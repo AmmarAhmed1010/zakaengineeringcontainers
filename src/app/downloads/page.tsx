@@ -10,15 +10,55 @@ export const metadata: Metadata = {
   description:
     "Download 12 container concept catalogues with floor plans measured in feet, four finished exterior views, and specification schedules.",
 };
+const collections = [
+  {
+    id: "offices",
+    title: "Offices",
+    label: "Office catalogues",
+    category: "Workspace",
+    description:
+      "Portable workspaces in six sizes, with office layouts, washrooms, and pantry zones.",
+  },
+  {
+    id: "studios",
+    title: "Studios & portable living",
+    label: "Studio & living catalogues",
+    category: "Living",
+    description:
+      "Open studios, a studio with a terrace, and larger portable residences for everyday living.",
+  },
+];
+
 export default function Downloads() {
   return (
     <main id="main-content">
       <PageIntro
         eyebrow="The design collection"
         title="Ideas worth building on."
-        text="Twelve spaces. Countless possibilities. Explore studios, portable residences, and offices with measured floor plans and four exterior views."
+        text="Find your space by use and size. Browse office or studio and living catalogues, each with a measured floor plan and four exterior views."
       />
       <div className="container">
+        <nav
+          className="catalogue-collections"
+          aria-label="Choose a catalogue collection"
+        >
+          {collections.map((collection) => (
+            <a href={`#${collection.id}`} key={collection.id}>
+              <div>
+                <span className="eyebrow">Browse by space</span>
+                <strong>{collection.label}</strong>
+                <span className="catalogue-collection-count">
+                  {
+                    documents.filter((d) => d.category === collection.category)
+                      .length
+                  }{" "}
+                  PDFs / Floor plans in feet
+                </span>
+              </div>
+              <ArrowUpRight width={24} />
+            </a>
+          ))}
+        </nav>
         <div className="document-note">
           <strong>Designed to start a conversation.</strong>
           <p>
@@ -27,42 +67,103 @@ export default function Downloads() {
             project before fabrication.
           </p>
         </div>
-        <section className="downloads-grid">
-          {documents.map((d, index) => (
-            <article className="download-card" key={d.slug}>
-              <Link
-                href={`/downloads/${d.slug}`}
-                className="download-cover"
-                aria-label={`Preview ${d.title}`}
-              >
-                <Image
-                  src={d.preview}
-                  alt={`${d.title} catalogue cover`}
-                  width={1094}
-                  height={773}
-                  sizes="(max-width: 640px) 90vw, (max-width: 900px) 45vw, 30vw"
-                  loading={index < 3 ? "eager" : "lazy"}
-                />
-              </Link>
-              <p className="eyebrow">
-                {d.code} / {d.category} collection
-              </p>
-              <h3>{d.title}</h3>
-              <p className="document-size">{d.subtitle}</p>
-              <p>{d.description}</p>
-              <div className="download-actions">
-                <Link href={`/downloads/${d.slug}`}>
-                  Preview catalogue
-                  <ArrowUpRight width={17} />
-                </Link>
-                <a href={d.file} download>
-                  PDF / {d.pages} pages
-                  <DownloadIcon width={17} />
+        {collections.map((collection, collectionIndex) => {
+          const items = documents.filter(
+            (d) => d.category === collection.category,
+          );
+          return (
+            <section
+              id={collection.id}
+              className="catalogue-section"
+              aria-labelledby={`${collection.id}-heading`}
+              key={collection.id}
+            >
+              <div className="catalogue-section-heading">
+                <div>
+                  <p className="eyebrow">
+                    {items.length} downloadable catalogues
+                  </p>
+                  <h2 id={`${collection.id}-heading`}>{collection.title}</h2>
+                  <p className="muted">{collection.description}</p>
+                </div>
+                <a href="#main-content" className="text-link">
+                  Back to collections <ArrowUpRight width={16} />
                 </a>
               </div>
-            </article>
-          ))}
-        </section>
+              <nav
+                className="catalogue-sizes"
+                aria-label={`${collection.title} sizes`}
+              >
+                <span>Choose your size</span>
+                {items.map((d) => (
+                  <a href={`#catalogue-${d.slug}`} key={d.slug}>
+                    {d.subtitle.split(" / ")[0]}
+                    {d.slug.includes("terrace") ? " + terrace" : ""}
+                  </a>
+                ))}
+              </nav>
+              <div className="downloads-grid">
+                {items.map((d, index) => (
+                  <article
+                    className="download-card"
+                    id={`catalogue-${d.slug}`}
+                    key={d.slug}
+                  >
+                    <div className="catalogue-card-label">
+                      <span
+                        className={`catalogue-type ${collection.category === "Living" ? "catalogue-type-living" : ""}`}
+                      >
+                        {collection.category === "Workspace"
+                          ? "Office"
+                          : d.title.includes("Residence")
+                            ? "Portable residence"
+                            : d.slug.includes("terrace")
+                              ? "Studio + terrace"
+                              : "Studio"}
+                      </span>
+                      <span>
+                        {d.code} / {d.pages}-page PDF
+                      </span>
+                    </div>
+                    <Link
+                      href={`/downloads/${d.slug}`}
+                      className="download-cover"
+                      aria-label={`Preview ${d.title}`}
+                    >
+                      <Image
+                        src={d.preview}
+                        alt={`${d.title} catalogue cover`}
+                        width={1094}
+                        height={773}
+                        sizes="(max-width: 640px) 90vw, (max-width: 900px) 45vw, 30vw"
+                        loading={
+                          collectionIndex === 0 && index < 3 ? "eager" : "lazy"
+                        }
+                      />
+                    </Link>
+                    <h3>{d.title}</h3>
+                    <p className="document-size">{d.subtitle}</p>
+                    <p>{d.description}</p>
+                    <div className="download-actions">
+                      <Link href={`/downloads/${d.slug}`}>
+                        Preview catalogue
+                        <ArrowUpRight width={17} />
+                      </Link>
+                      <a
+                        href={d.file}
+                        download
+                        aria-label={`Download ${d.title} PDF`}
+                      >
+                        Download PDF
+                        <DownloadIcon width={17} />
+                      </a>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          );
+        })}
       </div>
       <ProjectCTA />
     </main>
