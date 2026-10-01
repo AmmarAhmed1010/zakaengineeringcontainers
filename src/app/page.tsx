@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Arrow, ArrowUpRight, DownloadIcon } from "@/components/icons";
 import { ProjectCTA } from "@/components/footer";
 import { SectionTitle, ProjectCard } from "@/components/ui";
-import { services, projects, process } from "@/data/site";
+import { services, projects, process, documents } from "@/data/site";
 export default function Home() {
   return (
     <main id="main-content">
@@ -254,7 +254,7 @@ export default function Home() {
             <br />A lot of <span className="serif-word">possibility.</span>
           </h2>
           <p className="muted">
-            Explore five thoughtfully prepared concept catalogues. Office
+            Explore twelve thoughtfully prepared concept catalogues. Office
             cabins, comfortable homes, and site-ready spaces — with floor plans
             and details to start the conversation.
           </p>
@@ -263,7 +263,7 @@ export default function Home() {
             <DownloadIcon />
           </Link>
           <p className="small muted">
-            5 collections / Floor plans / Specifications
+            {documents.length} collections / Measured plans / Four exterior views
           </p>
         </div>
         <Link

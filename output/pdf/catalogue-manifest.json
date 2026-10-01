@@ -1,82 +1,110 @@
 [
   {
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-single-cabin-office.pdf",
-    "pages": 5,
-    "pageSize": [
-      841.89,
-      595.28
-    ],
-    "characters": [
-      686,
-      694,
-      780,
-      1820,
-      1003
-    ],
-    "bytes": 1961515
+    "slug": "studio-12x30",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-studio-12x30.pdf",
+    "pages": 6,
+    "widthFeet": 12,
+    "lengthFeet": 30,
+    "terraceFeet": 0,
+    "bytes": 788890
   },
   {
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-two-cabin-office.pdf",
-    "pages": 5,
-    "pageSize": [
-      841.89,
-      595.28
-    ],
-    "characters": [
-      690,
-      713,
-      780,
-      1820,
-      1001
-    ],
-    "bytes": 1961594
+    "slug": "studio-12x21-terrace",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-studio-12x21-terrace.pdf",
+    "pages": 6,
+    "widthFeet": 12,
+    "lengthFeet": 21,
+    "terraceFeet": 5,
+    "bytes": 811062
   },
   {
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-two-bedroom-residence.pdf",
-    "pages": 5,
-    "pageSize": [
-      841.89,
-      595.28
-    ],
-    "characters": [
-      696,
-      810,
-      570,
-      1820,
-      1028
-    ],
-    "bytes": 1932364
+    "slug": "portable-12x40",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-portable-12x40.pdf",
+    "pages": 6,
+    "widthFeet": 12,
+    "lengthFeet": 40,
+    "terraceFeet": 0,
+    "bytes": 865272
   },
   {
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-compact-container-home.pdf",
-    "pages": 5,
-    "pageSize": [
-      841.89,
-      595.28
-    ],
-    "characters": [
-      726,
-      753,
-      570,
-      1820,
-      953
-    ],
-    "bytes": 1932522
+    "slug": "portable-12x45",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-portable-12x45.pdf",
+    "pages": 6,
+    "widthFeet": 12,
+    "lengthFeet": 45,
+    "terraceFeet": 0,
+    "bytes": 876191
   },
   {
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-industrial-field-office.pdf",
-    "pages": 5,
-    "pageSize": [
-      841.89,
-      595.28
-    ],
-    "characters": [
-      707,
-      718,
-      780,
-      1820,
-      1034
-    ],
-    "bytes": 1961496
+    "slug": "portable-12x24",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-portable-12x24.pdf",
+    "pages": 6,
+    "widthFeet": 12,
+    "lengthFeet": 24,
+    "terraceFeet": 0,
+    "bytes": 785091
+  },
+  {
+    "slug": "portable-12x20",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-portable-12x20.pdf",
+    "pages": 6,
+    "widthFeet": 12,
+    "lengthFeet": 20,
+    "terraceFeet": 0,
+    "bytes": 844106
+  },
+  {
+    "slug": "office-8x20",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-8x20.pdf",
+    "pages": 6,
+    "widthFeet": 8,
+    "lengthFeet": 20,
+    "terraceFeet": 0,
+    "bytes": 808431
+  },
+  {
+    "slug": "office-10x20",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-10x20.pdf",
+    "pages": 6,
+    "widthFeet": 10,
+    "lengthFeet": 20,
+    "terraceFeet": 0,
+    "bytes": 773779
+  },
+  {
+    "slug": "office-12x20",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-12x20.pdf",
+    "pages": 6,
+    "widthFeet": 12,
+    "lengthFeet": 20,
+    "terraceFeet": 0,
+    "bytes": 786666
+  },
+  {
+    "slug": "office-8x40",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-8x40.pdf",
+    "pages": 6,
+    "widthFeet": 8,
+    "lengthFeet": 40,
+    "terraceFeet": 0,
+    "bytes": 869297
+  },
+  {
+    "slug": "office-10x40",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-10x40.pdf",
+    "pages": 6,
+    "widthFeet": 10,
+    "lengthFeet": 40,
+    "terraceFeet": 0,
+    "bytes": 855145
+  },
+  {
+    "slug": "office-12x40",
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-12x40.pdf",
+    "pages": 6,
+    "widthFeet": 12,
+    "lengthFeet": 40,
+    "terraceFeet": 0,
+    "bytes": 826904
   }
 ]

@@ -48,3 +48,5 @@ next-env.d.ts
 /content/references/
 /output/playwright/*.png
 /output/playwright/*.jpg
+__pycache__/
+*.pyc

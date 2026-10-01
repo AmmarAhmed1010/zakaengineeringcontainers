@@ -8,7 +8,7 @@ import { ProjectCTA } from "@/components/footer";
 export const metadata: Metadata = {
   title: "Design Catalogues",
   description:
-    "Download five professional container concept catalogues with floor plans, elevations, and specification schedules.",
+    "Download 12 container concept catalogues with floor plans measured in feet, four finished exterior views, and specification schedules.",
 };
 export default function Downloads() {
   return (
@@ -16,7 +16,7 @@ export default function Downloads() {
       <PageIntro
         eyebrow="The design collection"
         title="Ideas worth building on."
-        text="Five spaces. Countless possibilities. Explore our concept catalogues and find a starting point for your next project."
+        text="Twelve spaces. Countless possibilities. Explore studios, portable residences, and offices with measured floor plans and four exterior views."
       />
       <div className="container">
         <div className="document-note">
@@ -28,7 +28,7 @@ export default function Downloads() {
           </p>
         </div>
         <section className="downloads-grid">
-          {documents.map((d) => (
+          {documents.map((d, index) => (
             <article className="download-card" key={d.slug}>
               <Link
                 href={`/downloads/${d.slug}`}
@@ -38,8 +38,10 @@ export default function Downloads() {
                 <Image
                   src={d.preview}
                   alt={`${d.title} catalogue cover`}
-                  width={600}
-                  height={849}
+                  width={1094}
+                  height={773}
+                  sizes="(max-width: 640px) 90vw, (max-width: 900px) 45vw, 30vw"
+                  loading={index < 3 ? "eager" : "lazy"}
                 />
               </Link>
               <p className="eyebrow">

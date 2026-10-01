@@ -1,4 +1,5 @@
 import projectData from "./projects.json";
+import documentData from "./documents.json";
 export const projects = projectData;
 export const company = {
   name: "Zaka Engineering",
@@ -91,73 +92,7 @@ export const services = [
     image: "/images/generated/workshop.webp",
   },
 ];
-export const documents = [
-  {
-    slug: "single-cabin-office",
-    code: "ZE / 01",
-    title: "Single Cabin Office",
-    subtitle: "8′ × 20′ / 160 sq ft",
-    description:
-      "A compact workspace with an entry lobby and attached washroom. Includes a concept floor plan, elevations, and a finish schedule.",
-    pages: 5,
-    file: "/downloads/zaka-single-cabin-office.pdf",
-    image: "/images/generated/office.webp",
-    preview: "/images/pdf/single-cabin-office.webp",
-    category: "Workspace",
-  },
-  {
-    slug: "two-cabin-office",
-    code: "ZE / 02",
-    title: "Two Cabin Office",
-    subtitle: "8′ × 20′ / 160 sq ft",
-    description:
-      "Two private workspaces with a shared entrance and washroom. Explore room zoning, an exterior elevation, and project planning notes.",
-    pages: 5,
-    file: "/downloads/zaka-two-cabin-office.pdf",
-    image: "/images/generated/office.webp",
-    preview: "/images/pdf/two-cabin-office.webp",
-    category: "Workspace",
-  },
-  {
-    slug: "two-bedroom-residence",
-    code: "ZE / 03",
-    title: "Two Bedroom Residence",
-    subtitle: "16′ × 40′ / 640 sq ft",
-    description:
-      "A generous concept inspired by the supplied residential proposal, with two bedrooms, a central living room, kitchen, and two bathrooms.",
-    pages: 5,
-    file: "/downloads/zaka-two-bedroom-residence.pdf",
-    image: "/images/generated/hero.webp",
-    preview: "/images/pdf/two-bedroom-residence.webp",
-    category: "Living",
-  },
-  {
-    slug: "compact-container-home",
-    code: "ZE / 04",
-    title: "Compact Container Home",
-    subtitle: "12′ × 40′ / 480 sq ft",
-    description:
-      "An open living and dining concept with a private bedroom, kitchen, and bathroom. Includes an alternate two-bedroom zoning option.",
-    pages: 5,
-    file: "/downloads/zaka-compact-container-home.pdf",
-    image: "/images/generated/hero.webp",
-    preview: "/images/pdf/compact-container-home.webp",
-    category: "Living",
-  },
-  {
-    slug: "industrial-field-office",
-    code: "ZE / 05",
-    title: "Industrial Field Office",
-    subtitle: "8′ × 20′ / 160 sq ft",
-    description:
-      "A site operations concept with space for plan review, communications, and equipment storage, plus site readiness and specification checklists.",
-    pages: 5,
-    file: "/downloads/zaka-industrial-field-office.pdf",
-    image: "/images/generated/office.webp",
-    preview: "/images/pdf/industrial-field-office.webp",
-    category: "Workspace",
-  },
-];
+export const documents = documentData;
 export const process = [
   {
     title: "Tell us your vision",

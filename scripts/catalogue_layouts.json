@@ -1,0 +1,14 @@
+[
+  {"slug":"studio-12x30","width":12,"length":30,"kind":"studio","title":"Studio Room","category":"Living"},
+  {"slug":"studio-12x21-terrace","width":12,"length":21,"terrace":5,"kind":"studio","title":"Studio with Terrace","category":"Living"},
+  {"slug":"portable-12x40","width":12,"length":40,"kind":"home","title":"Portable Residence","category":"Living"},
+  {"slug":"portable-12x45","width":12,"length":45,"kind":"home","title":"Portable Residence","category":"Living"},
+  {"slug":"portable-12x24","width":12,"length":24,"kind":"studio","title":"Portable Studio","category":"Living"},
+  {"slug":"portable-12x20","width":12,"length":20,"kind":"studio","title":"Portable Studio","category":"Living"},
+  {"slug":"office-8x20","width":8,"length":20,"kind":"office","title":"Portable Office","category":"Workspace"},
+  {"slug":"office-10x20","width":10,"length":20,"kind":"office","title":"Portable Office","category":"Workspace"},
+  {"slug":"office-12x20","width":12,"length":20,"kind":"office","title":"Portable Office","category":"Workspace"},
+  {"slug":"office-8x40","width":8,"length":40,"kind":"office","title":"Portable Office","category":"Workspace"},
+  {"slug":"office-10x40","width":10,"length":40,"kind":"office","title":"Portable Office","category":"Workspace"},
+  {"slug":"office-12x40","width":12,"length":40,"kind":"office","title":"Portable Office","category":"Workspace"}
+]

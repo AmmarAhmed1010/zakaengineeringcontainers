@@ -4,11 +4,14 @@ import requests,pymupdf
 root=Path(__file__).resolve().parents[1]
 archive=json.loads((root/'src/data/archive.json').read_text(encoding='utf8'))
 projects=json.loads((root/'src/data/projects.json').read_text(encoding='utf8'))
+documents=json.loads((root/'src/data/documents.json').read_text(encoding='utf8'))
 routes={'/','/downloads','/source-content','/robots.txt','/sitemap.xml'}
 routes.update('/'+p['slug'] for p in archive)
 routes.update('/source-content/'+p['slug'] for p in archive)
 routes.update('/services/'+s for s in ['portable-prefab-cabins','modified-shipping-units','customized-containers','aluminum-fabrication','ms-iron-fabrication','ss-steel-fabrication'])
-routes.update('/downloads/'+s for s in ['single-cabin-office','two-cabin-office','two-bedroom-residence','compact-container-home','industrial-field-office'])
+routes.update('/downloads/'+d['slug'] for d in documents)
+routes.update(d['preview'] for d in documents)
+routes.update(d['image'] for d in documents)
 routes.update(p for project in projects for p in project['images'])
 routes.update('/images/generated/'+s+'.webp' for s in ['hero','office','interior','workshop'])
 def fetch(path):
@@ -19,7 +22,8 @@ def fetch(path):
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
     responses=list(pool.map(fetch,sorted(routes)))
 pdfs=[]
-for p in sorted((root/'public/downloads').glob('*.pdf')):
+for d in documents:
+    p=root/'public'/d['file'].lstrip('/')
     r=requests.get('http://127.0.0.1:3000/downloads/'+p.name,timeout=30)
     doc=pymupdf.open(p)
     clipped=[]
@@ -32,4 +36,4 @@ for p in sorted((root/'public/downloads').glob('*.pdf')):
 report={'checkedRoutesAndImages':len(responses),'failedResponses':[r for r in responses if r.get('status')!=200],'pdfs':pdfs,'allResponses':responses}
 (root/'output/playwright/http-audit.json').write_text(json.dumps(report,indent=2))
 print(json.dumps({k:v for k,v in report.items() if k!='allResponses'},indent=2))
-if report['failedResponses'] or any(p['pages']!=5 or p['response']!=200 or not p['validSignature'] or p['textOutsidePage'] for p in pdfs):raise SystemExit(1)
+if report['failedResponses'] or len(pdfs)!=12 or any(p['pages']!=6 or p['response']!=200 or not p['validSignature'] or p['textOutsidePage'] for p in pdfs):raise SystemExit(1)

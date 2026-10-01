@@ -17,7 +17,7 @@ The migration archive contains 47 page captures representing 46 unique pages. Ni
 
 Some original project copy conflicts with its project metadata (the portable-office body uses a different client name, and several office descriptions reuse call-center or hotel copy). Those texts are preserved for client review rather than silently inventing corrections. Unverified demo staff, testimonials, and pricing remain in the archive.
 
-The downloads section provides five original five-page concept catalogues, inspired by the six supplied PDFs. Each includes a cover visualization, a newly drawn schematic plan, exterior elevations, and an outline material schedule. The compact home includes a second residential layout. Plans are nominal and not to scale; supplied certification stamps and pricing are not carried into the new designs.
+The downloads section provides twelve six-page concept catalogues, covering every size in the updated client brief: six living/portable layouts and six office layouts. Each includes a cover visualization, a floor plan measured in feet, four finished exterior views across two pages, an outline material schedule, and project planning notes. The 12 x 21 ft studio assumes an additional 12 x 5 ft terrace, giving a 12 x 26 ft total footprint. Plans are nominal and not to scale; supplied certification stamps and pricing are not carried into the new designs. Exterior assets were created with the built-in image generation tool and their exact prompts are preserved in `docs/catalogue-exterior-prompts.json`.
 
 ## Reproduction
 

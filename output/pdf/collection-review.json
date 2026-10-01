@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "studio-12x30",
+    "pages": 6,
+    "bytes": 788890,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "studio-12x21-terrace",
+    "pages": 6,
+    "bytes": 811062,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "portable-12x40",
+    "pages": 6,
+    "bytes": 865272,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "portable-12x45",
+    "pages": 6,
+    "bytes": 876191,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "portable-12x24",
+    "pages": 6,
+    "bytes": 785091,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "portable-12x20",
+    "pages": 6,
+    "bytes": 844106,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "office-8x20",
+    "pages": 6,
+    "bytes": 808431,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "office-10x20",
+    "pages": 6,
+    "bytes": 773779,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "office-12x20",
+    "pages": 6,
+    "bytes": 786666,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "office-8x40",
+    "pages": 6,
+    "bytes": 869297,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "office-10x40",
+    "pages": 6,
+    "bytes": 855145,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  },
+  {
+    "slug": "office-12x40",
+    "pages": 6,
+    "bytes": 826904,
+    "textOutsidePage": [],
+    "publicCopyMatches": true,
+    "fourViewLabels": true
+  }
+]

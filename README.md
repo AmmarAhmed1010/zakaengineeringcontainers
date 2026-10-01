@@ -34,7 +34,7 @@ Open [http://localhost:3000](http://localhost:3000). Edit `src/app/page.tsx` to 
 
 - Home, About Us, Services, Projects, Contact Us, and Downloads.
 - Six individual service pages and nine original project galleries.
-- Five original PDF catalogues, with previews and downloadable files.
+- Twelve original six-page PDF catalogues covering studios, portable residences, and all six office sizes. Each includes a floor plan measured in feet, four exterior renders, specifications, and project planning notes.
 - All 46 unique original pages retained in the source-content archive.
 - Older source URLs are preserved through the legacy route and excluded from indexing.
 - Contact enquiries produce a WhatsApp draft for the visitor to review and send.

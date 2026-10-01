@@ -1248,13 +1248,21 @@ button:disabled {
   gap: 45px 32px;
   padding-bottom: 90px;
 }
+.download-card {
+  display: flex;
+  flex-direction: column;
+}
+.download-card > p:last-of-type {
+  margin-bottom: 23px;
+}
 .download-cover {
   display: block;
   background: #e8e5de;
   position: relative;
-  height: 350px;
+  height: 280px;
   padding: 22px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 .download-cover img {
   width: 100%;
@@ -1290,7 +1298,7 @@ button:disabled {
   justify-content: space-between;
   gap: 14px;
   border-top: 1px solid var(--line);
-  margin-top: 23px;
+  margin-top: auto;
   padding-top: 15px;
 }
 .download-actions a {
@@ -2140,7 +2148,7 @@ button:disabled {
     gap: 42px;
   }
   .download-cover {
-    height: 390px;
+    height: 270px;
   }
   .download-card h3 {
     font-size: 26px;
