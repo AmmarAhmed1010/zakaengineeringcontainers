@@ -1,0 +1,111 @@
+
+---Downloaded files---
+The import files for: Konstic were successfully downloaded!
+Initial max execution time = 36000
+Files info:
+Site URL = http://konstic.test
+Data file = C:\laragon\www\konstic\wp-content\plugins\konstic-core/demo-import/demo-data/content.xml
+Widget file = C:\laragon\www\konstic\wp-content\plugins\konstic-core/demo-import/demo-data/widgets.wie
+Customizer file = C:\laragon\www\konstic\wp-content\plugins\konstic-core/demo-import/demo-data/customize.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Konstic Post Search - Search - Imported
+Konstic:  Category - Category - Imported
+Konstic: Recent Posts with Thumbnails - Recent Posts - Imported
+Konstic: Tags - Tags - Imported
+
+Footer Menu Widget : 
+
+Navigation Menu - Quick Link - Imported
+
+Footer Menu Widget Two : 
+
+Navigation Menu - Our Services - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

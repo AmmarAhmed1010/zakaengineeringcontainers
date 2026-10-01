@@ -1,0 +1,19 @@
+# Generated image assets
+
+Created with the built-in ImageGen tool. Original PNGs and optimized WebP assets are saved under `public/images/generated/`. These are concept scenes, not photographs of completed Zaka projects.
+
+## Hero / hero.png and hero.webp
+
+Use case: photorealistic-natural. Create a premium architectural visualization for a Pakistani modular container construction company website hero. Wide cinematic landscape image 16:9. A beautiful single-story modular home built from two joined shipping containers, precise ivory corrugated steel facade, black slim aluminum full-height glazing, warm timber recessed entrance, one subtle brick-red vertical facade accent. Small timber deck, elegant concrete walkway, restrained grasses and olive trees, foothills of Islamabad visible in distance. Late afternoon warm sunlight, realistic materials, architectural magazine quality, believable buildable modest structure, beautifully landscaped, no people, no text, no logos, no watermark. Building centered with full structure visible, generous sky above, photograph shot at human eye level, not a skyscraper or luxury mansion. Image represents a concept design, not an existing completed project.
+
+## Office / office.png and office.webp
+
+Use case: product-mockup. Premium architectural photography concept for Zaka Engineering modular office product catalogue and website. Wide landscape 3:2, standalone single 20 foot by 8 foot shipping container office, light ivory corrugated steel walls with subtle deep navy trim, front facade long side features slim black sliding glass entrance at center, two large rectangular black-framed windows, flat roof, visible steel corner posts, raised slightly on concrete piers. Minimal modern desks visible inside, warm oak, planted Islamabad landscape, paved foreground, simple tall trees in background, soft morning sunlight. Full single unit visible, accurately modest proportions of a single 20-foot container, 3-quarter exterior perspective, very polished architecture journal photography, no text or branding, no watermark, no people, restrained luxury with realistic construction.
+
+## Interior / interior.png and interior.webp
+
+Use case: photorealistic-natural. Premium architecture editorial photograph of the interior of a compact 20 foot shipping container office, landscape 3:2 composition. Realistic narrow elegant workspace 8 feet wide with warm oak desk running along left wall, two ergonomic cream chairs, slim black aluminum windows with green Islamabad landscape outside, white insulated ceiling panels with recessed linear lighting, light timber floor, a floor to ceiling glass sliding door at far end, one restrained brick red accent detail and deep navy storage. Clean functional small office not a giant open plan building. Morning natural light through the windows, refined tactile materials, quiet professional atmosphere, human eye level view looking down the room, magazine photograph, no people, no text, no logos, no watermark.
+
+## Workshop / workshop.png and workshop.webp
+
+Use case: photorealistic-natural. Premium industrial editorial photograph for a Pakistani engineering and metal fabrication company, landscape 3:2. Clean organized small fabrication workshop in Islamabad, precision-cut mild steel beams and rectangular tubular frame for a modular container cabin, brushed stainless steel railing detail in foreground, neatly stacked aluminum window frames, high workshop ceiling and natural side lighting. One professional fabricator with gloves and face shield welding a steel joint in middle distance, tiny restrained realistic sparks, navy workwear with no logos. Carefully arranged tools, authentic metal textures, cinematic warm sunlight with cool gray shadows, premium architectural magazine visual, safe believable workspace, no text no branding no watermark.

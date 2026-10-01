@@ -1,0 +1,82 @@
+[
+  {
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-single-cabin-office.pdf",
+    "pages": 5,
+    "pageSize": [
+      841.89,
+      595.28
+    ],
+    "characters": [
+      686,
+      694,
+      780,
+      1820,
+      1003
+    ],
+    "bytes": 1961515
+  },
+  {
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-two-cabin-office.pdf",
+    "pages": 5,
+    "pageSize": [
+      841.89,
+      595.28
+    ],
+    "characters": [
+      690,
+      713,
+      780,
+      1820,
+      1001
+    ],
+    "bytes": 1961594
+  },
+  {
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-two-bedroom-residence.pdf",
+    "pages": 5,
+    "pageSize": [
+      841.89,
+      595.28
+    ],
+    "characters": [
+      696,
+      810,
+      570,
+      1820,
+      1028
+    ],
+    "bytes": 1932364
+  },
+  {
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-compact-container-home.pdf",
+    "pages": 5,
+    "pageSize": [
+      841.89,
+      595.28
+    ],
+    "characters": [
+      726,
+      753,
+      570,
+      1820,
+      953
+    ],
+    "bytes": 1932522
+  },
+  {
+    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-industrial-field-office.pdf",
+    "pages": 5,
+    "pageSize": [
+      841.89,
+      595.28
+    ],
+    "characters": [
+      707,
+      718,
+      780,
+      1820,
+      1034
+    ],
+    "bytes": 1961496
+  }
+]

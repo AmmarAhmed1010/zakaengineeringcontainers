@@ -1,0 +1,165 @@
+{
+  "capturedPages": 47,
+  "uniquePages": 46,
+  "projects": 9,
+  "downloadedAssets": 1243,
+  "assetBytes": 60853043,
+  "failedDownloads": [
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/author.png",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/author.png (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/brand-logo-2.png",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/brand-logo-2.png (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/brand-logo-3.png",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/brand-logo-3.png (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/brand-logo-4.png",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/brand-logo-4.png (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/brand-logo-5.png",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/brand-logo-5.png (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/brand-logo.png",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/brand-logo.png (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/details-1-1.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/details-1-1.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/details-2-1.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/details-2-1.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11002] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/project-1.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/project-1.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/project-2.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/project-2.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/project-3.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/project-3.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/project-4.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/project-4.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/project-5.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/project-5.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/team-5.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/team-5.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/team-6.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/team-6.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/team-7.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/team-7.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "url": "http://gramentheme.com/wp/xbuild/wp-content/uploads/2024/08/team-8.jpg",
+      "error": "HTTPConnectionPool(host='gramentheme.com', port=80): Max retries exceeded with url: /wp/xbuild/wp-content/uploads/2024/08/team-8.jpg (Caused by NameResolutionError(\"HTTPConnection(host='gramentheme.com', port=80): Failed to resolve 'gramentheme.com' ([Errno 11001] getaddrinfo failed)\"))"
+    }
+  ],
+  "brokenLinks": [
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/contact",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/contact"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/about-us",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/about-us"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-service/best-engineering/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-service/best-engineering/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-service/smart-technology/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-service/smart-technology/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-service/building-construction/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-service/building-construction/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-service/architecture-design/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-service/architecture-design/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-team/mack-hoa/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-team/mack-hoa/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/team-members/team-details",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/team-members/team-details"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-team/july-rank/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-team/july-rank/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-team/leo-hen/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-team/leo-hen/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-team//maria-serp/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-team/maria-serp/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-team/john-sina/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-team/john-sina/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-team/ameli-ken/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-team/ameli-ken/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-team/leonardo-decaprio/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-team/leonardo-decaprio/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-team/jacky-chan/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-team/jacky-chan/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/contact-us",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/contact-us"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/about-us/team-details",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/about-us/team-details"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/pricing",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/pricing"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-service/building-renovation/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-service/building-renovation/"
+    },
+    {
+      "url": "https://zakaengineeringcontainers.com/wp/konstic/all-service/chemical-research/",
+      "error": "404 Client Error: Not Found for url: https://zakaengineeringcontainers.com/wp/konstic/all-service/chemical-research/"
+    }
+  ],
+  "notes": [
+    "All source HTML and extracted text retained in content/source.",
+    "Source project descriptions include copied text and one conflicting client name; retained as supplied, recorded for client review.",
+    "Demo team, pricing and testimonial text archived rather than promoted as verified company information.",
+    "New architectural images are concepts and are not used as completed project photography."
+  ]
+}
