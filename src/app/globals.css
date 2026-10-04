@@ -2368,6 +2368,12 @@ button:disabled {
     font-size: 18px;
   }
 }
+.download-card .catalogue-layout-meta {
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 600;
+  margin: 8px 0 14px;
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

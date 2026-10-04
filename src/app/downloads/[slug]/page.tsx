@@ -43,7 +43,7 @@ export default async function Document({
           </a>
         </div>
         <iframe
-          src={`${d.file}#view=FitH`}
+          src={`${d.file}?revision=02#view=FitH`}
           className="pdf-viewer"
           title={`${d.title} PDF catalogue`}
         />

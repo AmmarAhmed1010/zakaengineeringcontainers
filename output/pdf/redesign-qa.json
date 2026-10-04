@@ -1,0 +1,110 @@
+{
+  "pdfs": [
+    {
+      "file": "zaka-compact-container-home.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-industrial-field-office.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-office-10x20.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-office-10x40.pdf",
+      "pages": 7,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-office-12x20.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-office-12x40.pdf",
+      "pages": 7,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-office-8x20.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-office-8x40.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-portable-12x20.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-portable-12x24.pdf",
+      "pages": 7,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-portable-12x40.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-portable-12x45.pdf",
+      "pages": 7,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-single-cabin-office.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-studio-12x21-terrace.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-studio-12x30.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-two-bedroom-residence.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    },
+    {
+      "file": "zaka-two-cabin-office.pdf",
+      "pages": 6,
+      "watermarkEveryPage": true,
+      "websiteCopyMatches": true
+    }
+  ],
+  "totalPages": 106,
+  "uniqueExteriorSheets": 17,
+  "clippedText": [],
+  "links": 34
+}

@@ -2,97 +2,137 @@
   {
     "slug": "studio-12x30",
     "pages": 6,
-    "bytes": 788890,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 360,
+    "imageSha256": "9484f77dca93ae33a5ecbbf2462b230a790bd5c935e9003f175251391646e02d",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "studio-12x21-terrace",
     "pages": 6,
-    "bytes": 811062,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 252,
+    "imageSha256": "44d740f90339fbd485cc49c9c2ce5c2f621da365aff8ad0705e3cf5806eb949f",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "portable-12x40",
     "pages": 6,
-    "bytes": 865272,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 480,
+    "imageSha256": "47eaacf2d96d84aa08d7906111116bba03c58661ca00c4b980e5f68133ffd6bb",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "portable-12x45",
-    "pages": 6,
-    "bytes": 876191,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "pages": 7,
+    "areaSqFt": 1080,
+    "imageSha256": "45b838b67568ed25fe1551b1e658629711dc1a930ba33282daabb226e80cbf6a",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "portable-12x24",
-    "pages": 6,
-    "bytes": 785091,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "pages": 7,
+    "areaSqFt": 288,
+    "imageSha256": "c06faf4c1e320429222b1a09700b5db8d6aff3ea6ca6a2339ee61668c0d6b01a",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "portable-12x20",
     "pages": 6,
-    "bytes": 844106,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 240,
+    "imageSha256": "52777eec85ebdda4df249c67475d8ec4f860e1ef30345392a0e4e93eb872984d",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "office-8x20",
     "pages": 6,
-    "bytes": 808431,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 160,
+    "imageSha256": "586359a5eb184fb947e0778dc2bec84488d1fde1fb3ebb7b8a40b6c1287ae1b9",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "office-10x20",
     "pages": 6,
-    "bytes": 773779,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 200,
+    "imageSha256": "304c1aac7e7f9592a469fb32465ee5e5cab16fadb0117f87d141bd127e2e18f4",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "office-12x20",
     "pages": 6,
-    "bytes": 786666,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 240,
+    "imageSha256": "31fd532f26d4d8847e0b9b03df6999b816670fd6aef3a57e80e94c5e41bf4e51",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "office-8x40",
     "pages": 6,
-    "bytes": 869297,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 320,
+    "imageSha256": "95b756a03e47a7ee41ad3bb733ec50c6fc15eecad233b6fc76d9431c9e2494b4",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "office-10x40",
-    "pages": 6,
-    "bytes": 855145,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "pages": 7,
+    "areaSqFt": 800,
+    "imageSha256": "434fa308b47a56e9c2e29e661a8585d1394958686104066c4af8b24aa72382d4",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   },
   {
     "slug": "office-12x40",
+    "pages": 7,
+    "areaSqFt": 960,
+    "imageSha256": "44692a54564a158f3e79dc9cb6272de2dac2e2da69c025af48b1582a29de433d",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
+  },
+  {
+    "slug": "single-cabin-office",
     "pages": 6,
-    "bytes": 826904,
-    "textOutsidePage": [],
-    "publicCopyMatches": true,
-    "fourViewLabels": true
+    "areaSqFt": 160,
+    "imageSha256": "b54418ebf8f06074cbbc7a878d2f8e5403c9e544e2c9d61bfa673b3f6eb25e85",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
+  },
+  {
+    "slug": "two-cabin-office",
+    "pages": 6,
+    "areaSqFt": 160,
+    "imageSha256": "0f0ef717bd3bb7e4446ee898220780d941e1f4fa6db568b122f333bb2de8fe9e",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
+  },
+  {
+    "slug": "industrial-field-office",
+    "pages": 6,
+    "areaSqFt": 160,
+    "imageSha256": "68cd56762c3604894c6119298fa6c2370e75b8950898f7559d09dc2bea154588",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
+  },
+  {
+    "slug": "two-bedroom-residence",
+    "pages": 6,
+    "areaSqFt": 640,
+    "imageSha256": "306d914be5c15fbdc760cb6fed8d818b8ea0b8c096d58b5485977603c9c37efc",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
+  },
+  {
+    "slug": "compact-container-home",
+    "pages": 6,
+    "areaSqFt": 720,
+    "imageSha256": "ee0c9bf39bd5605a72f0b00a2934e43dc47c1f6f20cafc84a455fb4c3c8cdbf0",
+    "websiteCopyMatches": true,
+    "roomGeometryValidated": true
   }
 ]

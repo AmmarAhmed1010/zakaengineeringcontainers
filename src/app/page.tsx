@@ -254,9 +254,9 @@ export default function Home() {
             <br />A lot of <span className="serif-word">possibility.</span>
           </h2>
           <p className="muted">
-            Explore twelve thoughtfully prepared concept catalogues. Office
-            cabins, comfortable homes, and site-ready spaces — with floor plans
-            and details to start the conversation.
+            Explore {documents.length} individual designs. Compact cabins,
+            two-storey offices and one- to three-bedroom homes — with measured
+            floor plans and four exterior views for every design.
           </p>
           <Link className="button button-navy" href="/downloads">
             Explore the catalogues

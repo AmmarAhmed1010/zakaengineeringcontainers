@@ -8,7 +8,7 @@ import { ProjectCTA } from "@/components/footer";
 export const metadata: Metadata = {
   title: "Design Catalogues",
   description:
-    "Download 12 container concept catalogues with floor plans measured in feet, four finished exterior views, and specification schedules.",
+    "Explore 17 distinct office and living designs: single and double storeys, studios and one to three bedrooms, measured floor plans and four exterior views.",
 };
 const collections = [
   {
@@ -17,7 +17,7 @@ const collections = [
     label: "Office catalogues",
     category: "Workspace",
     description:
-      "Portable workspaces in six sizes, with office layouts, washrooms, and pantry zones.",
+      "Nine individual workspace designs, from compact site cabins to two-storey office hubs. Compare sizes, roof styles and finishes.",
   },
   {
     id: "studios",
@@ -25,7 +25,7 @@ const collections = [
     label: "Studio & living catalogues",
     category: "Living",
     description:
-      "Open studios, a studio with a terrace, and larger portable residences for everyday living.",
+      "Eight distinct living designs: open studios, one-, two- and three-bedroom homes, a duplex, a roof terrace and a courtyard home.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function Downloads() {
       <PageIntro
         eyebrow="The design collection"
         title="Ideas worth building on."
-        text="Find your space by use and size. Browse office or studio and living catalogues, each with a measured floor plan and four exterior views."
+        text="Find your space by use, size and layout. Each design has its own exterior, floor plans measured in feet and four finished views."
       />
       <div className="container">
         <nav
@@ -97,7 +97,7 @@ export default function Downloads() {
                 <span>Choose your size</span>
                 {items.map((d) => (
                   <a href={`#catalogue-${d.slug}`} key={d.slug}>
-                    {d.subtitle.split(" / ")[0]}
+                    {d.subtitle.split(" / ")[0]} · {d.storeys === 2 ? "2 storeys" : d.category === "Living" ? d.bedrooms ? `${d.bedrooms} bed` : "Studio" : d.title.replace("Office", "").trim()}
                     {d.slug.includes("terrace") ? " + terrace" : ""}
                   </a>
                 ))}
@@ -115,8 +115,8 @@ export default function Downloads() {
                       >
                         {collection.category === "Workspace"
                           ? "Office"
-                          : d.title.includes("Residence")
-                            ? "Portable residence"
+                          : d.bedrooms > 0
+                            ? `${d.bedrooms} bedroom${d.bedrooms > 1 ? "s" : ""}`
                             : d.slug.includes("terrace")
                               ? "Studio + terrace"
                               : "Studio"}
@@ -143,6 +143,7 @@ export default function Downloads() {
                     </Link>
                     <h3>{d.title}</h3>
                     <p className="document-size">{d.subtitle}</p>
+                    <p className="catalogue-layout-meta">{d.storeys === 2 ? "Double storey · Ground + upper floor plans" : "Single storey"}{d.slug === "portable-12x24" ? " · Roof terrace plan included" : ""}{d.slug === "compact-container-home" ? " · Open courtyard" : ""}</p>
                     <p>{d.description}</p>
                     <div className="download-actions">
                       <Link href={`/downloads/${d.slug}`}>

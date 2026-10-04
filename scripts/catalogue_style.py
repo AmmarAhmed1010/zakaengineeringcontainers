@@ -46,13 +46,13 @@ def header(c,d,page,section):
     c.drawImage(str(QA/'logo.png'),40,H-74,width=110,height=64,mask='auto',preserveAspectRatio=True,anchor='c')
     text(c,400,H-38,'THE ZAKA DESIGN COLLECTION',9,'Bold',RED)
     text(c,400,H-54,section.upper(),8,'Body',MUTED)
-    text(c,W-123,H-38,d['code']+' / 01',9,'Bold')
+    text(c,W-123,H-38,d['code']+' / '+d.get('revision','01'),9,'Bold')
     text(c,W-123,H-54,'OCTOBER 2026',8,'Body',MUTED)
     line(c,40,H-82,W-40,H-82)
     line(c,40,43,W-40,43)
     text(c,40,27,'ZAKA ENGINEERING CONTAINERS & PREFAB (PVT. LTD.)',7,'Bold')
     text(c,350,27,'CONCEPT DESIGN / NOT TO SCALE / FOR CLIENT DISCUSSION',6.5,'Body',MUTED)
-    text(c,W-92,27,f'{page:02d} / 06',8,'Bold')
+    text(c,W-92,27,f"{page:02d} / {d.get('pages',6):02d}",8,'Bold')
     c.setTitle(d['title']+' | Zaka Engineering Concept Catalogue')
     c.setAuthor('Zaka Engineering Containers & Prefab (Pvt. Ltd.)')
     c.setSubject('Illustrative container design catalogue with concept floor plan, elevations and outline specifications')
@@ -72,7 +72,7 @@ def dim(c,x1,y1,x2,y2,label):
         c.saveState();c.translate(x1-8,(y1+y2)/2);c.rotate(90);text(c,-pdfmetrics.stringWidth(label,'Body',8)/2,0,label,8);c.restoreState()
 
 def spec_page(c,d):
-    header(c,d,5,'Outline specifications')
+    header(c,d,d.get('pages',6)-1,'Outline specifications')
     heading(c,'04 / Materials & systems','The details make the difference.','An outline schedule for client discussion. Material grades, thicknesses, capacity, and performance are confirmed in the project quotation.')
     rows=[('Structure','Steel container or fabricated prefab frame; openings and reinforcement to be engineered for the approved layout.'),('Exterior finish','Protective primer and coating system selected for exposure, maintenance needs, and the agreed colour palette.'),('Insulation','Wall and roof insulation specification to be agreed for local climate, comfort, and budget.'),('Internal linings','Insulated panel or board lining; washable finishes in wet areas and an agreed finish in occupied spaces.'),('Floor assembly','Existing or fabricated base with a selected floor finish; wet-area waterproofing and thresholds to be detailed.'),('Doors & glazing','Aluminum-framed windows and selected entrance doors; safety glass and hardware specified by opening type.'),('Electrical & data','Lighting, socket and data-point schedule to be agreed; supply requirements and local earthing verified for the site.'),('Climate & ventilation','Ventilation and optional air conditioning sized for occupancy, heat gain, climate, and operating requirements.'),('Plumbing & drainage','Supply, waste, and sanitary connections coordinated with site services where included in the final scope.'),('Delivery & installation','Route access, lifting, support design, anchoring, and service connections agreed before dispatch.')]
     rect(c,40,360,W-80,27,NAVY);text(c,53,370,'SYSTEM',8,'Bold',PAPER);text(c,228,370,'OUTLINE REQUIREMENT',8,'Bold',PAPER)
@@ -87,7 +87,7 @@ def spec_page(c,d):
     c.showPage()
 
 def planning_page(c,d):
-    header(c,d,6,'Your project brief')
+    header(c,d,d.get('pages',6),'Your project brief')
     heading(c,'05 / Make it yours','A clear plan for your next step.','Bring us your site and requirements. We will help develop the layout, scope, and quotation for your project.')
     text(c,40,365,'BEFORE WE DESIGN',9,'Bold',RED)
     prompts=['Intended use and number of occupants','City, site access and available footprint','Preferred room layout and finish palette','Available power, water and drainage','Budget range and desired delivery timeline']

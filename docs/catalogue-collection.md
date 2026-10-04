@@ -1,5 +1,7 @@
 # Client catalogue collection
 
+Historical revision 01 notes. The current 17-design collection is documented in [catalogue-redesign.md](catalogue-redesign.md).
+
 The updated brief lists twelve distinct layouts. All twelve are provided, rather than omitting requested sizes to reach exactly ten files. Each catalogue has six landscape A4 pages: introduction, measured floor plan, front/rear renders, left/right renders, outline specifications, and project/contact notes.
 
 ## Living and portable spaces

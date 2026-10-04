@@ -1,110 +1,1003 @@
 [
   {
-    "slug": "studio-12x30",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-studio-12x30.pdf",
+    "file": "zaka-studio-12x30.pdf",
     "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 952425,
+    "websiteCopyMatches": true,
+    "slug": "studio-12x30",
     "widthFeet": 12,
     "lengthFeet": 30,
-    "terraceFeet": 0,
-    "bytes": 788890
+    "storeys": 1,
+    "bedrooms": 1,
+    "areaSqFt": 360,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.21 PM (1).jpeg",
+    "imageSha256": "9484f77dca93ae33a5ecbbf2462b230a790bd5c935e9003f175251391646e02d",
+    "floorZones": [
+      [
+        {
+          "name": "Bathroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 6,
+          "kind": "bath"
+        },
+        {
+          "name": "Kitchenette",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Living / dining",
+          "x": 6,
+          "y": 0,
+          "length": 12,
+          "width": 12,
+          "kind": "living"
+        },
+        {
+          "name": "Bedroom 1",
+          "x": 18,
+          "y": 3,
+          "length": 12,
+          "width": 9,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom corridor",
+          "x": 18,
+          "y": 0,
+          "length": 12,
+          "width": 3,
+          "kind": "hall"
+        }
+      ]
+    ]
   },
   {
-    "slug": "studio-12x21-terrace",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-studio-12x21-terrace.pdf",
+    "file": "zaka-studio-12x21-terrace.pdf",
     "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 896453,
+    "websiteCopyMatches": true,
+    "slug": "studio-12x21-terrace",
     "widthFeet": 12,
     "lengthFeet": 21,
-    "terraceFeet": 5,
-    "bytes": 811062
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 252,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.16 PM (2).jpeg",
+    "imageSha256": "44d740f90339fbd485cc49c9c2ce5c2f621da365aff8ad0705e3cf5806eb949f",
+    "floorZones": [
+      [
+        {
+          "name": "Bathroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 6,
+          "kind": "bath"
+        },
+        {
+          "name": "Kitchenette",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Open studio",
+          "x": 6,
+          "y": 0,
+          "length": 15,
+          "width": 12,
+          "kind": "studio"
+        }
+      ]
+    ]
   },
   {
-    "slug": "portable-12x40",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-portable-12x40.pdf",
+    "file": "zaka-portable-12x40.pdf",
     "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 956113,
+    "websiteCopyMatches": true,
+    "slug": "portable-12x40",
     "widthFeet": 12,
     "lengthFeet": 40,
-    "terraceFeet": 0,
-    "bytes": 865272
+    "storeys": 1,
+    "bedrooms": 2,
+    "areaSqFt": 480,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.21 PM (1).jpeg",
+    "imageSha256": "47eaacf2d96d84aa08d7906111116bba03c58661ca00c4b980e5f68133ffd6bb",
+    "floorZones": [
+      [
+        {
+          "name": "Bathroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 6,
+          "kind": "bath"
+        },
+        {
+          "name": "Kitchenette",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Living / dining",
+          "x": 6,
+          "y": 0,
+          "length": 14,
+          "width": 12,
+          "kind": "living"
+        },
+        {
+          "name": "Bedroom 1",
+          "x": 20,
+          "y": 3,
+          "length": 10,
+          "width": 9,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom 2",
+          "x": 30,
+          "y": 3,
+          "length": 10,
+          "width": 9,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom corridor",
+          "x": 20,
+          "y": 0,
+          "length": 20,
+          "width": 3,
+          "kind": "hall"
+        }
+      ]
+    ]
   },
   {
+    "file": "zaka-portable-12x45.pdf",
+    "pages": 7,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 870631,
+    "websiteCopyMatches": true,
     "slug": "portable-12x45",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-portable-12x45.pdf",
-    "pages": 6,
     "widthFeet": 12,
     "lengthFeet": 45,
-    "terraceFeet": 0,
-    "bytes": 876191
+    "storeys": 2,
+    "bedrooms": 3,
+    "areaSqFt": 1080,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.46 PM (1).jpeg",
+    "imageSha256": "45b838b67568ed25fe1551b1e658629711dc1a930ba33282daabb226e80cbf6a",
+    "floorZones": [
+      [
+        {
+          "name": "Bathroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 6,
+          "kind": "bath"
+        },
+        {
+          "name": "Kitchenette",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Living / dining",
+          "x": 6,
+          "y": 0,
+          "length": 23,
+          "width": 12,
+          "kind": "living"
+        },
+        {
+          "name": "Bedroom 1",
+          "x": 29,
+          "y": 3,
+          "length": 16,
+          "width": 9,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom access",
+          "x": 29,
+          "y": 0,
+          "length": 16,
+          "width": 3,
+          "kind": "hall"
+        }
+      ],
+      [
+        {
+          "name": "Bathroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 6,
+          "kind": "bath"
+        },
+        {
+          "name": "Landing",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "landing"
+        },
+        {
+          "name": "Bedroom 2",
+          "x": 6,
+          "y": 3,
+          "length": 16,
+          "width": 9,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom 3",
+          "x": 22,
+          "y": 3,
+          "length": 23,
+          "width": 9,
+          "kind": "bed"
+        },
+        {
+          "name": "Shared corridor",
+          "x": 6,
+          "y": 0,
+          "length": 39,
+          "width": 3,
+          "kind": "hall"
+        }
+      ]
+    ]
   },
   {
+    "file": "zaka-portable-12x24.pdf",
+    "pages": 7,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 963217,
+    "websiteCopyMatches": true,
     "slug": "portable-12x24",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-portable-12x24.pdf",
-    "pages": 6,
     "widthFeet": 12,
     "lengthFeet": 24,
-    "terraceFeet": 0,
-    "bytes": 785091
+    "storeys": 1,
+    "bedrooms": 1,
+    "areaSqFt": 288,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.17 PM (1).jpeg",
+    "imageSha256": "c06faf4c1e320429222b1a09700b5db8d6aff3ea6ca6a2339ee61668c0d6b01a",
+    "floorZones": [
+      [
+        {
+          "name": "Bathroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 6,
+          "kind": "bath"
+        },
+        {
+          "name": "Kitchenette",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Living / dining",
+          "x": 6,
+          "y": 0,
+          "length": 8,
+          "width": 12,
+          "kind": "living"
+        },
+        {
+          "name": "Bedroom 1",
+          "x": 14,
+          "y": 3,
+          "length": 10,
+          "width": 9,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom corridor",
+          "x": 14,
+          "y": 0,
+          "length": 10,
+          "width": 3,
+          "kind": "hall"
+        }
+      ]
+    ]
   },
   {
+    "file": "zaka-portable-12x20.pdf",
+    "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 913172,
+    "websiteCopyMatches": true,
     "slug": "portable-12x20",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-portable-12x20.pdf",
-    "pages": 6,
     "widthFeet": 12,
     "lengthFeet": 20,
-    "terraceFeet": 0,
-    "bytes": 844106
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 240,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.50 PM.jpeg",
+    "imageSha256": "52777eec85ebdda4df249c67475d8ec4f860e1ef30345392a0e4e93eb872984d",
+    "floorZones": [
+      [
+        {
+          "name": "Bathroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 6,
+          "kind": "bath"
+        },
+        {
+          "name": "Kitchenette",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Open studio",
+          "x": 6,
+          "y": 0,
+          "length": 14,
+          "width": 12,
+          "kind": "studio"
+        }
+      ]
+    ]
   },
   {
+    "file": "zaka-office-8x20.pdf",
+    "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 870695,
+    "websiteCopyMatches": true,
     "slug": "office-8x20",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-8x20.pdf",
-    "pages": 6,
     "widthFeet": 8,
     "lengthFeet": 20,
-    "terraceFeet": 0,
-    "bytes": 808431
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 160,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.42 PM.jpeg",
+    "imageSha256": "586359a5eb184fb947e0778dc2bec84488d1fde1fb3ebb7b8a40b6c1287ae1b9",
+    "floorZones": [
+      [
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 4,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Entry / pantry",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 4,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Team workspace",
+          "x": 6,
+          "y": 0,
+          "length": 14,
+          "width": 8,
+          "kind": "office"
+        }
+      ]
+    ]
   },
   {
+    "file": "zaka-office-10x20.pdf",
+    "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 942692,
+    "websiteCopyMatches": true,
     "slug": "office-10x20",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-10x20.pdf",
-    "pages": 6,
     "widthFeet": 10,
     "lengthFeet": 20,
-    "terraceFeet": 0,
-    "bytes": 773779
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 200,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.39 PM.jpeg",
+    "imageSha256": "304c1aac7e7f9592a469fb32465ee5e5cab16fadb0117f87d141bd127e2e18f4",
+    "floorZones": [
+      [
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Entry / pantry",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Team workspace",
+          "x": 6,
+          "y": 0,
+          "length": 14,
+          "width": 10,
+          "kind": "office"
+        }
+      ]
+    ]
   },
   {
-    "slug": "office-12x20",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-12x20.pdf",
+    "file": "zaka-office-12x20.pdf",
     "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 898388,
+    "websiteCopyMatches": true,
+    "slug": "office-12x20",
     "widthFeet": 12,
     "lengthFeet": 20,
-    "terraceFeet": 0,
-    "bytes": 786666
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 240,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.36 PM.jpeg",
+    "imageSha256": "31fd532f26d4d8847e0b9b03df6999b816670fd6aef3a57e80e94c5e41bf4e51",
+    "floorZones": [
+      [
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 8,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Entry / pantry",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 8,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Team workspace",
+          "x": 6,
+          "y": 0,
+          "length": 14,
+          "width": 12,
+          "kind": "office"
+        }
+      ]
+    ]
   },
   {
-    "slug": "office-8x40",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-8x40.pdf",
+    "file": "zaka-office-8x40.pdf",
     "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 791995,
+    "websiteCopyMatches": true,
+    "slug": "office-8x40",
     "widthFeet": 8,
     "lengthFeet": 40,
-    "terraceFeet": 0,
-    "bytes": 869297
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 320,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.35 PM.jpeg",
+    "imageSha256": "95b756a03e47a7ee41ad3bb733ec50c6fc15eecad233b6fc76d9431c9e2494b4",
+    "floorZones": [
+      [
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 4,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Entry / pantry",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 4,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Team workspace",
+          "x": 6,
+          "y": 0,
+          "length": 34,
+          "width": 8,
+          "kind": "office"
+        }
+      ]
+    ]
   },
   {
+    "file": "zaka-office-10x40.pdf",
+    "pages": 7,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 864595,
+    "websiteCopyMatches": true,
     "slug": "office-10x40",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-10x40.pdf",
-    "pages": 6,
     "widthFeet": 10,
     "lengthFeet": 40,
-    "terraceFeet": 0,
-    "bytes": 855145
+    "storeys": 2,
+    "bedrooms": 0,
+    "areaSqFt": 800,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.15 PM (1).jpeg",
+    "imageSha256": "434fa308b47a56e9c2e29e661a8585d1394958686104066c4af8b24aa72382d4",
+    "floorZones": [
+      [
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Entry / pantry",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Team workspace",
+          "x": 6,
+          "y": 0,
+          "length": 34,
+          "width": 10,
+          "kind": "office"
+        }
+      ],
+      [
+        {
+          "name": "Stair landing",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 3,
+          "kind": "landing"
+        },
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Pantry",
+          "x": 0,
+          "y": 3,
+          "length": 6,
+          "width": 3,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Meeting / studio",
+          "x": 6,
+          "y": 3,
+          "length": 20,
+          "width": 7,
+          "kind": "office"
+        },
+        {
+          "name": "Private office",
+          "x": 26,
+          "y": 3,
+          "length": 14,
+          "width": 7,
+          "kind": "office"
+        },
+        {
+          "name": "Shared corridor",
+          "x": 6,
+          "y": 0,
+          "length": 34,
+          "width": 3,
+          "kind": "hall"
+        }
+      ]
+    ]
   },
   {
+    "file": "zaka-office-12x40.pdf",
+    "pages": 7,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 943097,
+    "websiteCopyMatches": true,
     "slug": "office-12x40",
-    "file": "C:\\github-repos\\zaka-engineering-containers\\output\\pdf\\zaka-office-12x40.pdf",
-    "pages": 6,
     "widthFeet": 12,
     "lengthFeet": 40,
-    "terraceFeet": 0,
-    "bytes": 826904
+    "storeys": 2,
+    "bedrooms": 0,
+    "areaSqFt": 960,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.39 PM.jpeg",
+    "imageSha256": "44692a54564a158f3e79dc9cb6272de2dac2e2da69c025af48b1582a29de433d",
+    "floorZones": [
+      [
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 8,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Entry / pantry",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 8,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Team workspace",
+          "x": 6,
+          "y": 0,
+          "length": 34,
+          "width": 12,
+          "kind": "office"
+        }
+      ],
+      [
+        {
+          "name": "Stair landing",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 3,
+          "kind": "landing"
+        },
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 8,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Pantry",
+          "x": 0,
+          "y": 3,
+          "length": 6,
+          "width": 5,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Meeting / studio",
+          "x": 6,
+          "y": 3,
+          "length": 22,
+          "width": 9,
+          "kind": "office"
+        },
+        {
+          "name": "Private office",
+          "x": 28,
+          "y": 3,
+          "length": 12,
+          "width": 9,
+          "kind": "office"
+        },
+        {
+          "name": "Shared corridor",
+          "x": 6,
+          "y": 0,
+          "length": 34,
+          "width": 3,
+          "kind": "hall"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "zaka-single-cabin-office.pdf",
+    "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 947207,
+    "websiteCopyMatches": true,
+    "slug": "single-cabin-office",
+    "widthFeet": 8,
+    "lengthFeet": 20,
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 160,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.36 PM (1).jpeg",
+    "imageSha256": "b54418ebf8f06074cbbc7a878d2f8e5403c9e544e2c9d61bfa673b3f6eb25e85",
+    "floorZones": [
+      [
+        {
+          "name": "Entrance",
+          "x": 0,
+          "y": 0,
+          "length": 4,
+          "width": 4,
+          "kind": "landing"
+        },
+        {
+          "name": "Washroom",
+          "x": 0,
+          "y": 4,
+          "length": 4,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Private office",
+          "x": 4,
+          "y": 0,
+          "length": 16,
+          "width": 8,
+          "kind": "office"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "zaka-two-cabin-office.pdf",
+    "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 875769,
+    "websiteCopyMatches": true,
+    "slug": "two-cabin-office",
+    "widthFeet": 8,
+    "lengthFeet": 20,
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 160,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.38 PM (1).jpeg",
+    "imageSha256": "0f0ef717bd3bb7e4446ee898220780d941e1f4fa6db568b122f333bb2de8fe9e",
+    "floorZones": [
+      [
+        {
+          "name": "Private office 1",
+          "x": 0,
+          "y": 0,
+          "length": 7,
+          "width": 8,
+          "kind": "office"
+        },
+        {
+          "name": "Entrance",
+          "x": 7,
+          "y": 0,
+          "length": 6,
+          "width": 4,
+          "kind": "landing"
+        },
+        {
+          "name": "Washroom",
+          "x": 7,
+          "y": 4,
+          "length": 6,
+          "width": 4,
+          "kind": "bath"
+        },
+        {
+          "name": "Private office 2",
+          "x": 13,
+          "y": 0,
+          "length": 7,
+          "width": 8,
+          "kind": "office"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "zaka-industrial-field-office.pdf",
+    "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 846804,
+    "websiteCopyMatches": true,
+    "slug": "industrial-field-office",
+    "widthFeet": 8,
+    "lengthFeet": 20,
+    "storeys": 1,
+    "bedrooms": 0,
+    "areaSqFt": 160,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.35 PM.jpeg",
+    "imageSha256": "68cd56762c3604894c6119298fa6c2370e75b8950898f7559d09dc2bea154588",
+    "floorZones": [
+      [
+        {
+          "name": "Review / briefing",
+          "x": 0,
+          "y": 0,
+          "length": 12,
+          "width": 8,
+          "kind": "office"
+        },
+        {
+          "name": "Comms / desk",
+          "x": 12,
+          "y": 0,
+          "length": 4,
+          "width": 8,
+          "kind": "office"
+        },
+        {
+          "name": "Equipment / pantry",
+          "x": 16,
+          "y": 0,
+          "length": 4,
+          "width": 8,
+          "kind": "kitchen"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "zaka-two-bedroom-residence.pdf",
+    "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 881936,
+    "websiteCopyMatches": true,
+    "slug": "two-bedroom-residence",
+    "widthFeet": 16,
+    "lengthFeet": 40,
+    "storeys": 1,
+    "bedrooms": 2,
+    "areaSqFt": 640,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.50 PM.jpeg",
+    "imageSha256": "306d914be5c15fbdc760cb6fed8d818b8ea0b8c096d58b5485977603c9c37efc",
+    "floorZones": [
+      [
+        {
+          "name": "Bathroom",
+          "x": 0,
+          "y": 6,
+          "length": 6,
+          "width": 10,
+          "kind": "bath"
+        },
+        {
+          "name": "Kitchenette",
+          "x": 0,
+          "y": 0,
+          "length": 6,
+          "width": 6,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Living / dining",
+          "x": 6,
+          "y": 0,
+          "length": 10,
+          "width": 16,
+          "kind": "living"
+        },
+        {
+          "name": "Bedroom 1",
+          "x": 16,
+          "y": 3,
+          "length": 12,
+          "width": 13,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom 2",
+          "x": 28,
+          "y": 3,
+          "length": 12,
+          "width": 13,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom corridor",
+          "x": 16,
+          "y": 0,
+          "length": 24,
+          "width": 3,
+          "kind": "hall"
+        }
+      ]
+    ]
+  },
+  {
+    "file": "zaka-compact-container-home.pdf",
+    "pages": 6,
+    "watermark": "GRID AND LOGIC",
+    "bytes": 917351,
+    "websiteCopyMatches": true,
+    "slug": "compact-container-home",
+    "widthFeet": 24,
+    "lengthFeet": 40,
+    "storeys": 1,
+    "bedrooms": 3,
+    "areaSqFt": 720,
+    "reference": "WhatsApp Image 2026-10-03 at 5.21.25 PM.jpeg",
+    "imageSha256": "ee0c9bf39bd5605a72f0b00a2934e43dc47c1f6f20cafc84a455fb4c3c8cdbf0",
+    "floorZones": [
+      [
+        {
+          "name": "Bedroom 1",
+          "x": 0,
+          "y": 0,
+          "length": 10,
+          "width": 12,
+          "kind": "bed"
+        },
+        {
+          "name": "Bedroom 2",
+          "x": 0,
+          "y": 12,
+          "length": 10,
+          "width": 12,
+          "kind": "bed"
+        },
+        {
+          "name": "Living / dining",
+          "x": 10,
+          "y": 12,
+          "length": 20,
+          "width": 12,
+          "kind": "living"
+        },
+        {
+          "name": "Bedroom 3",
+          "x": 30,
+          "y": 0,
+          "length": 10,
+          "width": 12,
+          "kind": "bed"
+        },
+        {
+          "name": "Kitchen",
+          "x": 30,
+          "y": 12,
+          "length": 5,
+          "width": 12,
+          "kind": "kitchen"
+        },
+        {
+          "name": "Bathroom",
+          "x": 35,
+          "y": 12,
+          "length": 5,
+          "width": 12,
+          "kind": "bath"
+        }
+      ]
+    ]
   }
 ]
