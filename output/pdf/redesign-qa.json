@@ -1,110 +1,159 @@
 {
+  "revision": "03",
+  "totalPages": 191,
   "pdfs": [
     {
       "file": "zaka-compact-container-home.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-industrial-field-office.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-office-10x20.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-office-10x40.pdf",
-      "pages": 7,
+      "pages": 12,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-office-12x20.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-office-12x40.pdf",
-      "pages": 7,
+      "pages": 12,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-office-8x20.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-office-8x40.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-portable-12x20.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-portable-12x24.pdf",
-      "pages": 7,
+      "pages": 12,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-portable-12x40.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-portable-12x45.pdf",
-      "pages": 7,
+      "pages": 12,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-single-cabin-office.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-studio-12x21-terrace.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-studio-12x30.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-two-bedroom-residence.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     },
     {
       "file": "zaka-two-cabin-office.pdf",
-      "pages": 6,
+      "pages": 11,
+      "clientMaterialSections": 20,
+      "fullClientTextPreserved": true,
       "watermarkEveryPage": true,
-      "websiteCopyMatches": true
+      "websiteCopyMatches": true,
+      "clippedText": []
     }
-  ],
-  "totalPages": 106,
-  "uniqueExteriorSheets": 17,
-  "clippedText": [],
-  "links": 34
+  ]
 }

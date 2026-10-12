@@ -1,0 +1,792 @@
+{
+  "studio-12x30": {
+    "changes": {},
+    "floors": [
+      {
+        "rooms": [
+          {
+            "name": "Washroom",
+            "x": 0,
+            "y": 6,
+            "length": 6,
+            "width": 6,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen",
+            "x": 0,
+            "y": 0,
+            "length": 6,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Living / dining",
+            "x": 6,
+            "y": 0,
+            "length": 12,
+            "width": 12,
+            "kind": "living",
+            "group": "Living / dining"
+          },
+          {
+            "name": "Bedroom 1",
+            "x": 18,
+            "y": 0,
+            "length": 12,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 1"
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 7,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 18,
+            "y": 1,
+            "vertical": true,
+            "sign": 1,
+            "size": 3
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "length": 6,
+            "vertical": true
+          }
+        ],
+        "note": "Bedroom corridor removed. Full-width 12 x 12 ft bedroom opens directly into the living room."
+      }
+    ]
+  },
+  "studio-12x21-terrace": {
+    "changes": {},
+    "floors": [
+      {
+        "rooms": [
+          {
+            "name": "Washroom",
+            "x": 0,
+            "y": 6,
+            "length": 6,
+            "width": 6,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen",
+            "x": 0,
+            "y": 0,
+            "length": 6,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Open studio",
+            "x": 6,
+            "y": 0,
+            "length": 15,
+            "width": 12,
+            "kind": "studio",
+            "group": "Open studio"
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 7,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 21,
+            "y": 2,
+            "vertical": true,
+            "sign": -1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "length": 6,
+            "vertical": true
+          }
+        ],
+        "note": "The main entrance is through the 12 x 5 ft right-end terrace. The former long-facade entrance is removed."
+      }
+    ]
+  },
+  "portable-12x40": {
+    "changes": {},
+    "floors": [
+      {
+        "rooms": [
+          {
+            "name": "Bedroom 1",
+            "x": 0,
+            "y": 0,
+            "length": 10,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 1"
+          },
+          {
+            "name": "Washroom",
+            "x": 10,
+            "y": 6,
+            "length": 4,
+            "width": 6,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen",
+            "x": 14,
+            "y": 6,
+            "length": 6,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Living / dining",
+            "x": 10,
+            "y": 0,
+            "length": 10,
+            "width": 6,
+            "kind": "living",
+            "group": "Living / dining",
+            "schedule": "20' x 12' less 10' x 6' services"
+          },
+          {
+            "name": "Living / dining",
+            "x": 20,
+            "y": 0,
+            "length": 10,
+            "width": 12,
+            "kind": "living",
+            "group": "Living / dining"
+          },
+          {
+            "name": "Bedroom 2",
+            "x": 30,
+            "y": 0,
+            "length": 10,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 2"
+          }
+        ],
+        "doors": [
+          {
+            "x": 10,
+            "y": 1,
+            "vertical": true,
+            "sign": -1,
+            "size": 3
+          },
+          {
+            "x": 30,
+            "y": 1,
+            "vertical": true,
+            "sign": 1,
+            "size": 3
+          },
+          {
+            "x": 10.5,
+            "y": 6,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 21,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 20,
+            "y": 0,
+            "length": 6,
+            "vertical": true
+          },
+          {
+            "x": 14,
+            "y": 6,
+            "length": 6,
+            "vertical": false
+          },
+          {
+            "x": 20,
+            "y": 6,
+            "length": 6,
+            "vertical": true
+          }
+        ],
+        "note": "Bedrooms at opposite ends open directly to the shared living area. Kitchen and washroom are integrated into the central service bay; no separate bedroom corridor."
+      }
+    ]
+  },
+  "two-bedroom-residence": {
+    "changes": {},
+    "floors": [
+      {
+        "rooms": [
+          {
+            "name": "Bedroom 1",
+            "x": 0,
+            "y": 0,
+            "length": 12,
+            "width": 16,
+            "kind": "bed",
+            "group": "Bedroom 1"
+          },
+          {
+            "name": "Washroom",
+            "x": 12,
+            "y": 10,
+            "length": 4,
+            "width": 6,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen",
+            "x": 16,
+            "y": 10,
+            "length": 6,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Living / dining",
+            "x": 12,
+            "y": 0,
+            "length": 10,
+            "width": 10,
+            "kind": "living",
+            "group": "Living / dining",
+            "schedule": "16' x 16' less 10' x 6' services"
+          },
+          {
+            "name": "Living / dining",
+            "x": 22,
+            "y": 0,
+            "length": 6,
+            "width": 16,
+            "kind": "living",
+            "group": "Living / dining"
+          },
+          {
+            "name": "Bedroom 2",
+            "x": 28,
+            "y": 0,
+            "length": 12,
+            "width": 16,
+            "kind": "bed",
+            "group": "Bedroom 2"
+          }
+        ],
+        "doors": [
+          {
+            "x": 12,
+            "y": 1,
+            "vertical": true,
+            "sign": -1,
+            "size": 3
+          },
+          {
+            "x": 28,
+            "y": 1,
+            "vertical": true,
+            "sign": 1,
+            "size": 3
+          },
+          {
+            "x": 12.5,
+            "y": 10,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 23,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 22,
+            "y": 0,
+            "length": 10,
+            "vertical": true
+          },
+          {
+            "x": 16,
+            "y": 10,
+            "length": 6,
+            "vertical": false
+          },
+          {
+            "x": 22,
+            "y": 10,
+            "length": 6,
+            "vertical": true
+          }
+        ],
+        "note": "Bedrooms at opposite ends open directly to the shared living area. Kitchen and washroom are integrated into the central service bay; no separate bedroom corridor."
+      }
+    ]
+  },
+  "portable-12x45": {
+    "changes": {
+      "title": "Four Bedroom Duplex",
+      "bedrooms": 4,
+      "finish": "ivory steel and warm timber, two fully stacked floors, front upper access balcony and right-end external staircase"
+    },
+    "floors": [
+      {
+        "rooms": [
+          {
+            "name": "Bedroom 1",
+            "x": 0,
+            "y": 0,
+            "length": 12,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 1"
+          },
+          {
+            "name": "Washroom",
+            "x": 12,
+            "y": 6,
+            "length": 4,
+            "width": 6,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen",
+            "x": 16,
+            "y": 6,
+            "length": 6,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Living / dining",
+            "x": 12,
+            "y": 0,
+            "length": 10,
+            "width": 6,
+            "kind": "living",
+            "group": "Living / dining",
+            "schedule": "17' x 12' less 10' x 6' services"
+          },
+          {
+            "name": "Living / dining",
+            "x": 22,
+            "y": 0,
+            "length": 7,
+            "width": 12,
+            "kind": "living",
+            "group": "Living / dining"
+          },
+          {
+            "name": "Bedroom 2",
+            "x": 29,
+            "y": 0,
+            "length": 16,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 2"
+          }
+        ],
+        "doors": [
+          {
+            "x": 12,
+            "y": 1,
+            "vertical": true,
+            "sign": -1,
+            "size": 3
+          },
+          {
+            "x": 29,
+            "y": 1,
+            "vertical": true,
+            "sign": 1,
+            "size": 3
+          },
+          {
+            "x": 12.5,
+            "y": 6,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 23,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 22,
+            "y": 0,
+            "length": 6,
+            "vertical": true
+          },
+          {
+            "x": 16,
+            "y": 6,
+            "length": 6,
+            "vertical": false
+          },
+          {
+            "x": 22,
+            "y": 6,
+            "length": 6,
+            "vertical": true
+          }
+        ],
+        "note": "Bedrooms at opposite ends open directly to the shared living area. Kitchen and washroom are integrated into the central service bay; no separate bedroom corridor."
+      },
+      {
+        "rooms": [
+          {
+            "name": "Bedroom 3",
+            "x": 0,
+            "y": 0,
+            "length": 12,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 3"
+          },
+          {
+            "name": "Washroom",
+            "x": 12,
+            "y": 6,
+            "length": 4,
+            "width": 6,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen",
+            "x": 16,
+            "y": 6,
+            "length": 6,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Living / dining",
+            "x": 12,
+            "y": 0,
+            "length": 10,
+            "width": 6,
+            "kind": "living",
+            "group": "Living / dining",
+            "schedule": "17' x 12' less 10' x 6' services"
+          },
+          {
+            "name": "Living / dining",
+            "x": 22,
+            "y": 0,
+            "length": 7,
+            "width": 12,
+            "kind": "living",
+            "group": "Living / dining"
+          },
+          {
+            "name": "Bedroom 4",
+            "x": 29,
+            "y": 0,
+            "length": 16,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 4"
+          }
+        ],
+        "doors": [
+          {
+            "x": 12,
+            "y": 1,
+            "vertical": true,
+            "sign": -1,
+            "size": 3
+          },
+          {
+            "x": 29,
+            "y": 1,
+            "vertical": true,
+            "sign": 1,
+            "size": 3
+          },
+          {
+            "x": 12.5,
+            "y": 6,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 23,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 22,
+            "y": 0,
+            "length": 6,
+            "vertical": true
+          },
+          {
+            "x": 16,
+            "y": 6,
+            "length": 6,
+            "vertical": false
+          },
+          {
+            "x": 22,
+            "y": 6,
+            "length": 6,
+            "vertical": true
+          }
+        ],
+        "note": "Bedrooms at opposite ends open directly to the shared living area. Kitchen and washroom are integrated into the central service bay; no separate bedroom corridor."
+      }
+    ]
+  },
+  "portable-12x24": {
+    "changes": {
+      "title": "Three Bedroom Compact Duplex",
+      "storeys": 2,
+      "bedrooms": 3,
+      "roofTerrace": false,
+      "finish": "white steel, black window frames, two enclosed floors, timber accents, front upper access balcony and right-end external staircase"
+    },
+    "floors": [
+      {
+        "rooms": [
+          {
+            "name": "Bedroom 1",
+            "x": 0,
+            "y": 0,
+            "length": 12,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 1",
+            "schedule": "16' x 12' less 4' x 6' washroom"
+          },
+          {
+            "name": "Wardrobe alcove",
+            "x": 12,
+            "y": 0,
+            "length": 4,
+            "width": 6,
+            "kind": "wardrobe",
+            "group": "Bedroom 1"
+          },
+          {
+            "name": "Washroom",
+            "x": 12,
+            "y": 6,
+            "length": 4,
+            "width": 6,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen",
+            "x": 16,
+            "y": 6,
+            "length": 4,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Open living",
+            "x": 16,
+            "y": 0,
+            "length": 8,
+            "width": 6,
+            "kind": "living",
+            "group": "Open living",
+            "schedule": "8' x 12' less 4' x 6' kitchen"
+          },
+          {
+            "name": "Open living",
+            "x": 20,
+            "y": 6,
+            "length": 4,
+            "width": 6,
+            "kind": "living",
+            "group": "Open living"
+          }
+        ],
+        "doors": [
+          {
+            "x": 16,
+            "y": 3,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 16,
+            "y": 7,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 20,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 12,
+            "y": 0,
+            "length": 6,
+            "vertical": true
+          },
+          {
+            "x": 20,
+            "y": 6,
+            "length": 4,
+            "vertical": false
+          },
+          {
+            "x": 16,
+            "y": 6,
+            "length": 4,
+            "vertical": false
+          },
+          {
+            "x": 20,
+            "y": 6,
+            "length": 6,
+            "vertical": true
+          }
+        ],
+        "note": "One bedroom downstairs, with a wardrobe alcove and recessed 4 x 6 ft washroom. The 8 x 12 ft living/kitchen zone is open without an internal partition."
+      },
+      {
+        "rooms": [
+          {
+            "name": "Bedroom 2",
+            "x": 0,
+            "y": 0,
+            "length": 10,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 2"
+          },
+          {
+            "name": "Washroom",
+            "x": 10,
+            "y": 6,
+            "length": 4,
+            "width": 6,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen / entry",
+            "x": 10,
+            "y": 0,
+            "length": 4,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen / entry"
+          },
+          {
+            "name": "Bedroom 3",
+            "x": 14,
+            "y": 0,
+            "length": 10,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 3"
+          }
+        ],
+        "doors": [
+          {
+            "x": 10,
+            "y": 1,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 14,
+            "y": 1,
+            "vertical": true,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 10.5,
+            "y": 6,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 10.5,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [],
+        "note": "Two bedrooms upstairs, with a central 4 x 6 ft washroom and 4 x 6 ft kitchen/entry. Upper access is from the external front balcony, reached by the right-end stair."
+      }
+    ]
+  }
+}

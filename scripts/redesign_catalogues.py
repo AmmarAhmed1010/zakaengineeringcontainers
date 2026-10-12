@@ -2,12 +2,14 @@
 from catalogue_style import *
 from create_collection import panel_bounds
 from watermark_catalogues import add_watermark
+from client_floor_plans import REVISIONS, draw_plan
+from client_materials import MATERIAL_PAGES, draw_materials
 import hashlib
 
 DESIGNS=json.loads((ROOT/'scripts/catalogue_redesigns.json').read_text())
 ASSETS=ROOT/'public/images/catalogues/revision-02'
-PREVIEW=ROOT/'public/images/pdf/revision-02';PREVIEW.mkdir(parents=True,exist_ok=True)
-QA=ROOT/'tmp/pdfs/revision-02';QA.mkdir(parents=True,exist_ok=True)
+PREVIEW=ROOT/'public/images/pdf/revision-03';PREVIEW.mkdir(parents=True,exist_ok=True)
+QA=ROOT/'tmp/pdfs/revision-03';QA.mkdir(parents=True,exist_ok=True)
 
 def room(name,x,y,l,w,kind='living'):
     return dict(name=name,x=x,y=y,length=l,width=w,kind=kind)
@@ -46,7 +48,10 @@ def rooms_for(d):
     return [rs]
 
 def enrich(d):
-    d=dict(d);d['revision']='02';d['floors']=rooms_for(d);d['pages']=7 if d['storeys']==2 or d['roofTerrace'] else 6
+    d={**d,**REVISIONS.get(d['slug'],{}).get('changes',{})}
+    d['revision']='03';d['floors']=[f['rooms'] for f in REVISIONS[d['slug']]['floors']] if d['slug'] in REVISIONS else rooms_for(d)
+    d['basePages']=7 if d['storeys']==2 or d['roofTerrace'] else 6
+    d['pages']=d['basePages']+MATERIAL_PAGES;d['briefPage']=d['basePages']-1
     d['floorArea']=sum(r['length']*r['width'] for r in d['floors'][0]);d['area']=d['floorArea']*d['storeys'];d['type']='redesign'
     assert d['floorArea']==(720 if d['slug']=='compact-container-home' else d['width']*d['length'])
     for floor in d['floors']:
@@ -58,22 +63,22 @@ def enrich(d):
     d['subtitle']=f"{d['storeys']}-storey {program} / {d['area']} sq ft enclosed"
     article='An' if d['width']==8 else 'A'
     d['description']=f"{article} {d['width']} x {d['length']} ft {program} with {d['finish']}."
-    if d['storeys']==2:d['description']+=' Two measured floor plans include separate circulation and an external stair allowance.'
+    if d['storeys']==2:d['description']+=' Kitchen and washroom on both floors; right-end stairs connect to the upper front access balcony.'
     if d['terrace']:d['description']+=' An additional 12 x 5 ft terrace extends from the right end.'
     if d['roofTerrace']:d['description']+=' A 12 x 24 ft roof deck adds an outdoor lounge above the enclosed floor.'
     if d['slug']=='compact-container-home':d['description']+=' A 20 x 12 ft open courtyard connects the three bedrooms and living wing via outdoor access.'
     d['inspiration']='Architecture direction informed by client-assets references, then developed as an original concept. All measurements are nominal feet; wall thicknesses are not deducted. Wider modules require fabricated or joined frames.'
-    if d['storeys']==2 or d['roofTerrace']:d['inspiration']+=' External stair allowance: 4 x 16 ft, outside the stated footprint; landing, supports and geometry require detailed design.'
+    if d['storeys']==2:d['inspiration']+=' Right-end external stairs: 4 x 16 ft, plus a 3 ft deep upper front access balcony, both outside the enclosed footprint. Final stair geometry, structure and clearances require detailed design.'
     return d
 
 def panel(c,d,index,x,y,w,h):
-    source=ASSETS/(d['slug']+'.webp');im=Image.open(source).convert('RGB');iw,ih=im.size
+    source=ROOT/'public'/d['image'].lstrip('/');im=Image.open(source).convert('RGB');iw,ih=im.size
     jpeg=QA/(d['slug']+'.jpg');im.save(jpeg,quality=92,optimize=True)
     lx,ty,rx,by=panel_bounds(im,d['slug'])[index];s=min(w/(rx-lx),h/(by-ty));pw,ph=(rx-lx)*s,(by-ty)*s;left=x+(w-pw)/2;bottom=y+(h-ph)/2
     c.saveState();clip=c.beginPath();clip.rect(left,bottom,pw,ph);c.clipPath(clip,stroke=0,fill=0);c.drawImage(str(jpeg),left-lx*s,bottom-(ih-by)*s,width=iw*s,height=ih*s);c.restoreState()
 
 def cover(c,d):
-    header(c,d,1,'Revision 02 / '+d['category'])
+    header(c,d,1,'Revision 03 / '+d['category'])
     text(c,40,479,'INDIVIDUAL DESIGN / '+d['code'],8,'Bold',RED)
     titlebottom=para(c,40,456,d['title'],245,28,NAVY,32,'Display')
     para(c,40,titlebottom-14,d['subtitle'],242,11,RED,16,'Bold')
@@ -183,11 +188,12 @@ def elevations(c,d,page,panels):
 
 def specifications(c,d):
     # Individual finish and programme above the standard construction schedule.
-    header(c,d,d['pages']-1,'Individual specification brief')
+    header(c,d,d['briefPage'],'Individual specification brief')
     heading(c,'03 / Materials & programme','Details for this design.','A defined visual direction and spatial brief for the project quotation.')
     rows=[('Building',f"{d['width']} x {d['length']} ft footprint; {d['storeys']} enclosed storey(s); {d['bedrooms']} bedroom(s)."),('Enclosed floor area',f"{d['floorArea']} sq ft per floor / {d['area']} sq ft total, before wall deductions."),('Exterior palette',d['finish'].capitalize()+'.'),('Roof & outdoor space','Guarded 12 x 24 ft accessible roof deck; stairs outside footprint.' if d['roofTerrace'] else ('Additional 12 x 5 ft terrace / 60 sq ft.' if d['terrace'] else ('20 x 12 ft open courtyard / 240 sq ft excluded from floor area.' if d['slug']=='compact-container-home' else 'Roof profile follows the exterior concept; structure and drainage to be designed.'))),('Structure','Fabricated or joined steel modules; foundation, openings, connections and lifting points engineered for site conditions.'),('Comfort & finish','Insulated walls and roof; selected internal linings and floor finish; washable wet-area surfaces.'),('Glazing & doors','Opening schedule coordinated with rooms, privacy, escape and ventilation; safety glass and hardware specified individually.'),('Electrical & services','Power, lighting, sockets and data developed to suit use. Plumbing, water supply and drainage coordinated with available site services.'),('Circulation & access','External stair allowance 4 x 16 ft; final rise, run, landing and support design required.' if d['storeys']==2 else 'Door swings and furniture are indicative; confirm finished clearances and accessible circulation.'),('Delivery & installation','Transport route, crane access, supports, anchoring and connections agreed before manufacture.')]
     yy=380
     for i,(label,value) in enumerate(rows):
+        if label=='Circulation & access' and d['storeys']==2:value="Right-end stair: 4 x 16 ft. Upper front access balcony: 3 ft deep, outside enclosed footprint. Final stair geometry to be engineered."
         rh=29;rect(c,40,yy-rh,W-80,rh,SAND if i%2==0 else PAPER);text(c,51,yy-18,label,8,'Bold');para(c,222,yy-5,value,560,8,MUTED,10);yy-=rh
     para(c,40,72,'Concept proposal only. Final engineering, quantities, approvals and price are established for the selected design and site.',W-80,7,MUTED,9);c.showPage()
 
@@ -195,23 +201,25 @@ def main():
     manifest=[];site=[]
     for raw in DESIGNS:
         d=enrich(raw);path=OUT/('zaka-'+d['slug']+'.pdf')
-        c=canvas.Canvas(str(path),pagesize=(W,H),pageCompression=1);cover(c,d);plan(c,d,0,2)
-        if d['storeys']==2:plan(c,d,1,3)
+        revision='03' if (ROOT/'public/images/catalogues/revision-03'/(d['slug']+'.webp')).exists() else '02'
+        d['image']='/images/catalogues/revision-'+revision+'/'+d['slug']+'.webp'
+        c=canvas.Canvas(str(path),pagesize=(W,H),pageCompression=1);cover(c,d);draw_plan(c,d,0,2)
+        if d['storeys']==2:draw_plan(c,d,1,3)
         elif d['roofTerrace']:plan(c,d,0,3,True)
-        start=d['pages']-3;elevations(c,d,start,[0,1]);elevations(c,d,start+1,[2,3]);specifications(c,d);planning_page(c,d);c.save()
+        start=d['basePages']-3;elevations(c,d,start,[0,1]);elevations(c,d,start+1,[2,3]);specifications(c,d);draw_materials(c,d,d['briefPage']+1);planning_page(c,d);c.save()
         watermark=add_watermark(path,path);doc=pymupdf.open(path);assert len(doc)==d['pages']
         for j,p in enumerate(doc):
             pix=p.get_pixmap(matrix=pymupdf.Matrix(1.25,1.25),alpha=False);pix.save(str(QA/f"{d['slug']}-{j+1}.png"))
             if j==0:Image.frombytes('RGB',[pix.width,pix.height],pix.samples).save(PREVIEW/(d['slug']+'.webp'),quality=90)
-        sheet=Image.new('RGB',(1800,720),'#deded9');draw=ImageDraw.Draw(sheet)
+        sheet=Image.new('RGB',(1800,math.ceil(len(doc)/3)*240),'#deded9');draw=ImageDraw.Draw(sheet)
         for j in range(len(doc)):
             im=ImageOps.contain(Image.open(QA/f"{d['slug']}-{j+1}.png"),(590,209));xx=(j%3)*600;yy=(j//3)*240;sheet.paste(im,(xx,yy+22));draw.text((xx+5,yy+4),f"{d['slug']} / {j+1}",fill='black')
         sheet.save(QA/(d['slug']+'-review.jpg'))
-        manifest.append({**watermark,'slug':d['slug'],'widthFeet':d['width'],'lengthFeet':d['length'],'storeys':d['storeys'],'bedrooms':d['bedrooms'],'areaSqFt':d['area'],'reference':d['reference'],'imageSha256':hashlib.sha256((ASSETS/(d['slug']+'.webp')).read_bytes()).hexdigest(),'floorZones':d['floors']})
+        manifest.append({**watermark,'slug':d['slug'],'revision':'03','widthFeet':d['width'],'lengthFeet':d['length'],'storeys':d['storeys'],'bedrooms':d['bedrooms'],'areaSqFt':d['area'],'reference':d['reference'],'imageSha256':hashlib.sha256((ROOT/'public'/d['image'].lstrip('/')).read_bytes()).hexdigest(),'floorZones':d['floors'],'materialSpecificationSections':20})
         subtitle=f"{d['width']}′ × {d['length']}′ / {d['area']} sq ft enclosed"
         if d['terrace']:subtitle+=' + 60 sq ft terrace'
         if d['roofTerrace']:subtitle+=' + roof deck'
-        site.append(dict(slug=d['slug'],code=d['code'],title=d['title'],subtitle=subtitle,description=d['description'],pages=d['pages'],file='/downloads/'+path.name,image='/images/catalogues/revision-02/'+d['slug']+'.webp',preview='/images/pdf/revision-02/'+d['slug']+'.webp',category=d['category'],storeys=d['storeys'],bedrooms=d['bedrooms'],designStyle=d['finish']))
+        site.append(dict(slug=d['slug'],code=d['code'],title=d['title'],subtitle=subtitle,description=d['description'],pages=d['pages'],revision='03',file='/downloads/'+path.name,image=d['image'],preview='/images/pdf/revision-03/'+d['slug']+'.webp',category=d['category'],storeys=d['storeys'],bedrooms=d['bedrooms'],designStyle=d['finish']))
         print(path.name,d['pages'],'pages',flush=True)
     (OUT/'catalogue-manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf8')
     review=[{k:d[k] for k in ('slug','pages','areaSqFt','imageSha256','websiteCopyMatches')}|{'roomGeometryValidated':True} for d in manifest]

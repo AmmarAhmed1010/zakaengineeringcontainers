@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { documents } from "@/data/site";
+import materialSpecifications from "@/data/material-specifications.json";
 import { PageIntro } from "@/components/ui";
 import { DownloadIcon, ArrowUpRight } from "@/components/icons";
 import { ProjectCTA } from "@/components/footer";
 export const metadata: Metadata = {
   title: "Design Catalogues",
   description:
-    "Explore 17 distinct office and living designs: single and double storeys, studios and one to three bedrooms, measured floor plans and four exterior views.",
+    "Explore 17 office and living designs with revised floor plans, studios and one to four bedrooms, four exterior views and complete material specifications.",
 };
 const collections = [
   {
@@ -25,7 +26,7 @@ const collections = [
     label: "Studio & living catalogues",
     category: "Living",
     description:
-      "Eight distinct living designs: open studios, one-, two- and three-bedroom homes, a duplex, a roof terrace and a courtyard home.",
+      "Eight living designs: open studios, one- and two-bedroom homes, three- and four-bedroom duplexes, a terrace studio and a courtyard home.",
   },
 ];
 
@@ -143,7 +144,7 @@ export default function Downloads() {
                     </Link>
                     <h3>{d.title}</h3>
                     <p className="document-size">{d.subtitle}</p>
-                    <p className="catalogue-layout-meta">{d.storeys === 2 ? "Double storey · Ground + upper floor plans" : "Single storey"}{d.slug === "portable-12x24" ? " · Roof terrace plan included" : ""}{d.slug === "compact-container-home" ? " · Open courtyard" : ""}</p>
+                    <p className="catalogue-layout-meta">{d.storeys === 2 ? "Double storey · Kitchen + washroom on both floors" : "Single storey"}{d.slug === "compact-container-home" ? " · Open courtyard" : ""}</p>
                     <p>{d.description}</p>
                     <div className="download-actions">
                       <Link href={`/downloads/${d.slug}`}>
@@ -151,7 +152,7 @@ export default function Downloads() {
                         <ArrowUpRight width={17} />
                       </Link>
                       <a
-                        href={d.file}
+                        href={`${d.file}?revision=${d.revision}`}
                         download
                         aria-label={`Download ${d.title} PDF`}
                       >
@@ -165,6 +166,23 @@ export default function Downloads() {
             </section>
           );
         })}
+        <section className="catalogue-section" aria-labelledby="materials-heading">
+          <div className="catalogue-section-heading">
+            <div>
+              <p className="eyebrow">Included in every catalogue</p>
+              <h2 id="materials-heading">Standard materials & specifications</h2>
+              <p className="muted">Zaka’s complete material schedule. Final thickness, gauge, brand, finish and accessories follow the approved quotation and design.</p>
+            </div>
+          </div>
+          <div className="catalogue-materials">
+            {materialSpecifications.map((section) => (
+              <details key={section.title}>
+                <summary>{section.title}</summary>
+                <div>{section.lines.map((line, index) => <p key={index}>{line}</p>)}</div>
+              </details>
+            ))}
+          </div>
+        </section>
       </div>
       <ProjectCTA />
     </main>

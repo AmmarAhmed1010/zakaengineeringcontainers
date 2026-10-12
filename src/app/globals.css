@@ -2374,6 +2374,27 @@ button:disabled {
   font-weight: 600;
   margin: 8px 0 14px;
 }
+.catalogue-materials details {
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+}
+.catalogue-materials details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.catalogue-materials summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+.catalogue-materials details > div {
+  max-width: 860px;
+  margin: 20px 0;
+}
+.catalogue-materials details p {
+  color: var(--muted);
+  margin: 6px 0;
+  font-size: 14px;
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

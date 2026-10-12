@@ -37,13 +37,13 @@ export default async function Document({
             <span>{d.subtitle}</span>
             <span className="muted">PDF / {d.pages} pages</span>
           </span>
-          <a href={d.file} download className="button button-red">
+          <a href={`${d.file}?revision=${d.revision}`} download className="button button-red">
             Download catalogue
             <DownloadIcon />
           </a>
         </div>
         <iframe
-          src={`${d.file}?revision=02#view=FitH`}
+          src={`${d.file}?revision=${d.revision}#view=FitH`}
           className="pdf-viewer"
           title={`${d.title} PDF catalogue`}
         />
@@ -51,7 +51,7 @@ export default async function Document({
           If the preview is unavailable on your device,{" "}
           <a
             className="text-link"
-            href={d.file}
+            href={`${d.file}?revision=${d.revision}`}
             target="_blank"
             rel="noopener noreferrer"
           >

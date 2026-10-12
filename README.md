@@ -34,7 +34,7 @@ Open [http://localhost:3000](http://localhost:3000). Edit `src/app/page.tsx` to 
 
 - Home, About Us, Services, Projects, Contact Us, and Downloads.
 - Six individual service pages and nine original project galleries.
-- Seventeen individual six- or seven-page PDF catalogues: nine offices and eight living designs, including single and double storeys, studios, one to three bedrooms, a roof deck and a courtyard home. Each includes measured floor plans, four exterior renders, individual specifications and project notes.
+- Seventeen individual 11- or 12-page PDF catalogues: nine offices and eight living designs, including single and double storeys, studios, one to four bedrooms, a terrace studio and a courtyard home. Each includes measured floor plans, four exterior renders, individual specifications, the full client material schedule and project notes.
 - All 46 unique original pages retained in the source-content archive.
 - Older source URLs are preserved through the legacy route and excluded from indexing.
 - Contact enquiries produce a WhatsApp draft for the visitor to review and send.
@@ -45,4 +45,4 @@ The original website HTML, text, and media index are in `content/source`. See `c
 
 Generated concept assets are in `public/images/generated`. See `docs/generated-image-prompts.md` for the exact prompts and `docs/design-direction.md` for design decisions and regeneration steps. Original reference PDFs are treated as visual references and are not redistributed by the site.
 
-PDF outputs are in `output/pdf`, website downloads are in `public/downloads`, and the editable PDF builder is `scripts/create_catalogues.py`. The PDF generation script requires Python with ReportLab, Pillow, PyMuPDF and pypdf. Revision 02 designs and measurement assumptions are documented in `docs/catalogue-redesign.md`.
+PDF outputs are in `output/pdf`, website downloads are in `public/downloads`, and the editable PDF builder is `scripts/create_catalogues.py`. The PDF generation script requires Python with ReportLab, Pillow, PyMuPDF and pypdf. Current corrections, client interpretations and measurement assumptions are documented in `docs/catalogue-revision-03.md`.

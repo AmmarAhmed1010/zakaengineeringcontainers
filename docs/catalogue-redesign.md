@@ -1,5 +1,7 @@
 # Catalogue redesign - revision 02
 
+Historical revision. Current client corrections and material specifications are documented in [catalogue-revision-03.md](catalogue-revision-03.md).
+
 17 existing PDF URLs rebuilt with individual exterior designs and measured plans. All 17 now appear on the downloads page: nine offices and eight living designs. Six landscape A4 pages each; the three duplexes and roof-deck cabin have a seventh page for the additional plan. GRID AND LOGIC remains on every page and preview.
 
 | Design | Footprint (ft) | Storeys | Bedrooms | Enclosed area (sq ft) |
