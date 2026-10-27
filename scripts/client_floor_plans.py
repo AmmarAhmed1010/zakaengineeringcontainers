@@ -1,5 +1,6 @@
 """Client-marked layouts: explicit openings, continuous living zones and end stairs."""
 from catalogue_style import *
+from bed_furniture import draw_bed, default_bed, audit_beds
 
 REVISIONS=json.loads((ROOT/'scripts/client_plan_revisions.json').read_text())
 
@@ -44,7 +45,7 @@ def draw_plan(c,d,index,page,roof=False):
     header(c,d,page,name+' / measurements in feet')
     heading(c,'01 / Client layout revision',name+'. Planned around your brief.','Nominal feet, before wall deductions. Numbered spaces correspond to the room schedule below.')
     total=l+d.get('terrace',0)+(5 if stairs else 0);depth=max(w,16 if stairs else w)+(3 if balcony else 0)
-    s=min(630/total,200/depth);x=(W-total*s)/2;y=(177 if slug=='office-10x20' else 193)+(3*s if balcony else 0)
+    s=min(630/total,200/depth);x=(W-total*s)/2;y=(193 if stairs else 177)+(3*s if balcony else 0)
     palette={'bed':'#e4dacb','wardrobe':'#e4dacb','bath':'#dce8eb','kitchen':'#ece2d2','office':'#e0e6de','hall':'#faf9f6','landing':'#f0ece4','studio':'#e9dfd0','living':'#efede7'}
     def bx(a,b,ll,ww,fill,stroke=NAVY):
         c.setLineWidth(.65);rect(c,x+a*s,y+b*s,ll*s,ww*s,HexColor(fill),stroke)
@@ -61,10 +62,12 @@ def draw_plan(c,d,index,page,roof=False):
     for o in opens:
         a,b=o['x'],o['y'];v=o.get('vertical',False);ll=o['length']
         line(c,x+a*s,y+b*s,x+(a if v else a+ll)*s,y+(b+ll if v else b)*s,HexColor('#efede7'),3)
+    beds=[]
     for r in rs:
         a,b,ll,ww,kind=(r[k] for k in ('x','y','length','width','kind'))
         if kind in ('bed','studio') and ll>=7 and ww>=8:
-            bx(a+ll-5.7,b+ww-6.7,5,6,'#cabba7',MUTED);bx(a+ll-5.5,b+ww-1.7,4.6,.8,'#faf9f6',MUTED)
+            bed=default_bed(r);beds.append(bed)
+            draw_bed(c,bed['x'],bed['y'],bed['width'],bed['height'],bed['head'],s,(x,y))
         elif kind=='wardrobe':bx(a+.2,b+.2,ll-.4,1.5,'#cabba7',MUTED)
         elif kind=='office':
             for xx in range(1,int(ll)-3,7):bx(a+xx,b+ww-2.2,3.5,1.5,'#cabba7',MUTED)
@@ -89,6 +92,7 @@ def draw_plan(c,d,index,page,roof=False):
             label='Kitchen' if 'Kitchen' in label else label.split(' / ')[0]
             size=min(size,(ll*s-8)/pdfmetrics.stringWidth(label,'Bold',1))
         tw=pdfmetrics.stringWidth(label,'Bold',size);cx=x+(a+ll*.45)*s;cy=y+(b+ww*.36)*s
+        if main['kind'] in ('bed','studio'):cx=x+(a+ll*.5)*s;cy=y+(b+ww-1.5)*s
         rect(c,cx-tw/2-3,cy-3,tw+6,12,PAPER);text(c,cx-tw/2,cy,label,size,'Bold')
     if d.get('terrace'):
         bx(l,0,5,w,'#dedaca');text(c,x+(l+.6)*s,y+5*s,'TERRACE',7,'Bold')
@@ -124,6 +128,9 @@ def draw_plan(c,d,index,page,roof=False):
             bx(l,-3,.5,3,'#e0e6de',MUTED)
             line(c,x+l*s,y-3*s,x+l*s,y,HexColor('#e0e6de'),3)
     for o in doors:opening(o)
+    windows=detail.get('windows',[dict(x=r['x']+1,y=w,size=min(r['length']-1,4)-1,vertical=False) for r in rs if r['kind'] in ('bed','office','studio','living') and r['y']+r['width']==w])
+    obstacles=[(r['x'],r['y'],r['length'],r['width']) for r in rs if r['kind'] in ('bath','kitchen','wardrobe')]
+    audit_beds(beds,windows,doors,obstacles,f"{slug} / floor {index}")
     dim(c,x,y+w*s+20,x+l*s,y+w*s+20,f"{l}' building length")
     dim(c,x-23,y,x-23,y+w*s,f"{w}' building width")
     note=detail.get('note','Blue: glazing. Red arcs: indicative doors. All final openings and clearances are developed for the approved layout.')

@@ -43,6 +43,16 @@ download copies are available by their `/downloads/<filename>` URLs.
 - Cedar Executive Office 10 x 20 ft: entry/pantry renamed Kitchen; sink and hob shown. Kitchen windows are 3 x 3 ft; workspace windows are 4 x 4 ft on the front, opposite 10 ft end and rear.
 - All 21 PDF catalogues use a faint watermark rendered from the website header's `Containers-Prefab.svg`. The old text watermark is removed. `scripts/watermark_catalogues.py` updates the canonical and download copies idempotently.
 
-These changes remain local for continued editing; no commit, push or deployment was made.
+Source builders and PDFs are versioned together so subsequent client revisions can be reproduced.
 
 The website SVG's white background rectangle was subsequently removed. Transparent header and watermark PNGs are rendered from that vector source with `node scripts/prepare_brand_logo.mjs`; the PDF builders preserve their alpha masks.
+
+## Bed directions and executive glazing
+
+All 28 illustrated beds across the collection are now 5 x 6.5 ft, with their headboards against solid wall segments. Sleeping furniture is centered away from corners, window openings, service fixtures and door swings. The builders check at least 2.5 ft at both long sides and the foot; the per-bed results are saved in `output/pdf/bed-layout-audit.json`.
+
+The family home's ground-floor beds turn onto the inner partitions; upstairs headboards use the solid rear walls. Residence beds use side partitions, with the 40 ft option's wardrobes and rear windows repositioned to keep access clear. The office bedroom uses the solid front wall and an upper-hinged passage door that clears the bed. The terrace studio's rear window moves alongside the bed rather than behind its headboard.
+
+Both 40/44 ft executive-office options now have front and right-end glazing, with the opposite rear window removed. The Cedar Executive Office 10 x 20 ft keeps its front/end glazing and loses its rear workspace window.
+
+Run `python scripts/refresh_bed_layouts.py` with the existing catalogue-builder dependencies to regenerate the affected plans, all four client PDFs, download copies, cache revisions, manifests and visual-review sheets. The shared bed renderer and geometry checks are in `scripts/bed_furniture.py`.

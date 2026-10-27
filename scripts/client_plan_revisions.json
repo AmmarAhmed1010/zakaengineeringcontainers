@@ -16,11 +16,10 @@
         {"tag":"W1","x":0,"y":1.25,"vertical":true,"size":3,"height":3},
         {"tag":"W1","x":1.5,"y":0,"vertical":false,"size":3,"height":3},
         {"tag":"W2","x":20,"y":3,"vertical":true,"size":4,"height":4},
-        {"tag":"W2","x":13,"y":0,"vertical":false,"size":4,"height":4},
-        {"tag":"W2","x":10,"y":10,"vertical":false,"size":4,"height":4}
+        {"tag":"W2","x":13,"y":0,"vertical":false,"size":4,"height":4}
       ],
       "openEdges": [],
-      "note":"Kitchen replaces entry/pantry. W1: 3 x 3 ft kitchen windows on front and 10 ft end. W2: 4 x 4 ft workspace windows on front, opposite 10 ft end and rear. Window sizes are width x height; confirm final sill heights."
+      "note":"Kitchen replaces entry/pantry. W1: 3 x 3 ft kitchen windows on front and 10 ft end. W2: 4 x 4 ft workspace windows on front and opposite 10 ft end; rear workspace window removed. Sizes are width x height."
     }]
   },
   "studio-12x30": {

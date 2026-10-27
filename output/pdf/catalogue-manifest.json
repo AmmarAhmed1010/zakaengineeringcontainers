@@ -3,7 +3,7 @@
     "file": "zaka-studio-12x30.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1182791,
+    "bytes": 1310297,
     "websiteCopyMatches": true,
     "slug": "studio-12x30",
     "revision": "03",
@@ -54,13 +54,36 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "bedFurniture": [
+      {
+        "context": "studio-12x30 / floor 0",
+        "x": 23.5,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          18,
+          0,
+          12,
+          12
+        ],
+        "name": "Bedroom 1",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "zaka-studio-12x21-terrace.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1099006,
+    "bytes": 1226517,
     "websiteCopyMatches": true,
     "slug": "studio-12x21-terrace",
     "revision": "03",
@@ -102,13 +125,36 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "bedFurniture": [
+      {
+        "context": "studio-12x21-terrace / floor 0",
+        "x": 12,
+        "y": 0,
+        "width": 5,
+        "height": 6.5,
+        "head": "south",
+        "room": [
+          6,
+          0,
+          15,
+          12
+        ],
+        "name": "Open studio",
+        "sideClearancesFeet": [
+          6,
+          4
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "zaka-portable-12x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1186914,
+    "bytes": 1314569,
     "websiteCopyMatches": true,
     "slug": "portable-12x40",
     "revision": "03",
@@ -178,13 +224,57 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "bedFurniture": [
+      {
+        "context": "portable-12x40 / floor 0",
+        "x": 0,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          0,
+          10,
+          12
+        ],
+        "name": "Bedroom 1",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "portable-12x40 / floor 0",
+        "x": 33.5,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          30,
+          0,
+          10,
+          12
+        ],
+        "name": "Bedroom 2",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "zaka-portable-12x45.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1115277,
+    "bytes": 1404465,
     "websiteCopyMatches": true,
     "slug": "portable-12x45",
     "revision": "03",
@@ -311,13 +401,99 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "bedFurniture": [
+      {
+        "context": "portable-12x45 / floor 0",
+        "x": 0,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          0,
+          12,
+          12
+        ],
+        "name": "Bedroom 1",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "portable-12x45 / floor 0",
+        "x": 38.5,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          29,
+          0,
+          16,
+          12
+        ],
+        "name": "Bedroom 2",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 9.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "portable-12x45 / floor 1",
+        "x": 0,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          0,
+          12,
+          12
+        ],
+        "name": "Bedroom 3",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "portable-12x45 / floor 1",
+        "x": 38.5,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          29,
+          0,
+          16,
+          12
+        ],
+        "name": "Bedroom 4",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 9.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "zaka-portable-12x24.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1217405,
+    "bytes": 1506483,
     "websiteCopyMatches": true,
     "slug": "portable-12x24",
     "revision": "03",
@@ -426,13 +602,78 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "bedFurniture": [
+      {
+        "context": "portable-12x24 / floor 0",
+        "x": 0,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          0,
+          12,
+          12
+        ],
+        "name": "Bedroom 1",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "portable-12x24 / floor 1",
+        "x": 0,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          0,
+          10,
+          12
+        ],
+        "name": "Bedroom 2",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "portable-12x24 / floor 1",
+        "x": 17.5,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          14,
+          0,
+          10,
+          12
+        ],
+        "name": "Bedroom 3",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "zaka-portable-12x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1144480,
+    "bytes": 1272024,
     "websiteCopyMatches": true,
     "slug": "portable-12x20",
     "revision": "03",
@@ -471,7 +712,30 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "bedFurniture": [
+      {
+        "context": "portable-12x20 / floor 0",
+        "x": 12,
+        "y": 0,
+        "width": 5,
+        "height": 6.5,
+        "head": "south",
+        "room": [
+          6,
+          0,
+          14,
+          12
+        ],
+        "name": "Open studio",
+        "sideClearancesFeet": [
+          6,
+          3
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "zaka-office-8x20.pdf",
@@ -522,7 +786,7 @@
     "file": "zaka-office-10x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1379433,
+    "bytes": 1302732,
     "websiteCopyMatches": true,
     "slug": "office-10x20",
     "revision": "03",
@@ -594,14 +858,6 @@
         "tag": "W2",
         "x": 13,
         "y": 0,
-        "vertical": false,
-        "size": 4,
-        "height": 4
-      },
-      {
-        "tag": "W2",
-        "x": 10,
-        "y": 10,
         "vertical": false,
         "size": 4,
         "height": 4
@@ -1035,7 +1291,7 @@
     "file": "zaka-two-bedroom-residence.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1112595,
+    "bytes": 1240248,
     "websiteCopyMatches": true,
     "slug": "two-bedroom-residence",
     "revision": "03",
@@ -1105,13 +1361,57 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "bedFurniture": [
+      {
+        "context": "two-bedroom-residence / floor 0",
+        "x": 0,
+        "y": 5.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          0,
+          12,
+          16
+        ],
+        "name": "Bedroom 1",
+        "sideClearancesFeet": [
+          5.5,
+          5.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "two-bedroom-residence / floor 0",
+        "x": 33.5,
+        "y": 5.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          28,
+          0,
+          12,
+          16
+        ],
+        "name": "Bedroom 2",
+        "sideClearancesFeet": [
+          5.5,
+          5.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "zaka-compact-container-home.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1148865,
+    "bytes": 1276720,
     "websiteCopyMatches": true,
     "slug": "compact-container-home",
     "revision": "03",
@@ -1174,6 +1474,71 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "bedFurniture": [
+      {
+        "context": "compact-container-home / floor 0",
+        "x": 0,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          0,
+          10,
+          12
+        ],
+        "name": "Bedroom 1",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "compact-container-home / floor 0",
+        "x": 0,
+        "y": 15.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          12,
+          10,
+          12
+        ],
+        "name": "Bedroom 2",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "compact-container-home / floor 0",
+        "x": 33.5,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          30,
+          0,
+          10,
+          12
+        ],
+        "name": "Bedroom 3",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   }
 ]

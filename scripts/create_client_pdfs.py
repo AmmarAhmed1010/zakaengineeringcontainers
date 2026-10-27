@@ -7,6 +7,7 @@ from reportlab.lib.utils import ImageReader
 from pypdf import PdfReader, PdfWriter
 import pypdfium2 as pdfium
 from PIL import Image, ImageDraw
+from bed_furniture import draw_bed, audit_beds
 
 REPO=Path(__file__).resolve().parents[1]
 ROOT=REPO/'output'/'pdf'
@@ -66,6 +67,7 @@ def frame(c,cfg,section,page,total,title=None,sub=None):
 class Plan:
     def __init__(self,c,length,width,x,y,s,cfg):
         self.c=c; self.L=length; self.B=width; self.x=x; self.y=y; self.s=s; self.cfg=cfg
+        self.beds=[];self.windows=[];self.doors=[];self.obstacles=[]
     def pt(self,x,y): return self.x+x*self.s,self.y+y*self.s
     def box(self,x,y,w,h,fill='#E2E3E2',lw=1):
         X,Y=self.pt(x,y); rect(self.c,X,Y,w*self.s,h*self.s,fill,INK,lw)
@@ -75,30 +77,39 @@ class Plan:
         X,Y=self.pt(x,y)
         for i,line in enumerate(s.split('\n')): txt(self.c,X,Y-i*(size+2),line,size,INK,'Helvetica-Bold' if i==0 else 'Helvetica',align='center')
     def win(self,x,y,length,vert=False,tag='W1'):
+        self.windows.append(dict(x=x,y=y,size=length,vertical=vert,tag=tag))
         dx,dy=(0,length) if vert else (length,0); self.line(x,y,x+dx,y+dy,'#FAF9F6',5)
         for off in [-.12,.12]: self.line(x+off if vert else x,y if vert else y+off,x+off+dx if vert else x+dx,y+dy if vert else y+off,'#607C8C',1)
         X,Y=self.pt(x+dx/2,y+dy/2); txt(self.c,X+7 if vert else X,Y-3 if vert else Y+7,tag,6.5,'#3C6374',align='left' if vert else 'center')
-    def door(self,x,y,width=3,vert=False,tag='D1',sign=1):
+    def door(self,x,y,width=3,vert=False,tag='D1',sign=1,reverse=False):
+        self.doors.append(dict(x=x,y=y,size=width,vertical=vert,sign=sign,reverse=reverse,tag=tag))
         c=self.c; X,Y=self.pt(x,y); v=width*self.s
-        dx,dy=(0,v) if vert else (v,0);ex,ey=(sign*v,0) if vert else (0,sign*v)
         self.line(x,y,x+(0 if vert else width),y+(width if vert else 0),'#FAF9F6',5)
+        if reverse:
+            if vert:Y+=v
+            else:X+=v
+        direction=-1 if reverse else 1
+        dx,dy=(0,direction*v) if vert else (direction*v,0);ex,ey=(sign*v,0) if vert else (0,sign*v)
         c.setStrokeColor(HexColor(self.cfg['accent']));c.setLineWidth(.9);c.line(X,Y,X+ex,Y+ey)
         k=.5522848;path=c.beginPath();path.moveTo(X+dx,Y+dy)
         path.curveTo(X+dx+k*ex,Y+dy+k*ey,X+ex+k*dx,Y+ey+k*dy,X+ex,Y+ey)
         c.setLineWidth(.5);c.drawPath(path)
         if vert:
-            txt(c,X+sign*10,Y+v/2,tag,6,self.cfg['accent'],align='center')
+            txt(c,X+sign*10,Y+direction*v/2,tag,6,self.cfg['accent'],align='center')
         else:
             txt(c,X+v/2,Y-11 if sign>0 else Y+8,tag,6,self.cfg['accent'],align='center')
     def cupboard(self,x,y,w=6,h=2):
+        self.obstacles.append((x,y,w,h))
         self.box(x,y,w,h,'#B8B4AC',.6); self.line(x,y,x+w,y+h,'#87857E',.4); self.line(x+w,y,x,y+h,'#87857E',.4)
         if h>w:
             X,Y=self.pt(x+w/2,y+h/2);self.c.saveState();self.c.translate(X,Y);self.c.rotate(90)
             txt(self.c,0,0,'CUPBOARD / 2 ft deep',5.4,align='center');self.c.restoreState()
         else:self.label(x+w/2,y+h/2-.1,'CUPBOARD',5.7)
-    def bed(self,x,y,w=5,h=6):
-        self.box(x,y,w,h,'#D2CEC6',.5); self.box(x+.25,y+h-1.5,w-.5,1.2,'#F6F5F1',.35)
+    def bed(self,x,y,w,h,head,room):
+        self.beds.append(dict(x=x,y=y,width=w,height=h,head=head,room=room,name='Bedroom / sleeping zone'))
+        draw_bed(self.c,x,y,w,h,head,self.s,(self.x,self.y))
     def bath(self,x,y,w,h,tag='WC',door='east'):
+        self.obstacles.append((x,y,w,h))
         self.box(x,y,w,h,'#DCE6E7'); self.label(x+w/2,y+h/2+.2,tag+f'\n{w:g} x {h:g} ft',6.5)
         X,Y=self.pt(x+.7,y+h-.7); self.c.setStrokeColor(HexColor('#71858B')); self.c.ellipse(X-3,Y-5,X+3,Y+4,stroke=1,fill=0)
         if door=='none': return
@@ -114,6 +125,7 @@ class Plan:
         self.line(x+3.5,y,x+3.5,y+2,'#7F8D88',.45)
         self.label(x+4.2,y+3,'L-SOFA',5.6)
     def dimensions(self):
+        audit_beds(self.beds,self.windows,self.doors,self.obstacles,self.cfg['file']+f' / page {self.c.getPageNumber()}')
         c=self.c; x,y=self.x,self.y; s=self.s
         c.setLineWidth(.5); c.setStrokeColor(HexColor(MUTED)); c.line(x,y+self.B*s+18,x+self.L*s,y+self.B*s+18)
         for a in [x,x+self.L*s]: c.line(a,y+self.B*s+12,a,y+self.B*s+24)
@@ -131,12 +143,14 @@ def table(c,rows,x,y,width=762,col=185,rowh=29,size=8):
 def notes(c,rows,y=153):
     txt(c,40,y,'ROOM SCHEDULE / NOMINAL FEET',7,RED,'Helvetica-Bold')
     table(c,rows,40,y-13,rowh=22,size=7.4)
+    txt(c,40,52,'Beds: 5 x 6.5 ft; solid-wall headboards; minimum 2.5 ft access at both long sides and the foot.',6.4,MUTED)
 
 def ground(c,cfg):
     p=Plan(c,40,24,215,175,9,cfg); p.box(0,0,40,24,'#F0EFEB',2)
     p.box(0,0,12,24,'#D9DADB'); p.box(28,0,12,24,'#D9DADB')
     p.bath(0,19,6,5,'ENSUITE 1'); p.bath(34,19,6,5,'ENSUITE 2','west')
-    p.cupboard(6,22,6,2); p.cupboard(28,22,6,2); p.bed(2,5); p.bed(33,5)
+    p.cupboard(6,22,6,2); p.cupboard(28,22,6,2)
+    p.bed(5.5,9,6.5,5,'east',(0,0,12,18));p.bed(28,9,6.5,5,'west',(28,0,12,18))
     p.label(6,16,'BEDROOM 1\n12 x 18 ft sleeping zone'); p.label(34,16,'BEDROOM 2\n12 x 18 ft sleeping zone')
     p.label(20,8,'LIVING / DINING\n16 x 24 ft central space'); p.kitchen(14,22,12,2)
     p.box(26,17,2,7,'#BBBDB7',.6);p.label(25,16,'L-KITCHEN',6)
@@ -145,7 +159,7 @@ def ground(c,cfg):
     for x in [2,30]: p.win(x,0,8,False,'W1')
     p.win(0,5,8,True,'W1'); p.win(40,5,8,True,'W1'); p.win(15,24,6,False,'W3')
     p.win(1.5,24,2,False,'V1'); p.win(36.5,24,2,False,'V1'); p.dimensions()
-    notes(c,[('Two side modules','12 x 24 ft each; bedroom + attached washroom + dressing/cupboard. Beds moved forward for dressing access.'),('Shared centre','L-shaped kitchen in the same rear position; L-shaped sofa against the side partition near the washroom/dressing zone.'),('Overall / circulation','40 x 24 ft = 960 sq ft; 16 x 24 ft living/dining, with clear entry and bedroom access.')],140)
+    notes(c,[('Two side modules','12 x 24 ft each; beds face inward from solid room partitions, clear of front/side windows and dressing access.'),('Shared centre','L-shaped kitchen in the same rear position; L-shaped sofa against the side partition near the washroom/dressing zone.'),('Overall / circulation','40 x 24 ft = 960 sq ft; 16 x 24 ft living/dining, with clear entry and bedroom access.')],140)
 
 def first(c,cfg):
     p=Plan(c,40,24,215,175,9,cfg); p.box(0,0,40,12,'#EAE8E2',1.3); p.label(20,5.5,'OPEN TERRACE\n40 x 12 ft / 480 sq ft')
@@ -153,8 +167,9 @@ def first(c,cfg):
         p.line(a,b,d,e,cfg['accent'],2); p.line(a+.15,b+.25,d-.15 if d else d+.15,e+.25,cfg['accent'],.5)
     p.box(0,12,15,12,'#D9DADB'); p.box(15,12,10,12,'#F2F1ED'); p.box(25,12,15,12,'#D9DADB')
     p.bath(0,18,4,6,'ENSUITE 3'); p.bath(36,18,4,6,'ENSUITE 4','west')
-    p.cupboard(0,12,2,6); p.cupboard(38,12,2,6); p.bed(8,15); p.bed(27,15)
-    p.label(10,23,'BEDROOM 3\n15 x 12 ft gross',7); p.label(30,23,'BEDROOM 4\n15 x 12 ft gross',7)
+    p.cupboard(0,12,2,6); p.cupboard(38,12,2,6)
+    p.bed(7,17.5,5,6.5,'north',(0,12,15,12));p.bed(28,17.5,5,6.5,'north',(25,12,15,12))
+    p.label(8.5,15.5,'BEDROOM 3\n15 x 12 ft gross',7); p.label(31.5,15.5,'BEDROOM 4\n15 x 12 ft gross',7)
     p.label(20,20,'LIVING\n9 x 12 ft clear',7); p.door(18,12,4,False,'D1'); p.door(15,13,3.5,True,'D2',-1); p.door(25,13,3.5,True,'D2',1)
     p.win(3,12,8,False,'W1'); p.win(29,12,8,False,'W1'); p.win(17,24,6,False,'W2'); p.win(1,24,2,False,'V1'); p.win(37,24,2,False,'V1'); p.dimensions()
     notes(c,[('Enclosed unit / terrace','40 x 12 ft enclosed unit + parallel 40 x 12 ft front terrace. Ensuites rotated to 4 ft along length x 6 ft along 12 ft end.'),('Length reconciliation','15 ft bedroom + 9 ft clear living + 15 ft bedroom + 1 ft combined partition allowance = 40 ft.'),('Access / railing','2 ft deep cupboards below the ensuites on the outer end walls. Living entry faces terrace; railing on exposed edges.')],140)
@@ -164,21 +179,23 @@ def residence(c,cfg,L):
     if L==40:
         p.box(0,0,12,12,'#D9DADB');p.box(16,0,12,12,'#D9DADB')
         p.bath(12,0,4,6,'ENSUITE 1','west');p.bath(12,6,4,6,'ENSUITE 2','east')
-        p.cupboard(10,6,2,6);p.cupboard(26,6,2,6);p.bed(2,3);p.bed(18,3)
-        p.label(6,10.7,'BEDROOM 1\n12 x 12 ft',7.2);p.label(22,10.7,'BEDROOM 2\n12 x 12 ft',7.2)
+        p.cupboard(0,10,5,2);p.cupboard(16,10,5,2)
+        p.bed(5.5,3.5,6.5,5,'east',(0,0,12,12));p.bed(21.5,4.5,6.5,5,'east',(16,0,12,12))
+        p.label(8,1.8,'BEDROOM 1\n12 x 12 ft',7.2);p.label(22,2.3,'BEDROOM 2\n12 x 12 ft',7.2)
         p.kitchen(29,10,10,2);p.label(34,6,'LIVING / OPEN KITCHEN\n12 x 12 ft',7.5)
-        p.door(1,0,3.5,False,'D5');p.door(28,.8,3.5,True,'D2',-1);p.door(29,0,3.5,False,'D1')
+        p.door(1,0,3.5,False,'D5');p.door(28,.5,3.5,True,'D2',-1);p.door(29,0,3.5,False,'D1')
         for x in (5,18):p.win(x,0,6,False,'W2')
-        p.win(2,12,6,False,'W2');p.win(18,12,6,False,'W2');p.win(0,3,6,True,'W2');p.win(40,3,6,True,'W2');p.win(32,12,4,False,'W4')
+        p.win(6,12,6,False,'W2');p.win(22,12,6,False,'W2');p.win(0,3,6,True,'W2');p.win(40,3,6,True,'W2');p.win(32,12,4,False,'W4')
         p.win(13,0,2,False,'V1');p.win(13,12,2,False,'V1')
         rows=[('Middle washroom pair','Two 4 x 6 ft ensuites in the 4 x 12 ft middle service band, each entered from its own bedroom.'),('Rooms / access','12 x 12 ft bedrooms; 12 x 12 ft end living/open kitchen. Bedroom 1 has its own outside entry, as sketched.'),('Building area','12 x 40 ft = 480 sq ft. Layout sequence: 12 ft bedroom + 4 ft services + 12 ft bedroom + 12 ft living.')]
     else:
         p.box(0,0,14,12,'#D9DADB');p.box(30,0,14,12,'#D9DADB')
         p.bath(0,6,4,6,'ENSUITE 1','south');p.bath(40,6,4,6,'ENSUITE 2','south')
-        p.cupboard(0,0,2,6);p.cupboard(42,0,2,6);p.bed(6,5);p.bed(33,5)
+        p.cupboard(0,0,2,6);p.cupboard(42,0,2,6)
+        p.bed(7.5,4.5,6.5,5,'east',(0,0,14,12));p.bed(30,4.5,6.5,5,'west',(30,0,14,12))
         p.label(8,2.7,'BEDROOM 1\n14 x 12 ft suite',7.2);p.label(36,2.7,'BEDROOM 2\n14 x 12 ft suite',7.2)
         p.kitchen(15,10,14,2);p.label(22,6,'LIVING / OPEN KITCHEN\n12 x 16 ft',8)
-        p.door(14,1,3.5,True,'D2',-1);p.door(30,1,3.5,True,'D2',1);p.door(20.25,0,3.5,False,'D1')
+        p.door(14,.5,3,True,'D2',-1);p.door(30,.5,3,True,'D2',1);p.door(20.25,0,3.5,False,'D1')
         for x in (5,33):p.win(x,0,6,False,'W2')
         for x in (6,32):p.win(x,12,6,False,'W2')
         p.win(20,12,4,False,'W4')
@@ -193,20 +210,21 @@ def office(c,cfg,L):
     p.label(14,3.1,'KITCHEN\n6 x 4.5 ft',6.3);p.label(13,5.55,'2.5 ft PASSAGE',6)
     p.door(10.5,4.5,2.5,False,'D6',-1);p.door(13,7,2.5,False,'D3',1)
     p.box(e,0,14,12,'#D5D7D8')
-    p.bed(1,4); p.cupboard(6,0,4,2); p.label(4,2.7,'BEDROOM\n10 x 12 ft',7.5)
+    p.bed(2.5,0,5,6.5,'south',(0,0,10,12));p.cupboard(8,8,2,4);p.label(4,10.5,'BEDROOM\n10 x 12 ft',7.5)
     p.label(16+rec/2,8,'RECEPTION\n'+str(rec)+' x 12 ft',8); p.label(e+7,9,'EXECUTIVE OFFICE\n14 x 12 ft',8)
     p.box(e+5,3,6,3,'#B8B7B0',.6); p.box(17,4,4,2,'#C6C2B8',.5)
-    p.door(10,4.5,2.5,True,'D2',-1);p.line(16,4.5,16,7,'#FAF9F6',5)
+    p.door(10,4.5,2.5,True,'D2',-1,reverse=True);p.line(16,4.5,16,7,'#FAF9F6',5)
     p.door(e,1,3.5,True,'D4',1); p.door(17,0,3.5,False,'D1')
     p.line(e,5,e,12,'#71919E',1.5); p.label(e+.6,7,'GLASS',5.3)
-    p.win(1,12,4,False,'W5'); p.win(0,3,4,True,'W5'); p.win(17,12,6,False,'W2'); p.win(e+4,12,6,False,'W2'); p.win(L,3,6,True,'W2'); p.win(12,12,2,False,'V1');p.win(11,0,4,False,'W4'); p.dimensions()
-    notes(c,[('Rooms / service bay',f'Bedroom 10 x 12 ft; service bay 6 x 12 ft; reception {rec} x 12 ft; executive office 14 x 12 ft.'),('Passage / room widths','12 ft width = 4.5 ft kitchen + 2.5 ft passage + 5 ft washroom. Both services are enclosed and entered from the passage.'),('Access / partition','Reception enters passage; bedroom has its own passage door as sketched. No direct bedroom-to-kitchen or washroom door.')],180)
+    p.win(1,12,4,False,'W5'); p.win(0,3,4,True,'W5'); p.win(17,12,6,False,'W2'); p.win(e+4,0,6,False,'W2'); p.win(L,3,6,True,'W2'); p.win(12,12,2,False,'V1');p.win(11,0,4,False,'W4'); p.dimensions()
+    notes(c,[('Rooms / service bay',f'Bedroom 10 x 12 ft; service bay 6 x 12 ft; reception {rec} x 12 ft; executive office 14 x 12 ft.'),('Passage / room widths','12 ft width = 4.5 ft kitchen + 2.5 ft passage + 5 ft washroom. Both services are entered from the passage.'),('Access / glazing','Executive office: front and right-end windows; rear window removed. Bedroom headboard uses the solid front wall.')],180)
 
 def studio(c,cfg):
     p=Plan(c,26,12,200,195,17,cfg); p.box(0,0,21,12,'#F0EFEB',2); p.box(21,0,5,12,'#E5E2DB',1.2)
-    p.bath(0,6,5,6,'WASHROOM','south'); p.kitchen(0,0,5,2); p.cupboard(5,6,2,6); p.bed(10,4)
-    p.label(17.5,8,'OPEN STUDIO\n21 x 12 ft gross',7.5); p.label(23.5,7,'TERRACE\n5 x 12 ft',7)
-    p.door(21,1,3.5,True,'D1',-1); p.win(21,6,5,True,'W6'); p.win(8,0,4,False,'W4'); p.win(12,12,4,False,'W4'); p.win(1,12,2,False,'V1')
+    p.bath(0,6,5,6,'WASHROOM','south'); p.kitchen(0,0,5,2); p.cupboard(5,6,2,6)
+    p.bed(9.5,5.5,5,6.5,'north',(0,0,21,12))
+    p.label(16.9,7.6,'OPEN STUDIO\n21 x 12 ft gross',7.3); p.label(23.5,7,'TERRACE\n5 x 12 ft',7)
+    p.door(21,1,3.5,True,'D1',-1); p.win(21,6,5,True,'W6'); p.win(8,0,4,False,'W4'); p.win(17,12,4,False,'W4'); p.win(1,12,2,False,'V1')
     p.line(26,0,26,12,cfg['accent'],2); p.line(21,12,26,12,cfg['accent'],2); p.dimensions()
     notes(c,[('External footprint','12 x 26 ft = 312 sq ft including terrace.'),('Enclosed studio','12 x 21 ft gross; 5 x 6 ft washroom. Wardrobe moved beside its side wall: 2 ft deep x 6 ft long.'),('Outdoor / openings','12 x 5 ft terrace = 60 sq ft. Washroom door moved to the studio-facing wall to keep wardrobe access clear.')],175)
 
@@ -325,6 +343,7 @@ def author(cfg):
     rows=[('D1 / main entrance',"4 ft x 6 ft 6 in (home); 3 ft 6 in x 6 ft 6 in (other units)."),('D2 / internal doors',"2 ft 6 in x 6 ft 6 in at office bedroom/passage; 3 ft 6 in x 6 ft 6 in for home/residence bedrooms."),('D3 / washroom doors',"2 ft 6 in x 6 ft 6 in; moisture-resistant finish."),('D4 / executive office',"3 ft 6 in x 7 ft glazed door within glazed reception partition."),('D5 / separate bedroom entry',"3 ft 6 in x 6 ft 6 in; outside entry to bedroom 1 in the 40 ft residence option."),('D6 / enclosed kitchen',"2 ft 6 in x 6 ft 6 in; entered only from office service passage."),('W1 / home bedrooms',"8 ft x 6 ft; front and outer side walls as drawn."),('W2 / living & offices',"6 ft x 4 ft; living, bedroom and executive-office walls where tagged."),('W3 / home kitchen',"6 ft x 4 ft; rear wall above kitchen counter."),('W4 / kitchen / studio',"4 ft x 4 ft; studio long walls, residence kitchen and office kitchen."),('W5 / office bedroom',"4 ft x 5 ft; bedroom end and rear walls."),('W6 / studio terrace',"5 ft x 4 ft; glazed opening beside terrace entrance."),('V1 / washroom vent',"2 ft x 1 ft 6 in, high-level frosted opening; mechanical extract provision.")]
     used={'duplex':{'D1','D2','D3','W1','W2','W3','V1'},'residence':{'D1','D2','D3','D5','W2','W4','V1'},'office':{'D1','D2','D3','D4','D6','W2','W4','W5','V1'},'studio':{'D1','D3','W4','W6','V1'}}[cfg['type']]
     rows=[row for row in rows if row[0].split(' / ')[0] in used]
+    if cfg['type']=='residence':rows=[(a,'3 ft clear in the 44 ft option; 3 ft 6 in in the 40 ft option. Door height 6 ft 6 in.' if a.startswith('D2 /') else b) for a,b in rows]
     rows.append(('Cupboard / wardrobe','2 ft deep x 6 ft long beside the studio washroom.' if cfg['type']=='studio' else '2 ft deep; positions and lengths follow the floor plan.'))
     rows.append(('Finish selection',cfg['palette']))
     table(c,rows,40,405,rowh=25,size=8)
