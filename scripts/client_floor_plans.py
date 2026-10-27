@@ -44,7 +44,7 @@ def draw_plan(c,d,index,page,roof=False):
     header(c,d,page,name+' / measurements in feet')
     heading(c,'01 / Client layout revision',name+'. Planned around your brief.','Nominal feet, before wall deductions. Numbered spaces correspond to the room schedule below.')
     total=l+d.get('terrace',0)+(5 if stairs else 0);depth=max(w,16 if stairs else w)+(3 if balcony else 0)
-    s=min(630/total,200/depth);x=(W-total*s)/2;y=193+(3*s if balcony else 0)
+    s=min(630/total,200/depth);x=(W-total*s)/2;y=(177 if slug=='office-10x20' else 193)+(3*s if balcony else 0)
     palette={'bed':'#e4dacb','wardrobe':'#e4dacb','bath':'#dce8eb','kitchen':'#ece2d2','office':'#e0e6de','hall':'#faf9f6','landing':'#f0ece4','studio':'#e9dfd0','living':'#efede7'}
     def bx(a,b,ll,ww,fill,stroke=NAVY):
         c.setLineWidth(.65);rect(c,x+a*s,y+b*s,ll*s,ww*s,HexColor(fill),stroke)
@@ -71,6 +71,10 @@ def draw_plan(c,d,index,page,roof=False):
         elif kind=='kitchen':
             bx(a+.4,b+ww-1.8,max(1,ll-.8),1.4,'#cabba7',MUTED)
             bx(a+.7,b+ww-1.5,.9,.8,'#faf9f6',MUTED)
+            if slug=='office-10x20':
+                bx(a+ll-2.3,b+ww-1.5,1.4,.8,'#626a72',MUTED)
+                c.setStrokeColor(PAPER);c.setLineWidth(.5)
+                for offset in (.35,1.05):c.circle(x+(a+ll-2.3+offset)*s,y+(b+ww-1.1)*s,.21*s,stroke=1,fill=0)
         elif kind=='living' and ll>=6 and ww>=6:
             bx(a+1,b+ww-2.5,min(4,ll-2),1.7,'#cabba7',MUTED)
         elif kind=='bath':
@@ -89,9 +93,25 @@ def draw_plan(c,d,index,page,roof=False):
     if d.get('terrace'):
         bx(l,0,5,w,'#dedaca');text(c,x+(l+.6)*s,y+5*s,'TERRACE',7,'Bold')
         dim(c,x+l*s,y+w*s+18,x+(l+5)*s,y+w*s+18,"5' terrace")
-    for r in rs:
-        if r['kind'] not in ('bed','office','studio','living'):continue
-        if r['y']+r['width']==w:line(c,x+(r['x']+1)*s,y+w*s,x+(r['x']+min(r['length']-1,4))*s,y+w*s,HexColor('#57879a'),3)
+    if 'windows' in detail:
+        for window in detail['windows']:
+            a,b,size=window['x'],window['y'],window['size'];vertical=window.get('vertical',False)
+            xx,yy=x+a*s,y+b*s;dx,dy=(0,size*s) if vertical else (size*s,0)
+            line(c,xx,yy,xx+dx,yy+dy,PAPER,4)
+            line(c,xx,yy,xx+dx,yy+dy,HexColor('#57879a'),2.5)
+            label=f"{window['tag']}  {size:g}' x {window['height']:g}'"
+            c.saveState()
+            if vertical:
+                c.translate(xx+(-8 if a==0 else 11),yy+dy/2);c.rotate(90)
+                text(c,-pdfmetrics.stringWidth(label,'Body',6.5)/2,0,label,6.5,'Body',HexColor('#3d6a7e'))
+            else:
+                tx=xx+dx/2-pdfmetrics.stringWidth(label,'Body',6.5)/2
+                text(c,tx,yy+8 if b==w else yy-13,label,6.5,'Body',HexColor('#3d6a7e'))
+            c.restoreState()
+    else:
+        for r in rs:
+            if r['kind'] not in ('bed','office','studio','living'):continue
+            if r['y']+r['width']==w:line(c,x+(r['x']+1)*s,y+w*s,x+(r['x']+min(r['length']-1,4))*s,y+w*s,HexColor('#57879a'),3)
     if stairs:
         start=-3 if balcony else 0
         bx(l+.5,start,4,16,'#e0e6de',MUTED)

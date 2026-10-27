@@ -46,3 +46,8 @@ The original website HTML, text, and media index are in `content/source`. See `c
 Generated concept assets are in `public/images/generated`. See `docs/generated-image-prompts.md` for the exact prompts and `docs/design-direction.md` for design decisions and regeneration steps. Original reference PDFs are treated as visual references and are not redistributed by the site.
 
 PDF outputs are in `output/pdf`, website downloads are in `public/downloads`, and the editable PDF builder is `scripts/create_catalogues.py`. The PDF generation script requires Python with ReportLab, Pillow, PyMuPDF and pypdf. Current corrections, client interpretations and measurement assumptions are documented in `docs/catalogue-revision-03.md`.
+
+
+## Client catalogue revision 04
+
+Four additional client catalogues, their photorealistic exterior assets, and the editable builder are organized in this repository. See [the revision 04 file guide](docs/catalogue-revision-04.md).

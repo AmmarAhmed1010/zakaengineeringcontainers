@@ -17,7 +17,7 @@ def room(name,x,y,l,w,kind='living'):
 def service(d,upper=False):
     w=d['width']
     if d['category']=='Workspace':
-        return [room('Washroom',0,w-4,6,4,'bath'),room('Entry / pantry',0,0,6,w-4,'kitchen')]
+        return [room('Washroom',0,w-4,6,4,'bath'),room('Kitchen' if d['slug']=='office-10x20' else 'Entry / pantry',0,0,6,w-4,'kitchen')]
     return [room('Bathroom',0,6,6,w-6,'bath'),room('Landing' if upper else 'Kitchenette',0,0,6,6,'landing' if upper else 'kitchen')]
 
 def rooms_for(d):

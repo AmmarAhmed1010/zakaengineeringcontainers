@@ -2,8 +2,8 @@
   {
     "file": "zaka-studio-12x30.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 979268,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1182791,
     "websiteCopyMatches": true,
     "slug": "studio-12x30",
     "revision": "03",
@@ -59,8 +59,8 @@
   {
     "file": "zaka-studio-12x21-terrace.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 895507,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1099006,
     "websiteCopyMatches": true,
     "slug": "studio-12x21-terrace",
     "revision": "03",
@@ -107,8 +107,8 @@
   {
     "file": "zaka-portable-12x40.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 983285,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1186914,
     "websiteCopyMatches": true,
     "slug": "portable-12x40",
     "revision": "03",
@@ -183,8 +183,8 @@
   {
     "file": "zaka-portable-12x45.pdf",
     "pages": 12,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 910629,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1115277,
     "websiteCopyMatches": true,
     "slug": "portable-12x45",
     "revision": "03",
@@ -316,8 +316,8 @@
   {
     "file": "zaka-portable-12x24.pdf",
     "pages": 12,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 1012861,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1217405,
     "websiteCopyMatches": true,
     "slug": "portable-12x24",
     "revision": "03",
@@ -431,8 +431,8 @@
   {
     "file": "zaka-portable-12x20.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 941004,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1144480,
     "websiteCopyMatches": true,
     "slug": "portable-12x20",
     "revision": "03",
@@ -476,8 +476,8 @@
   {
     "file": "zaka-office-8x20.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 898430,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1101900,
     "websiteCopyMatches": true,
     "slug": "office-8x20",
     "revision": "03",
@@ -521,8 +521,8 @@
   {
     "file": "zaka-office-10x20.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 970462,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1379433,
     "websiteCopyMatches": true,
     "slug": "office-10x20",
     "revision": "03",
@@ -541,15 +541,17 @@
           "y": 6,
           "length": 6,
           "width": 4,
-          "kind": "bath"
+          "kind": "bath",
+          "group": "Washroom"
         },
         {
-          "name": "Entry / pantry",
+          "name": "Kitchen",
           "x": 0,
           "y": 0,
           "length": 6,
           "width": 6,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Team workspace",
@@ -557,17 +559,60 @@
           "y": 0,
           "length": 14,
           "width": 10,
-          "kind": "office"
+          "kind": "office",
+          "group": "Team workspace"
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "windows": [
+      {
+        "tag": "W1",
+        "x": 0,
+        "y": 1.25,
+        "vertical": true,
+        "size": 3,
+        "height": 3
+      },
+      {
+        "tag": "W1",
+        "x": 1.5,
+        "y": 0,
+        "vertical": false,
+        "size": 3,
+        "height": 3
+      },
+      {
+        "tag": "W2",
+        "x": 20,
+        "y": 3,
+        "vertical": true,
+        "size": 4,
+        "height": 4
+      },
+      {
+        "tag": "W2",
+        "x": 13,
+        "y": 0,
+        "vertical": false,
+        "size": 4,
+        "height": 4
+      },
+      {
+        "tag": "W2",
+        "x": 10,
+        "y": 10,
+        "vertical": false,
+        "size": 4,
+        "height": 4
+      }
+    ]
   },
   {
     "file": "zaka-office-12x20.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 926232,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1129714,
     "websiteCopyMatches": true,
     "slug": "office-12x20",
     "revision": "03",
@@ -611,8 +656,8 @@
   {
     "file": "zaka-office-8x40.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 819840,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1023331,
     "websiteCopyMatches": true,
     "slug": "office-8x40",
     "revision": "03",
@@ -656,8 +701,8 @@
   {
     "file": "zaka-office-10x40.pdf",
     "pages": 12,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 895076,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1099657,
     "websiteCopyMatches": true,
     "slug": "office-10x40",
     "revision": "03",
@@ -751,8 +796,8 @@
   {
     "file": "zaka-office-12x40.pdf",
     "pages": 12,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 972899,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1177480,
     "websiteCopyMatches": true,
     "slug": "office-12x40",
     "revision": "03",
@@ -846,8 +891,8 @@
   {
     "file": "zaka-single-cabin-office.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 974852,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1178302,
     "websiteCopyMatches": true,
     "slug": "single-cabin-office",
     "revision": "03",
@@ -891,8 +936,8 @@
   {
     "file": "zaka-two-cabin-office.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 903776,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1107279,
     "websiteCopyMatches": true,
     "slug": "two-cabin-office",
     "revision": "03",
@@ -944,8 +989,8 @@
   {
     "file": "zaka-industrial-field-office.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 874512,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1077985,
     "websiteCopyMatches": true,
     "slug": "industrial-field-office",
     "revision": "03",
@@ -989,8 +1034,8 @@
   {
     "file": "zaka-two-bedroom-residence.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 908966,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1112595,
     "websiteCopyMatches": true,
     "slug": "two-bedroom-residence",
     "revision": "03",
@@ -1065,8 +1110,8 @@
   {
     "file": "zaka-compact-container-home.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 945160,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1148865,
     "websiteCopyMatches": true,
     "slug": "compact-container-home",
     "revision": "03",

@@ -1,121 +1,170 @@
 [
   {
-    "file": "zaka-studio-12x30.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 979268,
+    "file": "zaka-client-01-family-home-two-floors.pdf",
+    "pages": 13,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 5324658,
+    "legacyWatermarksRemoved": 0,
     "websiteCopyMatches": true
   },
   {
-    "file": "zaka-studio-12x21-terrace.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 895507,
+    "file": "zaka-client-02-two-bedroom-12x40-and-12x44.pdf",
+    "pages": 13,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 5357485,
+    "legacyWatermarksRemoved": 0,
     "websiteCopyMatches": true
   },
   {
-    "file": "zaka-portable-12x40.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 983285,
+    "file": "zaka-client-03-office-12x40-and-12x44.pdf",
+    "pages": 13,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 5186734,
+    "legacyWatermarksRemoved": 0,
     "websiteCopyMatches": true
   },
   {
-    "file": "zaka-portable-12x45.pdf",
+    "file": "zaka-client-04-studio-12x26-with-terrace.pdf",
     "pages": 12,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 910629,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-portable-12x24.pdf",
-    "pages": 12,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 1012861,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-portable-12x20.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 941004,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-office-8x20.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 898430,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-office-10x20.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 970462,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-office-12x20.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 926232,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-office-8x40.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 819840,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-office-10x40.pdf",
-    "pages": 12,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 895076,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-office-12x40.pdf",
-    "pages": 12,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 972899,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-single-cabin-office.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 974852,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-two-cabin-office.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 903776,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-industrial-field-office.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 874512,
-    "websiteCopyMatches": true
-  },
-  {
-    "file": "zaka-two-bedroom-residence.pdf",
-    "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 908966,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 5262905,
+    "legacyWatermarksRemoved": 0,
     "websiteCopyMatches": true
   },
   {
     "file": "zaka-compact-container-home.pdf",
     "pages": 11,
-    "watermark": "GRID AND LOGIC",
-    "bytes": 945160,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1148865,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-industrial-field-office.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1077985,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-office-10x20.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1379433,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-office-10x40.pdf",
+    "pages": 12,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1099657,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-office-12x20.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1129714,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-office-12x40.pdf",
+    "pages": 12,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1177480,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-office-8x20.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1101900,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-office-8x40.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1023331,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-portable-12x20.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1144480,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-portable-12x24.pdf",
+    "pages": 12,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1217405,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-portable-12x40.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1186914,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-portable-12x45.pdf",
+    "pages": 12,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1115277,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-single-cabin-office.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1178302,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-studio-12x21-terrace.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1099006,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-studio-12x30.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1182791,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-two-bedroom-residence.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1112595,
+    "legacyWatermarksRemoved": 0,
+    "websiteCopyMatches": true
+  },
+  {
+    "file": "zaka-two-cabin-office.pdf",
+    "pages": 11,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "bytes": 1107279,
+    "legacyWatermarksRemoved": 0,
     "websiteCopyMatches": true
   }
 ]

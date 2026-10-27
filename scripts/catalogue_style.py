@@ -23,8 +23,8 @@ pdfmetrics.registerFont(TTFont('Body',str(font_path/'arial.ttf')))
 pdfmetrics.registerFont(TTFont('Bold',str(font_path/'arialbd.ttf')))
 pdfmetrics.registerFont(TTFont('Display',str(font_path/'georgia.ttf')))
 pdfmetrics.registerFont(TTFont('Italic',str(font_path/'georgiai.ttf')))
-logo=Image.open(ROOT/'public/images/original/LOGO-ZAKA-ENGINEERING-1.png').convert('RGB')
-logo=logo.crop((15,85,487,360));logo.save(QA/'logo.png')
+logo=Image.open(ROOT/'public/images/original/Zaka-logo-transparent.png').convert('RGBA')
+logo.save(QA/'logo.png')
 
 
 

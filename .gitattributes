@@ -1,0 +1,7 @@
+# Preserve catalogue and image bytes across Windows and Unix checkouts.
+*.pdf binary
+*.png binary
+*.webp binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
