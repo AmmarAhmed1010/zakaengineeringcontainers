@@ -12,6 +12,7 @@ from redesign_catalogues import DESIGNS, enrich
 from client_floor_plans import draw_plan
 from catalogue_style import ROOT, W, H
 from bed_furniture import AUDIT
+from catalogue_names import original_filename
 from zaka_watermarks import add_watermark, main as update_watermarks
 
 QA=ROOT/'tmp/pdfs/bed-layout-review';QA.mkdir(parents=True,exist_ok=True)
@@ -25,7 +26,7 @@ def main():
             buffer=BytesIO();c=canvas.Canvas(buffer,pagesize=(W,H));draw_plan(c,d,floor,floor+2);c.save()
             pages[floor+1]=PdfReader(BytesIO(buffer.getvalue())).pages[0]
         if not pages:continue
-        path=ROOT/'output/pdf'/('zaka-'+d['slug']+'.pdf');original=PdfReader(path);writer=PdfWriter()
+        path=ROOT/'output/pdf'/original_filename(d['slug']);original=PdfReader(path);writer=PdfWriter()
         if original.metadata:writer.add_metadata(dict(original.metadata))
         for i,page in enumerate(original.pages):writer.add_page(pages.get(i,page))
         temp=QA/(path.name+'.tmp');writer.write(temp);os.replace(temp,path);add_watermark(path,path)

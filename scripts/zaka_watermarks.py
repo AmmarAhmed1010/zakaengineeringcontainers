@@ -73,7 +73,7 @@ def add_watermark(source,destination):
                 legacyWatermarksRemoved=removed,websiteCopyMatches=destination.read_bytes()==public.read_bytes())
 
 def main():
-    sources=sorted(OUTPUT.glob('zaka-*.pdf'))
+    sources=sorted(OUTPUT.glob('*.pdf'))
     if not sources:raise RuntimeError('No catalogue PDFs found')
     results=[]
     for path in sources:

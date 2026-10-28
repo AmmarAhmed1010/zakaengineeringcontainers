@@ -11,10 +11,11 @@ from redesign_catalogues import DESIGNS, enrich
 from client_floor_plans import draw_plan, REVISIONS
 from catalogue_style import ROOT, W, H
 from zaka_watermarks import main as update_watermarks, LABEL
+from catalogue_names import original_filename, filename as catalogue_filename
 
 def main():
     slug='office-10x20';d=enrich(next(v for v in DESIGNS if v['slug']==slug))
-    source=ROOT/'output/pdf'/('zaka-'+slug+'.pdf')
+    source=ROOT/'output/pdf'/original_filename(slug)
     buf=BytesIO();c=canvas.Canvas(buf,pagesize=(W,H));draw_plan(c,d,0,2);c.save()
     replacement=PdfReader(BytesIO(buf.getvalue()));original=PdfReader(source);writer=PdfWriter()
     if original.metadata:writer.add_metadata(dict(original.metadata))
@@ -39,6 +40,7 @@ def main():
     manifest_path.write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     qa=ROOT/'tmp/pdfs/current-review';qa.mkdir(parents=True,exist_ok=True)
     for filename,indices in [('zaka-office-10x20.pdf',[0,1,5]),('zaka-client-01-family-home-two-floors.pdf',[1,7]),('zaka-studio-12x21-terrace.pdf',[1])]:
+        filename=catalogue_filename(filename)
         document=pdfium.PdfDocument(str(ROOT/'output/pdf'/filename))
         for index in indices:document[index].render(scale=1.3).to_pil().save(qa/(Path(filename).stem+f'-{index+1:02d}.png'))
     print('Office plan, website copies and previews updated.',flush=True)

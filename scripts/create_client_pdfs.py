@@ -8,13 +8,14 @@ from pypdf import PdfReader, PdfWriter
 import pypdfium2 as pdfium
 from PIL import Image, ImageDraw
 from bed_furniture import draw_bed, audit_beds
+from catalogue_names import filename
 
 REPO=Path(__file__).resolve().parents[1]
 ROOT=REPO/'output'/'pdf'
 TMP=REPO/'tmp'/'pdfs'/'client-revision-04'; TMP.mkdir(parents=True,exist_ok=True)
 ASSETS=REPO/'public'/'images'/'generated'/'client-revision-04'
 W,H=841.89,595.28
-REF=PdfReader(ROOT/'zaka-two-bedroom-residence.pdf')
+REF=PdfReader(ROOT/filename('zaka-two-bedroom-residence.pdf'))
 LOGO=Image.open(REPO/'public/images/original/Zaka-logo-transparent.png').convert('RGBA')
 INK='#17283B'; MUTED='#657079'; RED='#8D302D'
 
@@ -318,6 +319,7 @@ dict(type='office',code='ZC-03',file='zaka-client-03-office-12x40-and-12x44.pdf'
 dict(type='studio',code='ZC-04',file='zaka-client-04-studio-12x26-with-terrace.pdf',title='Studio\n& Terrace',short='Open studio with front terrace',dims='12 x 26 ft overall',body='#C9CAC8',trim='#484B50',accent='#815D6A',border=3,finish='Warm grey body / white fascia / charcoal frame',palette='Warm grey cladding, charcoal frame and white roof fascia; plum dashed round-corner border.',desc='A 12 x 21 ft enclosed studio with a 5 x 6 ft washroom, open kitchen and cupboard, opening onto a 12 x 5 ft terrace.',area='252 sq ft enclosed + 60 sq ft terrace')]
 
 def author(cfg):
+    cfg={**cfg,'file':filename(cfg['file'])}
     plans=2 if cfg['type']!='studio' else 1; total=11+plans # adds dedicated opening schedule
     buf=BytesIO(); c=canvas.Canvas(buf,pagesize=(W,H)); c.setTitle(cfg['short']+' | Zaka client revision')
     n=0

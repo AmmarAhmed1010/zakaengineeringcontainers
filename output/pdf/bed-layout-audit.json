@@ -357,7 +357,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-01-family-home-two-floors.pdf / page 2",
+    "context": "family-home-two-floors-40x24.pdf / page 2",
     "x": 5.5,
     "y": 9,
     "width": 6.5,
@@ -378,7 +378,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-01-family-home-two-floors.pdf / page 2",
+    "context": "family-home-two-floors-40x24.pdf / page 2",
     "x": 28,
     "y": 9,
     "width": 6.5,
@@ -399,7 +399,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-01-family-home-two-floors.pdf / page 3",
+    "context": "family-home-two-floors-40x24.pdf / page 3",
     "x": 7,
     "y": 17.5,
     "width": 5,
@@ -420,7 +420,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-01-family-home-two-floors.pdf / page 3",
+    "context": "family-home-two-floors-40x24.pdf / page 3",
     "x": 28,
     "y": 17.5,
     "width": 5,
@@ -441,7 +441,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-02-two-bedroom-12x40-and-12x44.pdf / page 2",
+    "context": "two-bedroom-living-12x40-and-12x44.pdf / page 2",
     "x": 5.5,
     "y": 3.5,
     "width": 6.5,
@@ -462,7 +462,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-02-two-bedroom-12x40-and-12x44.pdf / page 2",
+    "context": "two-bedroom-living-12x40-and-12x44.pdf / page 2",
     "x": 21.5,
     "y": 4.5,
     "width": 6.5,
@@ -483,7 +483,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-02-two-bedroom-12x40-and-12x44.pdf / page 3",
+    "context": "two-bedroom-living-12x40-and-12x44.pdf / page 3",
     "x": 7.5,
     "y": 4.5,
     "width": 6.5,
@@ -504,7 +504,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-02-two-bedroom-12x40-and-12x44.pdf / page 3",
+    "context": "two-bedroom-living-12x40-and-12x44.pdf / page 3",
     "x": 30,
     "y": 4.5,
     "width": 6.5,
@@ -525,7 +525,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-03-office-12x40-and-12x44.pdf / page 2",
+    "context": "executive-office-suite-12x40-and-12x44.pdf / page 2",
     "x": 2.5,
     "y": 0,
     "width": 5,
@@ -546,7 +546,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-03-office-12x40-and-12x44.pdf / page 3",
+    "context": "executive-office-suite-12x40-and-12x44.pdf / page 3",
     "x": 2.5,
     "y": 0,
     "width": 5,
@@ -567,7 +567,7 @@
     "headboardOnSolidWall": true
   },
   {
-    "context": "zaka-client-04-studio-12x26-with-terrace.pdf / page 2",
+    "context": "studio-with-terrace-12x26.pdf / page 2",
     "x": 9.5,
     "y": 5.5,
     "width": 5,

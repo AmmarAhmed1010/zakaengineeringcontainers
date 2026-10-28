@@ -1,0 +1,65 @@
+[
+  {
+    "context": "silver-one-bedroom-home-12x32.pdf / page 2",
+    "x": 0,
+    "y": 3.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "west",
+    "room": [
+      0,
+      0,
+      12,
+      12
+    ],
+    "name": "Bedroom / sleeping zone",
+    "sideClearancesFeet": [
+      3.5,
+      3.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "charcoal-two-bedroom-home-24x32.pdf / page 2",
+    "x": 8,
+    "y": 17.5,
+    "width": 5,
+    "height": 6.5,
+    "head": "north",
+    "room": [
+      0,
+      12,
+      16,
+      12
+    ],
+    "name": "Bedroom / sleeping zone",
+    "sideClearancesFeet": [
+      3,
+      3
+    ],
+    "footClearanceFeet": 5.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "charcoal-two-bedroom-home-24x32.pdf / page 2",
+    "x": 19,
+    "y": 17.5,
+    "width": 5,
+    "height": 6.5,
+    "head": "north",
+    "room": [
+      16,
+      12,
+      16,
+      12
+    ],
+    "name": "Bedroom / sleeping zone",
+    "sideClearancesFeet": [
+      3,
+      3
+    ],
+    "footClearanceFeet": 5.5,
+    "headboardOnSolidWall": true
+  }
+]

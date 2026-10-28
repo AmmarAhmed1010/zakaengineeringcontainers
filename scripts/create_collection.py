@@ -167,7 +167,8 @@ def exterior_v2(c,d,page,panels):
 def main():
     manifest=[];site=[]
     for i,raw in enumerate(catalogues):
-        d=enrich(raw,i);path=OUT/('zaka-'+d['slug']+'.pdf')
+        from catalogue_names import original_filename
+        d=enrich(raw,i);path=OUT/original_filename(d['slug'])
         assert sum(l*k for name,l,k in d['rooms'] if name!='Additional terrace')==d['area']
         c=canvas.Canvas(str(path),pagesize=(W,H),pageCompression=1)
         cover_v2(c,d);floor_v2(c,d);exterior_v2(c,d,3,[0,1]);exterior_v2(c,d,4,[2,3]);spec_page(c,d);planning_page(c,d)

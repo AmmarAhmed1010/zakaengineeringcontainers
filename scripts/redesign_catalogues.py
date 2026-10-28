@@ -198,9 +198,10 @@ def specifications(c,d):
     para(c,40,72,'Concept proposal only. Final engineering, quantities, approvals and price are established for the selected design and site.',W-80,7,MUTED,9);c.showPage()
 
 def main():
+    from catalogue_names import original_filename
     manifest=[];site=[]
     for raw in DESIGNS:
-        d=enrich(raw);path=OUT/('zaka-'+d['slug']+'.pdf')
+        d=enrich(raw);path=OUT/original_filename(d['slug'])
         revision='03' if (ROOT/'public/images/catalogues/revision-03'/(d['slug']+'.webp')).exists() else '02'
         d['image']='/images/catalogues/revision-'+revision+'/'+d['slug']+'.webp'
         c=canvas.Canvas(str(path),pagesize=(W,H),pageCompression=1);cover(c,d);draw_plan(c,d,0,2)

@@ -255,7 +255,7 @@ export default function Home() {
           </h2>
           <p className="muted">
             Explore {documents.length} individual designs. Compact cabins,
-            two-storey offices and one- to four-bedroom homes — with measured
+            cafes, restaurants, portable spaces, offices and homes — with measured
             floor plans and four exterior views for every design.
           </p>
           <Link className="button button-navy" href="/downloads">

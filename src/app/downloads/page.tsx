@@ -9,7 +9,7 @@ import { ProjectCTA } from "@/components/footer";
 export const metadata: Metadata = {
   title: "Design Catalogues",
   description:
-    "Explore 17 office and living designs with revised floor plans, studios and one to four bedrooms, four exterior views and complete material specifications.",
+    "Explore 30 office, home, cafe, restaurant and portable-space designs with measured floor plans, opening schedules, four exterior views and material specifications.",
 };
 const collections = [
   {
@@ -18,7 +18,7 @@ const collections = [
     label: "Office catalogues",
     category: "Workspace",
     description:
-      "Nine individual workspace designs, from compact site cabins to two-storey office hubs. Compare sizes, roof styles and finishes.",
+      "Site cabins, executive suites, meeting spaces and two-storey office hubs. Compare measured layouts, sizes and finishes.",
   },
   {
     id: "studios",
@@ -26,7 +26,23 @@ const collections = [
     label: "Studio & living catalogues",
     category: "Living",
     description:
-      "Eight living designs: open studios, one- and two-bedroom homes, three- and four-bedroom duplexes, a terrace studio and a courtyard home.",
+      "Open studios, one- and two-bedroom homes, family duplexes, terrace living and a courtyard home. Detailed plans include furniture, kitchens and washrooms.",
+  },
+  {
+    id: "hospitality",
+    title: "Cafes & restaurants",
+    label: "Cafe & restaurant catalogues",
+    category: "Hospitality",
+    description:
+      "A 12 x 40 ft cafe with a dedicated kitchen and indoor serving hatch, a joined-module restaurant and a compact takeaway kitchen.",
+  },
+  {
+    id: "portable",
+    title: "Portable spaces",
+    label: "Portable-space catalogues",
+    category: "Portable",
+    description:
+      "A portable clinic and learning studio, with service rooms, furniture, door swings and window sizes shown in each catalogue.",
   },
 ];
 
@@ -36,7 +52,7 @@ export default function Downloads() {
       <PageIntro
         eyebrow="The design collection"
         title="Ideas worth building on."
-        text="Find your space by use, size and layout. Each design has its own exterior, floor plans measured in feet and four finished views."
+        text="Explore 30 designs by use, size and layout. Every catalogue includes floor plans measured in feet, four exterior concept views and material specifications."
       />
       <div className="container">
         <nav
@@ -114,7 +130,11 @@ export default function Downloads() {
                       <span
                         className={`catalogue-type ${collection.category === "Living" ? "catalogue-type-living" : ""}`}
                       >
-                        {collection.category === "Workspace"
+                        {collection.category === "Hospitality"
+                          ? "Cafe / restaurant"
+                          : collection.category === "Portable"
+                            ? "Portable space"
+                            : collection.category === "Workspace"
                           ? "Office"
                           : d.bedrooms > 0
                             ? `${d.bedrooms} bedroom${d.bedrooms > 1 ? "s" : ""}`

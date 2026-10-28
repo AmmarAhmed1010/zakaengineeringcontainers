@@ -1,12 +1,12 @@
 [
   {
-    "file": "zaka-studio-12x30.pdf",
+    "file": "cedar-one-bedroom-cabin-12x30.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1310297,
     "websiteCopyMatches": true,
     "slug": "studio-12x30",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 12,
     "lengthFeet": 30,
     "storeys": 1,
@@ -77,16 +77,17 @@
         "footClearanceFeet": 5.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "sha256": "61a865bc154772ae953417cef1fe68d556a48304fdc4e3507f3a780618911b50"
   },
   {
-    "file": "zaka-studio-12x21-terrace.pdf",
+    "file": "sage-terrace-studio-12x21.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1226517,
     "websiteCopyMatches": true,
     "slug": "studio-12x21-terrace",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 12,
     "lengthFeet": 21,
     "storeys": 1,
@@ -148,16 +149,17 @@
         "footClearanceFeet": 5.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "sha256": "d9f99156ceed916d34935232ab4bfdde819c3b61a8b72b10460aa4414998a8b2"
   },
   {
-    "file": "zaka-portable-12x40.pdf",
+    "file": "two-bedroom-family-home-12x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1314569,
     "websiteCopyMatches": true,
     "slug": "portable-12x40",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 12,
     "lengthFeet": 40,
     "storeys": 1,
@@ -268,16 +270,17 @@
         "footClearanceFeet": 3.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "sha256": "b698f58b884e1acb4a107e9b8c1da537290bd6912332ab71093d3b633d79e229"
   },
   {
-    "file": "zaka-portable-12x45.pdf",
+    "file": "four-bedroom-duplex-12x45.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1404465,
     "websiteCopyMatches": true,
     "slug": "portable-12x45",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 12,
     "lengthFeet": 45,
     "storeys": 2,
@@ -487,16 +490,17 @@
         "footClearanceFeet": 9.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "sha256": "c7524b4ac0d8fe395a6a621024397526bc6da3698af8376e2d47f69e700254ad"
   },
   {
-    "file": "zaka-portable-12x24.pdf",
+    "file": "three-bedroom-compact-duplex-12x24.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1506483,
     "websiteCopyMatches": true,
     "slug": "portable-12x24",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 12,
     "lengthFeet": 24,
     "storeys": 2,
@@ -667,16 +671,17 @@
         "footClearanceFeet": 3.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "sha256": "b96ddd7b9568b4142aaa13b377ac0fa51893f12119dd987eb349dca48c8f9340"
   },
   {
-    "file": "zaka-portable-12x20.pdf",
+    "file": "compact-gabled-studio-12x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1272024,
     "websiteCopyMatches": true,
     "slug": "portable-12x20",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 12,
     "lengthFeet": 20,
     "storeys": 1,
@@ -735,16 +740,17 @@
         "footClearanceFeet": 5.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "sha256": "a81634940a388109c4cfbbb7f0aa21edb80df33d3d7e85d60857eae9166ff5de"
   },
   {
-    "file": "zaka-office-8x20.pdf",
+    "file": "mint-site-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1101900,
     "websiteCopyMatches": true,
     "slug": "office-8x20",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
@@ -780,16 +786,17 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "sha256": "65b56c6ba3258f80c37f056ec6af984239120f1b706365cb0185b0e57e8679fc"
   },
   {
-    "file": "zaka-office-10x20.pdf",
+    "file": "cedar-executive-office-10x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1302732,
     "websiteCopyMatches": true,
     "slug": "office-10x20",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 10,
     "lengthFeet": 20,
     "storeys": 1,
@@ -862,16 +869,17 @@
         "size": 4,
         "height": 4
       }
-    ]
+    ],
+    "sha256": "81410558c626f8cecf5109aaccd2a2acf55c447ff033153b3dcaa64d96914ae9"
   },
   {
-    "file": "zaka-office-12x20.pdf",
+    "file": "glazed-team-office-12x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1129714,
     "websiteCopyMatches": true,
     "slug": "office-12x20",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 12,
     "lengthFeet": 20,
     "storeys": 1,
@@ -907,16 +915,17 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "sha256": "cfa6a7e5cc056219ca429c79a7b3f54d8eaf77eac29c4cae46a7059b9449943a"
   },
   {
-    "file": "zaka-office-8x40.pdf",
+    "file": "olive-linear-site-hub-8x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1023331,
     "websiteCopyMatches": true,
     "slug": "office-8x40",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 8,
     "lengthFeet": 40,
     "storeys": 1,
@@ -952,16 +961,17 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "sha256": "883e0c01dbfa73ae003bd1f84b6b076742cbde221eb7430547155cfbcea60077"
   },
   {
-    "file": "zaka-office-10x40.pdf",
+    "file": "two-storey-office-hub-10x40.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1099657,
     "websiteCopyMatches": true,
     "slug": "office-10x40",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 10,
     "lengthFeet": 40,
     "storeys": 2,
@@ -1047,16 +1057,17 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "sha256": "985a5ac3285b500a872a784fc52400213d56557eee41dc58b1bded8109375d53"
   },
   {
-    "file": "zaka-office-12x40.pdf",
+    "file": "charcoal-loft-office-12x40.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1177480,
     "websiteCopyMatches": true,
     "slug": "office-12x40",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 12,
     "lengthFeet": 40,
     "storeys": 2,
@@ -1142,16 +1153,17 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "sha256": "845851d684d4e4b4a037cce6c6190de3572da1216735a0b1a64d2cb2a38fecc6"
   },
   {
-    "file": "zaka-single-cabin-office.pdf",
+    "file": "compact-gabled-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1178302,
     "websiteCopyMatches": true,
     "slug": "single-cabin-office",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
@@ -1187,16 +1199,17 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "sha256": "f8da3f3e590abfd15971bdd07afb4e7da446a27f16d6f310126044d93793384e"
   },
   {
-    "file": "zaka-two-cabin-office.pdf",
+    "file": "twin-cabin-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1107279,
     "websiteCopyMatches": true,
     "slug": "two-cabin-office",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
@@ -1240,16 +1253,17 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "sha256": "80748a278b30fa685b2e3c1243d6b3e931e7b4c1ea08a6ede27eb8bd1e1c8e6a"
   },
   {
-    "file": "zaka-industrial-field-office.pdf",
+    "file": "off-grid-field-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1077985,
     "websiteCopyMatches": true,
     "slug": "industrial-field-office",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
@@ -1285,16 +1299,17 @@
         }
       ]
     ],
-    "materialSpecificationSections": 20
+    "materialSpecificationSections": 20,
+    "sha256": "36850dac878fe90b5f5612223cbedf7b0d0fba17400dea92a3e18ae47f5f3296"
   },
   {
-    "file": "zaka-two-bedroom-residence.pdf",
+    "file": "two-bedroom-garden-cottage-16x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1240248,
     "websiteCopyMatches": true,
     "slug": "two-bedroom-residence",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 16,
     "lengthFeet": 40,
     "storeys": 1,
@@ -1405,16 +1420,17 @@
         "footClearanceFeet": 5.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "sha256": "8e5a0d4766a1d158dab26745a2688d2e08247f90fde9e6e5eb5c562289eb7ebf"
   },
   {
-    "file": "zaka-compact-container-home.pdf",
+    "file": "three-bedroom-courtyard-home-24x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
     "bytes": 1276720,
     "websiteCopyMatches": true,
     "slug": "compact-container-home",
-    "revision": "03",
+    "revision": "20261028-collection-30",
     "widthFeet": 24,
     "lengthFeet": 40,
     "storeys": 1,
@@ -1539,6 +1555,1104 @@
         "footClearanceFeet": 3.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "sha256": "2bf91e446ae8fc1d10e2225810288baccb179f3f560690bcd3a2ffed88e579c7"
+  },
+  {
+    "file": "family-home-two-floors-40x24.pdf",
+    "slug": "family-home-two-floors-40x24",
+    "pages": 13,
+    "bytes": 5249413,
+    "sha256": "64f5d7472ebe053cde27766a4b48734dd75b1489fbd5359a9ddda41a6f30bff3",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "file": "two-bedroom-living-12x40-and-12x44.pdf",
+    "slug": "two-bedroom-living-12x40-and-12x44",
+    "pages": 13,
+    "bytes": 5282144,
+    "sha256": "02d618cc99844275300f417fc1d5afdc249a424d8f265a79ee89240b7467e6d0",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "file": "executive-office-suite-12x40-and-12x44.pdf",
+    "slug": "executive-office-suite-12x40-and-12x44",
+    "pages": 13,
+    "bytes": 5111108,
+    "sha256": "89264bb2fd88a464eb83641407875fd42c620dbbd719a04834b1ed1004cf304e",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "file": "studio-with-terrace-12x26.pdf",
+    "slug": "studio-with-terrace-12x26",
+    "pages": 12,
+    "bytes": 5186859,
+    "sha256": "452e5789a9c540c157356722c362ae9e83a56ce95976c557e1967c1e346cfdcf",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 40,
+    "widthFeet": 12,
+    "areaSqFt": 480,
+    "rooms": [
+      [
+        "Kitchen",
+        "16 x 12 ft / 192 sq ft; preparation island, sink, cooking and storage counters."
+      ],
+      [
+        "Seating / reception",
+        "24 x 12 ft / 288 sq ft; four cafe tables with eight seats, reception and entry circulation."
+      ],
+      [
+        "Service connection",
+        "5 ft wide internal serving hatch; separate staff door in the kitchen partition."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 16,
+        "y": 5,
+        "size": 5,
+        "vertical": true,
+        "tag": "S1"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 4,
+        "y": 12,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 28,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 28,
+        "y": 12,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 35,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 35,
+        "y": 12,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 40,
+        "y": 4,
+        "size": 4,
+        "vertical": true,
+        "tag": "W1"
+      }
+    ],
+    "doors": [
+      {
+        "x": 18,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      },
+      {
+        "x": 16,
+        "y": 0.4,
+        "size": 3,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      }
+    ],
+    "bedFurniture": [],
+    "file": "courtyard-cafe-12x40.pdf",
+    "slug": "courtyard-cafe-12x40",
+    "pages": 13,
+    "bytes": 5271976,
+    "sha256": "8f8c3a2fd8861fb9a85621b677ec63dbaafc2333a6f50bd92601fa3e97998dbf",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 40,
+    "widthFeet": 24,
+    "areaSqFt": 960,
+    "rooms": [
+      [
+        "Kitchen",
+        "12 x 24 ft / 288 sq ft; preparation, cooking, wash-up and storage counters."
+      ],
+      [
+        "Dining / reception",
+        "28 x 24 ft gross / 672 sq ft; six four-seat tables, entry and washroom circulation."
+      ],
+      [
+        "Customer washroom",
+        "6 x 6 ft within the rear dining corner; entered from dining, separated from food preparation."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 12,
+        "y": 11,
+        "size": 6,
+        "vertical": true,
+        "tag": "S2"
+      },
+      {
+        "x": 36,
+        "y": 24,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      },
+      {
+        "x": 2,
+        "y": 24,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 15,
+        "y": 24,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 24,
+        "y": 24,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 29,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 40,
+        "y": 6,
+        "size": 6,
+        "vertical": true,
+        "tag": "W2"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "size": 4,
+        "vertical": true,
+        "tag": "W1"
+      }
+    ],
+    "doors": [
+      {
+        "x": 12,
+        "y": 3,
+        "size": 3,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 34.5,
+        "y": 18,
+        "size": 2.5,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 18,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "size": 3,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D5"
+      }
+    ],
+    "bedFurniture": [],
+    "file": "cedar-bistro-24x40.pdf",
+    "slug": "cedar-bistro-24x40",
+    "pages": 13,
+    "bytes": 4850201,
+    "sha256": "04744e9f3e57db2917f04f381750b064c5a347a8bafe2231ab0f035ae21acc05",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 20,
+    "widthFeet": 12,
+    "areaSqFt": 240,
+    "rooms": [
+      [
+        "Kitchen / service",
+        "16 x 12 ft gross / 192 sq ft; cooking and preparation behind the front serving counter."
+      ],
+      [
+        "Staff washroom",
+        "4 x 6 ft / 24 sq ft; enclosed rear corner."
+      ],
+      [
+        "Storage",
+        "4 x 6 ft / 24 sq ft; dedicated dry-goods storage with kitchen access."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 4,
+        "y": 0,
+        "size": 8,
+        "vertical": false,
+        "tag": "S3"
+      },
+      {
+        "x": 5,
+        "y": 12,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 17,
+        "y": 12,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      }
+    ],
+    "doors": [
+      {
+        "x": 16,
+        "y": 6.7,
+        "size": 2.5,
+        "vertical": true,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 16,
+        "y": 1,
+        "size": 2.5,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "size": 3,
+        "vertical": true,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      }
+    ],
+    "bedFurniture": [],
+    "file": "charcoal-takeaway-12x20.pdf",
+    "slug": "charcoal-takeaway-12x20",
+    "pages": 13,
+    "bytes": 4864505,
+    "sha256": "9f96bd0acfa5c65d482539bd49f741ac83fa0e8844e2442b637ffb48b3b28f75",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 32,
+    "widthFeet": 12,
+    "areaSqFt": 384,
+    "rooms": [
+      [
+        "Team / reception",
+        "14 x 12 ft / 168 sq ft; four workstations and reception beside front entry."
+      ],
+      [
+        "Executive office",
+        "12 x 12 ft / 144 sq ft; private desk and visitor seating, front and end windows."
+      ],
+      [
+        "Services",
+        "6 x 12 ft / 72 sq ft; separate 6 x 6 ft kitchen and 6 x 6 ft washroom."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 1,
+        "y": 12,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 8,
+        "y": 12,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 24,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 32,
+        "y": 5,
+        "size": 4,
+        "vertical": true,
+        "tag": "W1"
+      }
+    ],
+    "doors": [
+      {
+        "x": 6,
+        "y": 6.7,
+        "size": 2.5,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 6,
+        "y": 0.5,
+        "size": 2.5,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 20,
+        "y": 1,
+        "size": 3,
+        "vertical": true,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D4"
+      },
+      {
+        "x": 14,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      }
+    ],
+    "bedFurniture": [],
+    "file": "slate-team-office-12x32.pdf",
+    "slug": "slate-team-office-12x32",
+    "pages": 13,
+    "bytes": 4885656,
+    "sha256": "c6d306b7b3b6143d50aed105901207043de30481a15113a0e6b1c7b32dae54bb",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 32,
+    "widthFeet": 24,
+    "areaSqFt": 768,
+    "rooms": [
+      [
+        "Front meeting room",
+        "12 x 12 ft / 144 sq ft; six-place conference table."
+      ],
+      [
+        "Reception / circulation",
+        "8 x 12 ft front zone / 96 sq ft; centred entrance and open rear connection."
+      ],
+      [
+        "Team office",
+        "12 x 12 ft / 144 sq ft; four workstations."
+      ],
+      [
+        "Rear executive / lounge",
+        "20 x 12 ft / 240 sq ft; two desks and visitor/lounge seating."
+      ],
+      [
+        "Kitchen / washroom",
+        "Two 6 x 9 ft service rooms with a shared 12 x 3 ft passage from reception."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 3,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 23,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 18,
+        "y": 24,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 0,
+        "y": 17,
+        "size": 4,
+        "vertical": true,
+        "tag": "W1"
+      },
+      {
+        "x": 8,
+        "y": 24,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      },
+      {
+        "x": 32,
+        "y": 15,
+        "size": 6,
+        "vertical": true,
+        "tag": "W2"
+      }
+    ],
+    "doors": [
+      {
+        "x": 12,
+        "y": 1,
+        "size": 3,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 20,
+        "y": 1,
+        "size": 3,
+        "vertical": true,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 7,
+        "y": 15,
+        "size": 2.5,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 3,
+        "y": 15,
+        "size": 2.5,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 14,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      }
+    ],
+    "bedFurniture": [],
+    "file": "ivory-meeting-office-24x32.pdf",
+    "slug": "ivory-meeting-office-24x32",
+    "pages": 13,
+    "bytes": 4561222,
+    "sha256": "31f5f0e13e29581be426eed53da17b6cfe2be150875fe16fc4ef0898db0688f3",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 32,
+    "widthFeet": 12,
+    "areaSqFt": 384,
+    "rooms": [
+      [
+        "Bedroom",
+        "12 x 12 ft / 144 sq ft; double bed with solid-wall headboard and wardrobe."
+      ],
+      [
+        "Service bay",
+        "8 x 12 ft / 96 sq ft; kitchen 8 x 4 ft, passage 8 x 3 ft, washroom 5 x 5 ft and store 3 x 5 ft."
+      ],
+      [
+        "Living / dining",
+        "12 x 12 ft / 144 sq ft; main entrance and end-wall kitchen-side glazing."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 3,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 3,
+        "y": 12,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 13,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 13.5,
+        "y": 12,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      },
+      {
+        "x": 32,
+        "y": 4,
+        "size": 4,
+        "vertical": true,
+        "tag": "W1"
+      }
+    ],
+    "doors": [
+      {
+        "x": 12.5,
+        "y": 7,
+        "size": 2.5,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 17.2,
+        "y": 7,
+        "size": 2.5,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 12,
+        "y": 4.2,
+        "size": 2.6,
+        "vertical": true,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 20,
+        "y": 4.2,
+        "size": 2.6,
+        "vertical": true,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 24,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      }
+    ],
+    "bedFurniture": [
+      {
+        "x": 0,
+        "y": 3.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          0,
+          0,
+          12,
+          12
+        ],
+        "name": "Bedroom / sleeping zone"
+      }
+    ],
+    "file": "silver-one-bedroom-home-12x32.pdf",
+    "slug": "silver-one-bedroom-home-12x32",
+    "pages": 13,
+    "bytes": 4963982,
+    "sha256": "393f72f88408b7f6fd8e34c4c477920dc5db15f784907f23296e42ebb654cef4",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 32,
+    "widthFeet": 24,
+    "areaSqFt": 768,
+    "rooms": [
+      [
+        "Bedroom suites",
+        "Two 16 x 12 ft gross zones / 192 sq ft each, including a 5 x 6 ft ensuite and 2 ft deep wardrobe."
+      ],
+      [
+        "Living / dining",
+        "24 x 12 ft / 288 sq ft; centred front entrance and lounge furniture."
+      ],
+      [
+        "Open kitchen",
+        "8 x 12 ft / 96 sq ft; L-shaped counter in the front right corner."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 3,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 25,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 0,
+        "y": 13,
+        "size": 4,
+        "vertical": true,
+        "tag": "W1"
+      },
+      {
+        "x": 32,
+        "y": 13,
+        "size": 4,
+        "vertical": true,
+        "tag": "W1"
+      },
+      {
+        "x": 1.5,
+        "y": 24,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      },
+      {
+        "x": 28.5,
+        "y": 24,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      }
+    ],
+    "doors": [
+      {
+        "x": 5,
+        "y": 18.7,
+        "size": 2.5,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 27,
+        "y": 18.7,
+        "size": 2.5,
+        "vertical": true,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 12,
+        "y": 12,
+        "size": 3,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 17,
+        "y": 12,
+        "size": 3,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 14,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      }
+    ],
+    "bedFurniture": [
+      {
+        "x": 8,
+        "y": 17.5,
+        "width": 5,
+        "height": 6.5,
+        "head": "north",
+        "room": [
+          0,
+          12,
+          16,
+          12
+        ],
+        "name": "Bedroom / sleeping zone"
+      },
+      {
+        "x": 19,
+        "y": 17.5,
+        "width": 5,
+        "height": 6.5,
+        "head": "north",
+        "room": [
+          16,
+          12,
+          16,
+          12
+        ],
+        "name": "Bedroom / sleeping zone"
+      }
+    ],
+    "file": "charcoal-two-bedroom-home-24x32.pdf",
+    "slug": "charcoal-two-bedroom-home-24x32",
+    "pages": 13,
+    "bytes": 4976382,
+    "sha256": "750d1ba539aaa5ef9eb6a8d521ae16c7940030ee7e0eab52f6c3ed33ce956b2a",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 40,
+    "widthFeet": 12,
+    "areaSqFt": 480,
+    "rooms": [
+      [
+        "Consultation",
+        "10 x 12 ft / 120 sq ft; consultation desk, examination couch and handwash sink."
+      ],
+      [
+        "Service bay",
+        "6 x 12 ft / 72 sq ft; separate 6 x 6 ft kitchen and washroom."
+      ],
+      [
+        "Reception / waiting",
+        "12 x 12 ft / 144 sq ft; centred exterior entrance and internal circulation."
+      ],
+      [
+        "Treatment",
+        "12 x 12 ft / 144 sq ft; treatment couch, desk, storage and handwash sink."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 2,
+        "y": 12,
+        "size": 6,
+        "vertical": false,
+        "tag": "F1"
+      },
+      {
+        "x": 11,
+        "y": 12,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      },
+      {
+        "x": 11,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 22,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 31,
+        "y": 12,
+        "size": 6,
+        "vertical": false,
+        "tag": "F1"
+      }
+    ],
+    "doors": [
+      {
+        "x": 16,
+        "y": 6.7,
+        "size": 2.5,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 16,
+        "y": 0.5,
+        "size": 2.5,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 10,
+        "y": 3,
+        "size": 3,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 28,
+        "y": 1,
+        "size": 3,
+        "vertical": true,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 18,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      }
+    ],
+    "bedFurniture": [],
+    "file": "ivory-portable-clinic-12x40.pdf",
+    "slug": "ivory-portable-clinic-12x40",
+    "pages": 13,
+    "bytes": 4684782,
+    "sha256": "7b56d69d1e27b43bf6e29e3ded0a00a47bd30ce9f0e03e37f53bc92f8d925d40",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
+  },
+  {
+    "lengthFeet": 40,
+    "widthFeet": 12,
+    "areaSqFt": 480,
+    "rooms": [
+      [
+        "Classroom",
+        "28 x 12 ft / 336 sq ft; twelve seats, central aisle and front teaching area."
+      ],
+      [
+        "Service / storage",
+        "12 x 12 ft / 144 sq ft; kitchen 6 x 6 ft, washroom 6 x 6 ft and store 6 x 12 ft."
+      ],
+      [
+        "Openings",
+        "Centred main entrance, classroom end exit, wide teaching windows and high-level washroom vent."
+      ]
+    ],
+    "windows": [
+      {
+        "x": 1,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "tag": "W1"
+      },
+      {
+        "x": 1,
+        "y": 12,
+        "size": 2,
+        "vertical": false,
+        "tag": "V1"
+      },
+      {
+        "x": 13,
+        "y": 12,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 23,
+        "y": 12,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 32,
+        "y": 12,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 24,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      },
+      {
+        "x": 32,
+        "y": 0,
+        "size": 6,
+        "vertical": false,
+        "tag": "W2"
+      }
+    ],
+    "doors": [
+      {
+        "x": 6,
+        "y": 6.7,
+        "size": 2.5,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D3"
+      },
+      {
+        "x": 6,
+        "y": 0.5,
+        "size": 2.5,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 12,
+        "y": 1,
+        "size": 3,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D2"
+      },
+      {
+        "x": 40,
+        "y": 9,
+        "size": 3,
+        "vertical": true,
+        "sign": -1,
+        "reverse": false,
+        "tag": "D5"
+      },
+      {
+        "x": 18,
+        "y": 0,
+        "size": 4,
+        "vertical": false,
+        "sign": 1,
+        "reverse": false,
+        "tag": "D1"
+      }
+    ],
+    "bedFurniture": [],
+    "file": "grey-learning-studio-12x40.pdf",
+    "slug": "grey-learning-studio-12x40",
+    "pages": 13,
+    "bytes": 4700470,
+    "sha256": "b2c2b01011cf6d0976d2916cc996344098f94834fb094a54293faa002c374d13",
+    "websiteCopyMatches": true,
+    "watermark": "ZAKA WEBSITE LOGO v1",
+    "revision": "20261028-collection-30"
   }
 ]
