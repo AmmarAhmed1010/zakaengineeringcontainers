@@ -9,6 +9,7 @@ import pypdfium2 as pdfium
 from PIL import Image, ImageDraw
 from bed_furniture import draw_bed, audit_beds
 from catalogue_names import filename
+from roof_styles import apply_config, image_path as roof_image_path, draw_panel as roof_panel
 
 REPO=Path(__file__).resolve().parents[1]
 ROOT=REPO/'output'/'pdf'
@@ -230,6 +231,8 @@ def studio(c,cfg):
     notes(c,[('External footprint','12 x 26 ft = 312 sq ft including terrace.'),('Enclosed studio','12 x 21 ft gross; 5 x 6 ft washroom. Wardrobe moved beside its side wall: 2 ft deep x 6 ft long.'),('Outdoor / openings','12 x 5 ft terrace = 60 sq ft. Washroom door moved to the studio-facing wall to keep wardrobe access clear.')],175)
 
 def photo_panel(c,cfg,index,x,y,w,h):
+    slug=cfg.get('roofSlug')
+    if slug and roof_image_path(slug):return roof_panel(c,slug,index,x,y,w,h)
     key='family' if cfg['type']=='duplex' else cfg['type']
     path=ASSETS/(key+'.png')
     im=Image.open(path); iw,ih=im.size
@@ -249,7 +252,7 @@ def elevations(c,cfg,kind):
         photo_panel(c,cfg,index,x+8,198,356,216)
         labels=['FRONT / ENTRY PERSPECTIVE','EXTERIOR / OPPOSITE PERSPECTIVE','LEFT / SIDE PERSPECTIVE','RIGHT / SIDE PERSPECTIVE']
         txt(c,x,174,labels[index],8,RED,'Helvetica-Bold')
-        txt(c,x,159,cfg['finish'],7,MUTED)
+        wrap(c,cfg['finish'],x,159,372,7,MUTED,leading=10)
     wrap(c,'FINISH DIRECTION: '+cfg['palette'],40,128,750,9)
     note='AI-generated architectural concept images illustrate materials, lighting and landscape. The dimensioned floor plans and opening schedule control the layout.'
     if cfg['type']=='office': note+=' The 44 ft option is illustrated; the 40 ft option has a shorter reception bay.'
@@ -319,7 +322,7 @@ dict(type='office',code='ZC-03',file='zaka-client-03-office-12x40-and-12x44.pdf'
 dict(type='studio',code='ZC-04',file='zaka-client-04-studio-12x26-with-terrace.pdf',title='Studio\n& Terrace',short='Open studio with front terrace',dims='12 x 26 ft overall',body='#C9CAC8',trim='#484B50',accent='#815D6A',border=3,finish='Warm grey body / white fascia / charcoal frame',palette='Warm grey cladding, charcoal frame and white roof fascia; plum dashed round-corner border.',desc='A 12 x 21 ft enclosed studio with a 5 x 6 ft washroom, open kitchen and cupboard, opening onto a 12 x 5 ft terrace.',area='252 sq ft enclosed + 60 sq ft terrace')]
 
 def author(cfg):
-    cfg={**cfg,'file':filename(cfg['file'])}
+    cfg=apply_config({**cfg,'file':filename(cfg['file'])})
     plans=2 if cfg['type']!='studio' else 1; total=11+plans # adds dedicated opening schedule
     buf=BytesIO(); c=canvas.Canvas(buf,pagesize=(W,H)); c.setTitle(cfg['short']+' | Zaka client revision')
     n=0
@@ -353,7 +356,7 @@ def author(cfg):
     wrap(c,'Only the tags shown on each plan apply to that option. Typical cupboard depth is 2 ft. Window sill heights, opening direction, final wall build-up and stair connections require coordination before fabrication.',40,83,750,8,MUTED); c.showPage()
     for k in [0,1]: page('03 / exterior design','The same design. Brought to life.','Four photorealistic exterior perspectives. Grey, charcoal and white are arranged differently for each proposal.'); elevations(c,cfg,k); c.showPage()
     page('04 / materials & programme','Details for this design.','Spatial brief and finish direction for project quotation.')
-    rows=[('Building',cfg['short']+' / '+cfg['dims']),('Floor area',cfg['area']),('Exterior palette',cfg['palette']),('Roof & terrace','Flat roof concept; drainage and waterproofing coordinated with the final structural design.'),('Structure','Fabricated / joined steel modules; supports, connections and openings developed for the selected site.'),('Comfort & finish','Insulated walls and roof; washable internal linings; slip-resistant wet area finishes.'),('Glazing & doors','Opening sizes and positions follow the new plans and dedicated schedule.'),('Electrical & services','Power, lighting, sockets, kitchen supply and washroom plumbing coordinated with available site services.'),('Circulation & access','Door swings and furniture are indicative. External stair to first-floor terrace is additional to footprint.' if cfg['type']=='duplex' else 'Door swings and furniture are indicative; confirm clear circulation after wall deductions.'),('Delivery & installation','Transport route, crane access, supports and anchoring agreed before manufacture.')]
+    rows=[('Building',cfg['short']+' / '+cfg['dims']),('Floor area',cfg['area']),('Exterior palette',cfg['palette']),('Roof & terrace',cfg.get('roofSpecification','Flat roof concept; drainage and waterproofing coordinated with the final structural design.')),('Structure','Fabricated / joined steel modules; supports, connections and openings developed for the selected site.'),('Comfort & finish','Insulated walls and roof; washable internal linings; slip-resistant wet area finishes.'),('Glazing & doors','Opening sizes and positions follow the new plans and dedicated schedule.'),('Electrical & services','Power, lighting, sockets, kitchen supply and washroom plumbing coordinated with available site services.'),('Circulation & access','Door swings and furniture are indicative. External stair to first-floor terrace is additional to footprint.' if cfg['type']=='duplex' else 'Door swings and furniture are indicative; confirm clear circulation after wall deductions.'),('Delivery & installation','Transport route, crane access, supports and anchoring agreed before manufacture.')]
     table(c,rows,40,405,rowh=29,size=8); wrap(c,'Concept proposal: nominal dimensions are not fabrication dimensions. Original client material standards follow on the next five pages.',40,82,745,8,MUTED); c.showPage()
     # Preserve the complete five material-standard pages from the existing catalogue.
     # These pages are appended after this authored sequence and receive new page IDs.

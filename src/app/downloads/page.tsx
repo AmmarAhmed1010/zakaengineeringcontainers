@@ -174,6 +174,7 @@ export default function Downloads() {
                     <h3>{d.title}</h3>
                     <p className="document-size">{d.subtitle}</p>
                     <p className="catalogue-layout-meta">{layoutSummary(d)}{d.slug === "compact-container-home" ? " · Open courtyard" : ""}</p>
+                    <p className="catalogue-layout-meta">{d.roofStyle} · Corrugated steel exterior</p>
                     <p>{d.description}</p>
                     <div className="download-actions">
                       <Link href={`/downloads/${d.slug}`}>

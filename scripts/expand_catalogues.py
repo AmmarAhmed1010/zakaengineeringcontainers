@@ -21,6 +21,7 @@ from create_client_pdfs import Plan, W, H, txt, wrap, rect, table, frame, border
 from catalogue_names import filename
 from bed_furniture import AUDIT
 from zaka_watermarks import add_watermark, LABEL
+from roof_styles import apply_config, image_path as roof_image_path, draw_panel as roof_panel
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'output/pdf'
@@ -66,10 +67,10 @@ PALETTES=[('#454A4E','#ECEDEA','#9B7254'),('#EBECE8','#41474D','#71836A'),('#454
 
 def configure(raw,i):
     body,trim,accent=PALETTES[i]
-    return {**raw,'code':f'ZE-{22+i:02d}','file':raw['slug']+'.pdf','body':body,'trim':trim,'accent':accent,
+    return apply_config({**raw,'code':f'ZE-{22+i:02d}','file':raw['slug']+'.pdf','body':body,'trim':trim,'accent':accent,
             'border':i%4,'finish':('Charcoal' if body=='#454A4E' else 'Ivory' if body=='#EBECE8' else 'Grey')+' steel / contrasting trim',
             'palette':'Grey, charcoal and white steel surfaces; '+accent+' border accent.',
-            'bedrooms':raw.get('bedrooms',0),'dims':f"{raw['B']} x {raw['L']} ft",'area':raw['B']*raw['L']}
+            'bedrooms':raw.get('bedrooms',0),'dims':f"{raw['B']} x {raw['L']} ft",'area':raw['B']*raw['L']})
 
 def furniture(p,x,y,w,h,label='',fill='#B9B8B0'):
     p.box(x,y,w,h,fill,.55)
@@ -188,6 +189,7 @@ def floor_plan(c,cfg):
     return p
 
 def panel(c,cfg,index,x,y,w,h):
+    if roof_image_path(cfg['slug']):return roof_panel(c,cfg['slug'],index,x,y,w,h)
     path=ASSETS/(cfg['slug']+'.png');im=Image.open(path);iw,ih=im.size
     pw,ph=iw/2,ih/2;left=(index%2)*pw+3;top=(index//2)*ph+3;rw,rh=pw-6,ph-6
     scale=min(w/rw,h/rh);dx=x+(w-rw*scale)/2;dy=y+(h-rh*scale)/2
@@ -232,10 +234,10 @@ def author(cfg):
         for j in range(2):
             x=40+j*390;panel(c,cfg,2*k+j,x,185,372,235)
             txt(c,x,168,['FRONT / ENTRY','REAR / SERVICE','LEFT / END','RIGHT / END'][2*k+j],8,base.RED,'Helvetica-Bold')
-            txt(c,x,152,cfg['finish'],7,base.MUTED)
+            wrap(c,cfg['finish'],x,152,372,7,base.MUTED,leading=10)
         wrap(c,'Exterior concepts illustrate finish and atmosphere. Openings and furniture are governed by the measured plan; generated views can contain small visual differences.',40,109,750,8,base.MUTED);c.showPage()
     page(7,'05 / materials & programme','A coordinated specification.','The complete material standards follow on the next five pages.')
-    table(c,[('Building',cfg['title']+' / '+cfg['dims']),('Gross floor area',str(cfg['area'])+' sq ft before wall deductions.'),('Exterior finish',cfg['palette']),('Steel structure','Joined or fabricated modules; connections, supports and lifting points engineered for the selected site.'),('Roof / enclosure','Insulated roof and wall build-up, weatherproof flashings and coordinated rainwater discharge.'),('Interior / wet areas','Washable wall linings, durable flooring and slip-resistant wet-area surfaces.'),('Services','Lighting, sockets, ventilation, water supply and drainage coordinated with the site.'),('Installation','Transport, crane access, supports, anchoring and service connections agreed before fabrication.')],40,401,rowh=36,size=8)
+    table(c,[('Building',cfg['title']+' / '+cfg['dims']),('Gross floor area',str(cfg['area'])+' sq ft before wall deductions.'),('Exterior finish',cfg['palette']),('Steel structure','Joined or fabricated modules; connections, supports and lifting points engineered for the selected site.'),('Roof / enclosure',cfg.get('roofSpecification','')+' Insulated roof and wall build-up, weatherproof flashings and coordinated rainwater discharge.'),('Interior / wet areas','Washable wall linings, durable flooring and slip-resistant wet-area surfaces.'),('Services','Lighting, sockets, ventilation, water supply and drainage coordinated with the site.'),('Installation','Transport, crane access, supports, anchoring and service connections agreed before fabrication.')],40,401,rowh=36,size=8)
     wrap(c,'Concept proposal for discussion. Final wall thicknesses, structure, fire strategy, access and equipment are confirmed in project-specific drawings and quotation.',40,83,750,8,base.MUTED);c.showPage();c.save()
     writer=PdfWriter();writer.append(PdfReader(BytesIO(buf.getvalue())))
     for source_index in [5,6,7,8,9,10]:

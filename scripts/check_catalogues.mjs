@@ -37,6 +37,6 @@ if(base){
     const redirect=await fetch(base+'/downloads/'+oldName,{method:'HEAD',redirect:'manual'});
     assert.equal(redirect.status,308);assert(redirect.headers.get('location').endsWith('/downloads/'+newName));
   }
-  console.log('HTTP checks passed: 30 listings, 30 detail pages, 30 PDFs, 30 previews, 21 old-name redirects.');
+  console.log(`HTTP checks passed: 30 listings, 30 detail pages, 30 PDFs, 30 previews, ${Object.keys(mapping).length} old-name redirects.`);
 }
 console.log(`Verified 30 unique catalogues, ${docs.reduce((sum,d)=>sum+d.pages,0)} pages and identical canonical/download hashes.`);

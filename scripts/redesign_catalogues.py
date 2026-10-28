@@ -4,6 +4,7 @@ from create_collection import panel_bounds
 from watermark_catalogues import add_watermark
 from client_floor_plans import REVISIONS, draw_plan
 from office_kitchens import normalize_rooms
+from roof_styles import apply_design, image_path as roof_image_path, draw_panel as roof_panel
 from client_materials import MATERIAL_PAGES, draw_materials
 import hashlib
 
@@ -52,6 +53,7 @@ def enrich(d):
     d={**d,**REVISIONS.get(d['slug'],{}).get('changes',{})}
     d['revision']='03';d['floors']=[f['rooms'] for f in REVISIONS[d['slug']]['floors']] if d['slug'] in REVISIONS else rooms_for(d)
     normalize_rooms(d)
+    apply_design(d)
     d['basePages']=7 if d['storeys']==2 or d['roofTerrace'] else 6
     d['pages']=d['basePages']+MATERIAL_PAGES;d['briefPage']=d['basePages']-1
     d['floorArea']=sum(r['length']*r['width'] for r in d['floors'][0]);d['area']=d['floorArea']*d['storeys'];d['type']='redesign'
@@ -75,6 +77,7 @@ def enrich(d):
     return d
 
 def panel(c,d,index,x,y,w,h):
+    if roof_image_path(d['slug']):return roof_panel(c,d['slug'],index,x,y,w,h)
     source=ROOT/'public'/d['image'].lstrip('/');im=Image.open(source).convert('RGB');iw,ih=im.size
     jpeg=QA/(d['slug']+'.jpg');im.save(jpeg,quality=92,optimize=True)
     lx,ty,rx,by=panel_bounds(im,d['slug'])[index];s=min(w/(rx-lx),h/(by-ty));pw,ph=(rx-lx)*s,(by-ty)*s;left=x+(w-pw)/2;bottom=y+(h-ph)/2
@@ -196,8 +199,9 @@ def specifications(c,d):
     rows=[('Building',f"{d['width']} x {d['length']} ft footprint; {d['storeys']} enclosed storey(s); {d['bedrooms']} bedroom(s)."),('Enclosed floor area',f"{d['floorArea']} sq ft per floor / {d['area']} sq ft total, before wall deductions."),('Exterior palette',d['finish'].capitalize()+'.'),('Roof & outdoor space','Guarded 12 x 24 ft accessible roof deck; stairs outside footprint.' if d['roofTerrace'] else ('Additional 12 x 5 ft terrace / 60 sq ft.' if d['terrace'] else ('20 x 12 ft open courtyard / 240 sq ft excluded from floor area.' if d['slug']=='compact-container-home' else 'Roof profile follows the exterior concept; structure and drainage to be designed.'))),('Structure','Fabricated or joined steel modules; foundation, openings, connections and lifting points engineered for site conditions.'),('Comfort & finish','Insulated walls and roof; selected internal linings and floor finish; washable wet-area surfaces.'),('Glazing & doors','Opening schedule coordinated with rooms, privacy, escape and ventilation; safety glass and hardware specified individually.'),('Electrical & services','Power, lighting, sockets and data developed to suit use. Plumbing, water supply and drainage coordinated with available site services.'),('Circulation & access','External stair allowance 4 x 16 ft; final rise, run, landing and support design required.' if d['storeys']==2 else 'Door swings and furniture are indicative; confirm finished clearances and accessible circulation.'),('Delivery & installation','Transport route, crane access, supports, anchoring and connections agreed before manufacture.')]
     yy=380
     for i,(label,value) in enumerate(rows):
+        if label=='Roof & outdoor space':value=d.get('roofSpecification',value)
         if label=='Circulation & access' and d['storeys']==2:value="Right-end stair: 4 x 16 ft. Upper front access balcony: 3 ft deep, outside enclosed footprint. Final stair geometry to be engineered."
-        rh=29;rect(c,40,yy-rh,W-80,rh,SAND if i%2==0 else PAPER);text(c,51,yy-18,label,8,'Bold');para(c,222,yy-5,value,560,8,MUTED,10);yy-=rh
+        rh=45 if label=='Roof & outdoor space' else 29;rect(c,40,yy-rh,W-80,rh,SAND if i%2==0 else PAPER);text(c,51,yy-18,label,8,'Bold');para(c,222,yy-5,value,560,8,MUTED,10);yy-=rh
     para(c,40,72,'Concept proposal only. Final engineering, quantities, approvals and price are established for the selected design and site.',W-80,7,MUTED,9);c.showPage()
 
 def main():

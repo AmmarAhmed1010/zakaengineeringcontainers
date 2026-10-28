@@ -3,17 +3,17 @@
     "file": "cedar-one-bedroom-cabin-12x30.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1310297,
+    "bytes": 3976202,
     "websiteCopyMatches": true,
     "slug": "studio-12x30",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 12,
     "lengthFeet": 30,
     "storeys": 1,
     "bedrooms": 1,
     "areaSqFt": 360,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.21 PM (1).jpeg",
-    "imageSha256": "9484f77dca93ae33a5ecbbf2462b230a790bd5c935e9003f175251391646e02d",
+    "imageSha256": "64790e79cb9798b2b2afca1711b2b5fc1f656accd7010576badc9cd499df3326",
     "floorZones": [
       [
         {
@@ -78,23 +78,28 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "61a865bc154772ae953417cef1fe68d556a48304fdc4e3507f3a780618911b50"
+    "sha256": "5adf8491d96485342fe70457e56934296f6e705b3106eeb523f3bf0060e7a502",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "sage-terrace-studio-12x21.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1226517,
+    "bytes": 4017833,
     "websiteCopyMatches": true,
     "slug": "studio-12x21-terrace",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 12,
     "lengthFeet": 21,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 252,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.16 PM (2).jpeg",
-    "imageSha256": "a14951a77241975412d403f3369cf71c0882e357ad11927d7e18062d04eea648",
+    "imageSha256": "3acbc8128a02e3d67a7bcfb2dbe60c7f6cee31108da48c6ae86c66446f167d2b",
     "floorZones": [
       [
         {
@@ -150,23 +155,28 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "d9f99156ceed916d34935232ab4bfdde819c3b61a8b72b10460aa4414998a8b2"
+    "sha256": "59f149115e771a0faa800ffdce44185aa427407e601334953888e71fc619952e",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "two-bedroom-family-home-12x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1314569,
+    "bytes": 4196827,
     "websiteCopyMatches": true,
     "slug": "portable-12x40",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 12,
     "lengthFeet": 40,
     "storeys": 1,
     "bedrooms": 2,
     "areaSqFt": 480,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.21 PM (1).jpeg",
-    "imageSha256": "47eaacf2d96d84aa08d7906111116bba03c58661ca00c4b980e5f68133ffd6bb",
+    "imageSha256": "c4d18f439b81bf83aa4b125127b5ab76fc6eb0497fc5eac21c3d4b346b9674d2",
     "floorZones": [
       [
         {
@@ -271,23 +281,28 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "b698f58b884e1acb4a107e9b8c1da537290bd6912332ab71093d3b633d79e229"
+    "sha256": "b5b09dfc3e1c2b5493c315e87e8406ad6b182b2e44574005d79b63ec329b180d",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "four-bedroom-duplex-12x45.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1404465,
+    "bytes": 4108566,
     "websiteCopyMatches": true,
     "slug": "portable-12x45",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 12,
     "lengthFeet": 45,
     "storeys": 2,
     "bedrooms": 4,
     "areaSqFt": 1080,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.46 PM (1).jpeg",
-    "imageSha256": "0c712c81b6e06fbc9d224fbd590532e52abf3545c26420b752ee878705e5e427",
+    "imageSha256": "db55bb2e6eaf4475a7076125615f52d19bd85ad68d3c99d342ef0d8010b65d18",
     "floorZones": [
       [
         {
@@ -491,23 +506,28 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "c7524b4ac0d8fe395a6a621024397526bc6da3698af8376e2d47f69e700254ad"
+    "sha256": "e32b252d9da1c4f913d01d84f1fe6c0207d23180ed842cc8be45221898074b47",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "three-bedroom-compact-duplex-12x24.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 2542943,
+    "bytes": 4493121,
     "websiteCopyMatches": true,
     "slug": "portable-12x24",
-    "revision": "20261028-home-access",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 12,
     "lengthFeet": 24,
     "storeys": 2,
     "bedrooms": 3,
     "areaSqFt": 576,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.17 PM (1).jpeg",
-    "imageSha256": "fca46f0ceeb3750d2a49a6180124729cef8c6aaf8112625a2ee07b482467cd94",
+    "imageSha256": "2cb180d01b5019fa9c49137dfe2890aa82cdf391fa8e5235a45d5431640530b6",
     "floorZones": [
       [
         {
@@ -672,23 +692,28 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "1fd66b285056a3c35c41abd58b2b49e5fa5c8cdd20f17176fcaf38a6498a18bd"
+    "sha256": "5d9310dc628cb947fe1d6f34f45c2b5dffb04026be37666f5e8c390299c3d5b4",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
-    "file": "compact-gabled-studio-12x20.pdf",
+    "file": "compact-container-studio-12x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1272024,
+    "bytes": 4115330,
     "websiteCopyMatches": true,
     "slug": "portable-12x20",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 12,
     "lengthFeet": 20,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 240,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.50 PM.jpeg",
-    "imageSha256": "52777eec85ebdda4df249c67475d8ec4f860e1ef30345392a0e4e93eb872984d",
+    "imageSha256": "7dc23e4895b393dafc403fd3b8a8aa97083f4d962d9ee3ee0e8d3c494239fc9e",
     "floorZones": [
       [
         {
@@ -741,23 +766,28 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "a81634940a388109c4cfbbb7f0aa21edb80df33d3d7e85d60857eae9166ff5de"
+    "sha256": "7bf95e598d4bf44baae241cb133ba4bfaa9d9af3dfd79bd760b30fb77ec71f00",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "mint-site-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1229691,
+    "bytes": 3862714,
     "websiteCopyMatches": true,
     "slug": "office-8x20",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 160,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.42 PM.jpeg",
-    "imageSha256": "586359a5eb184fb947e0778dc2bec84488d1fde1fb3ebb7b8a40b6c1287ae1b9",
+    "imageSha256": "95afc747b52b4eb5580f01ec9a97c3ad4a275f8cfd03a7a1c9aa4fd7bc3e45a1",
     "floorZones": [
       [
         {
@@ -788,7 +818,7 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "b14015931152fa3dc07e3828b22bb9aaea4b3e55fcfd94b9780aa47ecfaae3a8",
+    "sha256": "ecffe0b446e1a39ebdc2f7a0ca4c119be0a71a34374d3703c783a7bcda806d47",
     "kitchenCirculation": [
       {
         "slug": "office-8x20",
@@ -831,23 +861,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "cedar-executive-office-10x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1302731,
+    "bytes": 3936894,
     "websiteCopyMatches": true,
     "slug": "office-10x20",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 10,
     "lengthFeet": 20,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 200,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.39 PM.jpeg",
-    "imageSha256": "304c1aac7e7f9592a469fb32465ee5e5cab16fadb0117f87d141bd127e2e18f4",
+    "imageSha256": "ebd3f6d9ebaa7cab3111f309401587035597182dda38e1ff7b50dae10614e15d",
     "floorZones": [
       [
         {
@@ -914,7 +949,7 @@
         "height": 4
       }
     ],
-    "sha256": "de825576487c9c33e119b631e4ae8daff70f128190ff8cad4e1709938850768a",
+    "sha256": "2160d5665a2eb872b46e50133bd07a295cb55e7af0811608d291f73c64acf53f",
     "kitchenCirculation": [
       {
         "slug": "office-10x20",
@@ -957,23 +992,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "glazed-team-office-12x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1257559,
+    "bytes": 4203321,
     "websiteCopyMatches": true,
     "slug": "office-12x20",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 12,
     "lengthFeet": 20,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 240,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.36 PM.jpeg",
-    "imageSha256": "31fd532f26d4d8847e0b9b03df6999b816670fd6aef3a57e80e94c5e41bf4e51",
+    "imageSha256": "19815389ce1a78c2b2dd6acfefe378b33b3efca318bc175ec5d22286a976279e",
     "floorZones": [
       [
         {
@@ -1004,7 +1044,7 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "3643c95c81847c29ed90aa909cee42d976a3356d5479e47b04255487dd701da1",
+    "sha256": "bfccd2463fc5d9dde27b2f760f4b28979ec2737193d8934df7b4365e9de8184a",
     "kitchenCirculation": [
       {
         "slug": "office-12x20",
@@ -1047,23 +1087,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "olive-linear-site-hub-8x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1151148,
+    "bytes": 3646315,
     "websiteCopyMatches": true,
     "slug": "office-8x40",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 8,
     "lengthFeet": 40,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 320,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.35 PM.jpeg",
-    "imageSha256": "95b756a03e47a7ee41ad3bb733ec50c6fc15eecad233b6fc76d9431c9e2494b4",
+    "imageSha256": "21795c98e77d5e0089a7ae2bb8263f6b19df10113fc9b156a73115d71d1e8f0c",
     "floorZones": [
       [
         {
@@ -1094,7 +1139,7 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "36cd6ecf5d9220d1133715938f4eb888903ad2892069566f5154553b89d2850a",
+    "sha256": "69b61491c758b2085608b31e384b4f0d400c64c285392bccbd4b09c1aca486f9",
     "kitchenCirculation": [
       {
         "slug": "office-8x40",
@@ -1137,23 +1182,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "two-storey-office-hub-10x40.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1388519,
+    "bytes": 4225343,
     "websiteCopyMatches": true,
     "slug": "office-10x40",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 10,
     "lengthFeet": 40,
     "storeys": 2,
     "bedrooms": 0,
     "areaSqFt": 800,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.15 PM (1).jpeg",
-    "imageSha256": "434fa308b47a56e9c2e29e661a8585d1394958686104066c4af8b24aa72382d4",
+    "imageSha256": "f79b62f7347389f7054d5483ddaca00de1cbc544fa32da1927cd8e85abde4aa9",
     "floorZones": [
       [
         {
@@ -1235,7 +1285,7 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "70b44aa8e891b8daa39a9091d2921577e8c8f016b7a8fa6013e07fda47bf429e",
+    "sha256": "0744e94364439c892191d11a5cb37e127b7eace0457ccd0dec831e2f20c0c6f9",
     "kitchenCirculation": [
       {
         "slug": "office-10x40",
@@ -1339,23 +1389,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "charcoal-loft-office-12x40.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1466322,
+    "bytes": 4252570,
     "websiteCopyMatches": true,
     "slug": "office-12x40",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 12,
     "lengthFeet": 40,
     "storeys": 2,
     "bedrooms": 0,
     "areaSqFt": 960,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.39 PM.jpeg",
-    "imageSha256": "44692a54564a158f3e79dc9cb6272de2dac2e2da69c025af48b1582a29de433d",
+    "imageSha256": "19efaa409f054a85d49a94dc107c06c72d5da2b9f105f270ee47d28651cd053a",
     "floorZones": [
       [
         {
@@ -1437,7 +1492,7 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "15a8403522d29b750438226718caa77788053d8c4f78abcc3ef9d8266913c186",
+    "sha256": "a713a49ae3c3ca33a5897aee64c64d64733d58106219287cf2c8ba44ef693168",
     "kitchenCirculation": [
       {
         "slug": "office-12x40",
@@ -1541,23 +1596,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
-    "file": "compact-gabled-office-8x20.pdf",
+    "file": "compact-container-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1306464,
+    "bytes": 4143166,
     "websiteCopyMatches": true,
     "slug": "single-cabin-office",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 160,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.36 PM (1).jpeg",
-    "imageSha256": "b54418ebf8f06074cbbc7a878d2f8e5403c9e544e2c9d61bfa673b3f6eb25e85",
+    "imageSha256": "06294862f696acbf716490bd836142957bbca89a6069a0f52389e77ea5a55bfe",
     "floorZones": [
       [
         {
@@ -1600,7 +1660,7 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "65fffc19a89c0af27f14e45c5b1f68b18ab0379257cda82895d6343f6cb04e94",
+    "sha256": "22d74c57e630646c25f2f6b3279bee809b25b686e735f26f1cf857e2e0b7e746",
     "kitchenCirculation": [
       {
         "slug": "single-cabin-office",
@@ -1649,23 +1709,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "twin-cabin-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1235143,
+    "bytes": 3956010,
     "websiteCopyMatches": true,
     "slug": "two-cabin-office",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 160,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.38 PM (1).jpeg",
-    "imageSha256": "0f0ef717bd3bb7e4446ee898220780d941e1f4fa6db568b122f333bb2de8fe9e",
+    "imageSha256": "11c60ef6b51be85f777d3d182aaacdebe74f04840c0b634a9e8380b4c7475291",
     "floorZones": [
       [
         {
@@ -1716,7 +1781,7 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "689408a934baac8128dfd5c9680940d4e8578db49bfdc0db33344ebec9329677",
+    "sha256": "a69de56e063b21d1859c43e9ee99c1e4085239ed002c72b3fe9b0035d5ebe5b4",
     "kitchenCirculation": [
       {
         "slug": "two-cabin-office",
@@ -1772,23 +1837,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "off-grid-field-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1206008,
+    "bytes": 3725380,
     "websiteCopyMatches": true,
     "slug": "industrial-field-office",
-    "revision": "20261028-open-office-kitchens",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
     "bedrooms": 0,
     "areaSqFt": 160,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.35 PM.jpeg",
-    "imageSha256": "68cd56762c3604894c6119298fa6c2370e75b8950898f7559d09dc2bea154588",
+    "imageSha256": "187152e8c35e1826d3d6509c1c05f4ce6f22970038a652a746ad164508168dad",
     "floorZones": [
       [
         {
@@ -1819,7 +1889,7 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "1ad5d0dda3c5db75886d0bec9365a8ce39e5efb26e315d28ea1913b75ee5b523",
+    "sha256": "6044758f35193493462fed300a142aeeec41c9cb43e2accb5014d51fdf3654db",
     "kitchenCirculation": [
       {
         "slug": "industrial-field-office",
@@ -1862,23 +1932,28 @@
         ],
         "doorSwingsClearOfCounters": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "two-bedroom-garden-cottage-16x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1240248,
+    "bytes": 3835608,
     "websiteCopyMatches": true,
     "slug": "two-bedroom-residence",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 16,
     "lengthFeet": 40,
     "storeys": 1,
     "bedrooms": 2,
     "areaSqFt": 640,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.50 PM.jpeg",
-    "imageSha256": "306d914be5c15fbdc760cb6fed8d818b8ea0b8c096d58b5485977603c9c37efc",
+    "imageSha256": "fb9d4212229795e8df9475cfd894f1dec570714317802b7be16eef517c50ba4f",
     "floorZones": [
       [
         {
@@ -1983,23 +2058,28 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "8e5a0d4766a1d158dab26745a2688d2e08247f90fde9e6e5eb5c562289eb7ebf"
+    "sha256": "f63374345b366cf8b528df8d4afcde5c1df8e8720b6677eb32f7d7cac97e23ed",
+    "legacyWatermarksRemoved": 0,
+    "roof": "mono-pitch",
+    "roofStyle": "Single-slope roof",
+    "roofSpecification": "Single-slope steel roof with corrugated metal sheets; supports and drainage coordinated for the joined building.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "three-bedroom-courtyard-home-24x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1279007,
+    "bytes": 4076497,
     "websiteCopyMatches": true,
     "slug": "compact-container-home",
-    "revision": "20261028-home-access",
+    "revision": "20261028-corrugated-roof-revision",
     "widthFeet": 24,
     "lengthFeet": 40,
     "storeys": 1,
     "bedrooms": 3,
     "areaSqFt": 720,
     "reference": "WhatsApp Image 2026-10-03 at 5.21.25 PM.jpeg",
-    "imageSha256": "ee0c9bf39bd5605a72f0b00a2934e43dc47c1f6f20cafc84a455fb4c3c8cdbf0",
+    "imageSha256": "3af7a3dd8cf3fbe8af779f4f3b45a4c14554abc595ce2c8c2f6315eeb26a88f1",
     "floorZones": [
       [
         {
@@ -2133,17 +2213,22 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "dd2c3c70526c2fd2e1a05de6177c83d4db391d0f648ece2c6154290c7d3ce2f1"
+    "sha256": "c88c82f1ecb6339a2dda572adbc8286edcfe98bb37c8ceb2b9c777e438cc1824",
+    "legacyWatermarksRemoved": 0,
+    "roof": "mono-pitch",
+    "roofStyle": "Single-slope roof",
+    "roofSpecification": "Single-slope steel roof with corrugated metal sheets; supports and drainage coordinated for the joined building. Sloping roofs cover occupied U-shaped wings only; the central courtyard stays open to sky.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails."
   },
   {
     "file": "family-home-two-floors-40x24.pdf",
     "slug": "family-home-two-floors-40x24",
     "pages": 13,
-    "bytes": 5249413,
-    "sha256": "64f5d7472ebe053cde27766a4b48734dd75b1489fbd5359a9ddda41a6f30bff3",
+    "bytes": 3701215,
+    "sha256": "b76317a375c51146c4768c982c9c8bb4951888e4135b2ec37942f21ff90fbaed",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "bedFurniture": [
       {
         "context": "family-home-two-floors-40x24.pdf / page 2",
@@ -2229,17 +2314,23 @@
         "footClearanceFeet": 5.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "mono-pitch",
+    "roofStyle": "Single-slope roof",
+    "roofSpecification": "Single-slope steel roof with corrugated metal sheets; supports and drainage coordinated for the joined building. A single-slope canopy spans the upper container and open-sided front terrace; the upper enclosed module remains 12 ft wide.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "2872863049ad84e85402ff41ce53de703f5764cf89cb83026b559b62db8934ab"
   },
   {
     "file": "two-bedroom-living-12x40-and-12x44.pdf",
     "slug": "two-bedroom-living-12x40-and-12x44",
     "pages": 13,
-    "bytes": 5282072,
-    "sha256": "9c7e37dc464de6c1160c2eedd2062f1517474e1abb8b6923b1d0b55552bb3fe1",
+    "bytes": 3580489,
+    "sha256": "4a41b719014c178f0e18479dbc50d7eb97cbd63627588e1f0639fc40b54d8663",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-home-access",
+    "revision": "20261028-corrugated-roof-revision",
     "bedFurniture": [
       {
         "context": "two-bedroom-living-12x40-and-12x44.pdf / page 2",
@@ -2325,17 +2416,23 @@
         "footClearanceFeet": 3.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "f4a65dccbda455443e9ffe600c2aaff08438de33b6a7a1df6c00bca0d39f6058"
   },
   {
     "file": "executive-office-suite-12x40-and-12x44.pdf",
     "slug": "executive-office-suite-12x40-and-12x44",
     "pages": 13,
-    "bytes": 5111108,
-    "sha256": "89264bb2fd88a464eb83641407875fd42c620dbbd719a04834b1ed1004cf304e",
+    "bytes": 3124258,
+    "sha256": "75e3a8a2272ceac76578a8dc15be5b1679fbe23754743625a4af4b76e7274e32",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "bedFurniture": [
       {
         "context": "executive-office-suite-12x40-and-12x44.pdf / page 2",
@@ -2379,17 +2476,23 @@
         "footClearanceFeet": 5.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "7980a6fbb3ea74459685764aef8a99b33cbd8bcd036c47a2ce50f3739a39023f"
   },
   {
     "file": "studio-with-terrace-12x26.pdf",
     "slug": "studio-with-terrace-12x26",
     "pages": 12,
-    "bytes": 5186859,
-    "sha256": "452e5789a9c540c157356722c362ae9e83a56ce95976c557e1967c1e346cfdcf",
+    "bytes": 3672471,
+    "sha256": "61473df4288123d2831e42ec963e86801406106ca96add58489d1a916ca3ba9a",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-corrugated-roof-revision",
     "bedFurniture": [
       {
         "context": "studio-with-terrace-12x26.pdf / page 2",
@@ -2412,7 +2515,13 @@
         "footClearanceFeet": 5.5,
         "headboardOnSolidWall": true
       }
-    ]
+    ],
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "89ef0d1d3c9264cf37355fb30eefd0ec68eeb3f68380dd616156d4ca734e4beb"
   },
   {
     "lengthFeet": 40,
@@ -2514,11 +2623,17 @@
     "file": "courtyard-cafe-12x40.pdf",
     "slug": "courtyard-cafe-12x40",
     "pages": 13,
-    "bytes": 5271976,
-    "sha256": "8f8c3a2fd8861fb9a85621b677ec63dbaafc2333a6f50bd92601fa3e97998dbf",
+    "bytes": 3568722,
+    "sha256": "2e7b62124af1d9a6bb45b4300e1ffb31d8f4e2670d91dffe280a2c749dd07c46",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "e00ff628e51954b9f8df4b0899e27b794ad56207c3779ce4837a3e4efd7e7337"
   },
   {
     "lengthFeet": 40,
@@ -2638,11 +2753,17 @@
     "file": "cedar-bistro-24x40.pdf",
     "slug": "cedar-bistro-24x40",
     "pages": 13,
-    "bytes": 4850201,
-    "sha256": "04744e9f3e57db2917f04f381750b064c5a347a8bafe2231ab0f035ae21acc05",
+    "bytes": 3635278,
+    "sha256": "55dd5b24b984cf43ca70c4d4de69f74ba7ad789c09aa16983aa659d3dd05de25",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "gable",
+    "roofStyle": "A-shaped gable roof",
+    "roofSpecification": "A-shaped gable steel roof over the joined 24 ft width, with corrugated metal roof sheets and coordinated ridge/drainage.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "6d6340489ec98f21796441e958dba4e7c5e00661bcd3bab062fa435a74b61b98"
   },
   {
     "lengthFeet": 20,
@@ -2718,11 +2839,17 @@
     "file": "charcoal-takeaway-12x20.pdf",
     "slug": "charcoal-takeaway-12x20",
     "pages": 13,
-    "bytes": 4864505,
-    "sha256": "9f96bd0acfa5c65d482539bd49f741ac83fa0e8844e2442b637ffb48b3b28f75",
+    "bytes": 2910316,
+    "sha256": "b75ffdef7197846d46467bf068c2b03fef13621b9f5f7e7892e951e7e2e2af02",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "ea54fdcd9d49bbf42d3f8057b2d9fc88a28316b24ea1dc3f6e979118f270be2a"
   },
   {
     "lengthFeet": 32,
@@ -2821,11 +2948,17 @@
     "file": "slate-team-office-12x32.pdf",
     "slug": "slate-team-office-12x32",
     "pages": 13,
-    "bytes": 4885656,
-    "sha256": "c6d306b7b3b6143d50aed105901207043de30481a15113a0e6b1c7b32dae54bb",
+    "bytes": 3175362,
+    "sha256": "59174c46b57dbba90fa2ed4bef00d1d3d91e357bdaffd1e4ceca203b1f8f21d5",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "6604bda793349aed1cf80f9d47d12fe7610bf1d54da4ecb9abd18358bf29c1f1"
   },
   {
     "lengthFeet": 32,
@@ -2948,11 +3081,17 @@
     "file": "ivory-meeting-office-24x32.pdf",
     "slug": "ivory-meeting-office-24x32",
     "pages": 13,
-    "bytes": 4561222,
-    "sha256": "31f5f0e13e29581be426eed53da17b6cfe2be150875fe16fc4ef0898db0688f3",
+    "bytes": 3271326,
+    "sha256": "ccfcbc72ba283817c45d1bd3d84781d64a6210d20e9f95cd095a4128931165e5",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "mono-pitch",
+    "roofStyle": "Single-slope roof",
+    "roofSpecification": "Single-slope steel roof with corrugated metal sheets; supports and drainage coordinated for the joined building.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "1df1c22c35b59841aa04f69e61bb84ad8098053b71fd132f3e8ff6da2c689760"
   },
   {
     "lengthFeet": 32,
@@ -3082,11 +3221,17 @@
     "file": "silver-one-bedroom-home-12x32.pdf",
     "slug": "silver-one-bedroom-home-12x32",
     "pages": 13,
-    "bytes": 4964285,
-    "sha256": "4e14e96a3be9e5aff0193197a9feae4ad56d4dac3b858982727ce3979bf4e6dd",
+    "bytes": 3107183,
+    "sha256": "5f4dbba5c013e2e77eb56dfc1029248b83a57734297da32bdf8dcbc2787ef957",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-home-access"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "25e8293513c564c2181aa2a65ca6efea6579e8c375aed6f6d6d870b9531632bb"
   },
   {
     "lengthFeet": 32,
@@ -3244,11 +3389,17 @@
     "file": "charcoal-two-bedroom-home-24x32.pdf",
     "slug": "charcoal-two-bedroom-home-24x32",
     "pages": 13,
-    "bytes": 4976382,
-    "sha256": "750d1ba539aaa5ef9eb6a8d521ae16c7940030ee7e0eab52f6c3ed33ce956b2a",
+    "bytes": 3232361,
+    "sha256": "1d819e2cf5fdab666ea1a8fd6564c90a8e41033d86ce640fc9c6a789ecc332f2",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "gable",
+    "roofStyle": "A-shaped gable roof",
+    "roofSpecification": "A-shaped gable steel roof over the joined 24 ft width, with corrugated metal roof sheets and coordinated ridge/drainage.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "9de81f94fd37acc4e04c66727b9493d2e87e1ea7ed7c4584b5a1874330a720e1"
   },
   {
     "lengthFeet": 40,
@@ -3360,11 +3511,17 @@
     "file": "ivory-portable-clinic-12x40.pdf",
     "slug": "ivory-portable-clinic-12x40",
     "pages": 13,
-    "bytes": 4684782,
-    "sha256": "7b56d69d1e27b43bf6e29e3ded0a00a47bd30ce9f0e03e37f53bc92f8d925d40",
+    "bytes": 3222419,
+    "sha256": "e3307613397ee3b2e5025e2f2bbc7845fa206984d128a3a5edbcf8f0b1eb2c68",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "21dca73bc15ded231d75806a700cc48a8433e165adc0160c472413b6822658be"
   },
   {
     "lengthFeet": 40,
@@ -3486,10 +3643,16 @@
     "file": "grey-learning-studio-12x40.pdf",
     "slug": "grey-learning-studio-12x40",
     "pages": 13,
-    "bytes": 4700470,
-    "sha256": "b2c2b01011cf6d0976d2916cc996344098f94834fb094a54293faa002c374d13",
+    "bytes": 3335324,
+    "sha256": "b631845ae180764974df1bb6e3614b81040e560ed90cd4cccfd1ec923e18c184",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-corrugated-roof-revision",
+    "legacyWatermarksRemoved": 0,
+    "roof": "flat",
+    "roofStyle": "Flat container roof",
+    "roofSpecification": "Flat container-style corrugated steel roof with level perimeter rails; concealed drainage falls coordinated during detailing.",
+    "wallSpecification": "Deep vertical shipping-container-style corrugated steel cladding with visible steel corner posts and top/bottom perimeter rails.",
+    "imageSha256": "11fdd84a328caee4c7b4c90813b1d439b7d3f72916c670eb61bb00d0ad2fb24b"
   }
 ]
