@@ -46,6 +46,15 @@ const collections = [
   },
 ];
 
+function layoutSummary(d: (typeof documents)[number]) {
+  if (d.storeys !== 2) return "Single storey";
+  if (d.slug === "portable-12x24")
+    return "Double storey · Ground-floor kitchen · First-floor entrance lobby";
+  if (d.slug === "family-home-two-floors-40x24")
+    return "Double storey · Ground-floor kitchen · Upper terrace";
+  return "Double storey · Kitchen + washroom on both floors";
+}
+
 export default function Downloads() {
   return (
     <main id="main-content">
@@ -164,7 +173,7 @@ export default function Downloads() {
                     </Link>
                     <h3>{d.title}</h3>
                     <p className="document-size">{d.subtitle}</p>
-                    <p className="catalogue-layout-meta">{d.storeys === 2 ? "Double storey · Kitchen + washroom on both floors" : "Single storey"}{d.slug === "compact-container-home" ? " · Open courtyard" : ""}</p>
+                    <p className="catalogue-layout-meta">{layoutSummary(d)}{d.slug === "compact-container-home" ? " · Open courtyard" : ""}</p>
                     <p>{d.description}</p>
                     <div className="download-actions">
                       <Link href={`/downloads/${d.slug}`}>

@@ -4153,7 +4153,7 @@ endstream
 endobj
 107 0 obj
 <<
-/Length 2783
+/Length 2900
 >>
 stream
 q
@@ -4222,10 +4222,13 @@ BT /F1 10 Tf 12 TL ET
 BT 1 0 0 1 40 330.5 Tm (attached washrooms and living with an open kitchen.) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 40 316 Tm (The 40 ft option uses middle washrooms; the 44 ft) Tj T* ET
+BT 1 0 0 1 40 316 Tm (The 40 ft option uses long-wall ensuites and an) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 40 301.5 Tm (option uses rear-corner washrooms.) Tj T* ET
+BT 1 0 0 1 40 301.5 Tm (internal bedroom connection; the 44 ft option uses) Tj T* ET
+.396078 .439216 .47451 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 40 287 Tm (rear-corner washrooms.) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F3 21 Tf 25.2 TL ET
 BT 1 0 0 1 40 209 Tm (12 x 40 / 44 ft) Tj T* ET
@@ -4284,7 +4287,7 @@ endstream
 endobj
 109 0 obj
 <<
-/Length 11058
+/Length 10872
 >>
 stream
 q
@@ -4352,143 +4355,149 @@ n 140.945 229 560 168 re B*
 1 w
 .090196 .156863 .231373 RG
 .85098 .854902 .858824 rg
-n 140.945 229 168 168 re B*
+n 140.945 229 196 168 re B*
 1 w
 .090196 .156863 .231373 RG
 .85098 .854902 .858824 rg
-n 364.945 229 168 168 re B*
+n 336.945 229 196 168 re B*
 1 w
 .090196 .156863 .231373 RG
 .862745 .901961 .905882 rg
-n 308.945 229 56 84 re B*
+n 140.945 341 84 56 re B*
 .090196 .156863 .231373 rg
 BT /F2 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 320.149 273.8 Tm (ENSUITE 1) Tj T* ET
+BT 1 0 0 1 166.149 371.8 Tm (ENSUITE 1) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 327.1885 265.3 Tm (4 x 6 ft) Tj T* ET
+BT 1 0 0 1 173.1885 363.3 Tm (6 x 4 ft) Tj T* ET
 .443137 .521569 .545098 RG
 n
-321.745 302.7 m
-321.745 305.1853 320.4019 307.2 318.745 307.2 c
-317.0881 307.2 315.745 305.1853 315.745 302.7 c
-315.745 300.2147 317.0881 298.2 318.745 298.2 c
-320.4019 298.2 321.745 300.2147 321.745 302.7 c
+153.745 386.7 m
+153.745 389.1853 152.4019 391.2 150.745 391.2 c
+149.0881 391.2 147.745 389.1853 147.745 386.7 c
+147.745 384.2147 149.0881 382.2 150.745 382.2 c
+152.4019 382.2 153.745 384.2147 153.745 386.7 c
 S
 5 w
 .980392 .976471 .964706 RG
-n 308.945 238.8 m 308.945 273.8 l S
+n 224.945 350.8 m 224.945 385.8 l S
 .607843 .447059 .329412 RG
 .9 w
-n 308.945 238.8 m 343.945 238.8 l S
+n 224.945 350.8 m 189.945 350.8 l S
 .5 w
-n 308.945 273.8 m 328.275 273.8 343.945 258.13 343.945 238.8 c
+n 224.945 385.8 m 205.615 385.8 189.945 370.13 189.945 350.8 c
 S
 .607843 .447059 .329412 rg
 BT /F1 6 Tf 7.2 TL ET
-BT 1 0 0 1 315.111 256.3 Tm (D3) Tj T* ET
+BT 1 0 0 1 211.111 368.3 Tm (D3) Tj T* ET
 1 w
 .090196 .156863 .231373 RG
 .862745 .901961 .905882 rg
-n 308.945 313 56 84 re B*
+n 448.945 341 84 56 re B*
 .090196 .156863 .231373 rg
 BT /F2 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 320.149 357.8 Tm (ENSUITE 2) Tj T* ET
+BT 1 0 0 1 474.149 371.8 Tm (ENSUITE 2) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 327.1885 349.3 Tm (4 x 6 ft) Tj T* ET
+BT 1 0 0 1 481.1885 363.3 Tm (6 x 4 ft) Tj T* ET
 .443137 .521569 .545098 RG
 n
-321.745 386.7 m
-321.745 389.1853 320.4019 391.2 318.745 391.2 c
-317.0881 391.2 315.745 389.1853 315.745 386.7 c
-315.745 384.2147 317.0881 382.2 318.745 382.2 c
-320.4019 382.2 321.745 384.2147 321.745 386.7 c
+461.745 386.7 m
+461.745 389.1853 460.4019 391.2 458.745 391.2 c
+457.0881 391.2 455.745 389.1853 455.745 386.7 c
+455.745 384.2147 457.0881 382.2 458.745 382.2 c
+460.4019 382.2 461.745 384.2147 461.745 386.7 c
 S
 5 w
 .980392 .976471 .964706 RG
-n 364.945 322.8 m 364.945 357.8 l S
+n 448.945 350.8 m 448.945 385.8 l S
 .607843 .447059 .329412 RG
 .9 w
-n 364.945 322.8 m 329.945 322.8 l S
+n 448.945 350.8 m 483.945 350.8 l S
 .5 w
-n 364.945 357.8 m 345.615 357.8 329.945 342.13 329.945 322.8 c
+n 448.945 385.8 m 468.275 385.8 483.945 370.13 483.945 350.8 c
 S
 .607843 .447059 .329412 rg
 BT /F1 6 Tf 7.2 TL ET
-BT 1 0 0 1 351.111 340.3 Tm (D3) Tj T* ET
+BT 1 0 0 1 455.111 368.3 Tm (D3) Tj T* ET
 .6 w
 .090196 .156863 .231373 RG
 .721569 .705882 .67451 rg
-n 140.945 369 70 28 re B*
+n 140.945 229 28 84 re B*
 .4 w
 .529412 .521569 .494118 RG
-n 140.945 369 m 210.945 397 l S
+n 140.945 229 m 168.945 313 l S
 .4 w
 .529412 .521569 .494118 RG
-n 210.945 369 m 140.945 397 l S
+n 168.945 229 m 140.945 313 l S
+q
+0 1 -1 0 154.945 271 cm
 .090196 .156863 .231373 rg
-BT /F2 5.7 Tf 6.84 TL ET
-BT 1 0 0 1 159.4805 381.6 Tm (CUPBOARD) Tj T* ET
+BT /F1 5.4 Tf 6.48 TL ET
+BT 1 0 0 1 -28.0611 0 Tm (CUPBOARD / 2 ft deep) Tj T* ET
+Q
 .6 w
 .090196 .156863 .231373 RG
 .721569 .705882 .67451 rg
-n 364.945 369 70 28 re B*
+n 504.945 229 28 56 re B*
 .4 w
 .529412 .521569 .494118 RG
-n 364.945 369 m 434.945 397 l S
+n 504.945 229 m 532.945 285 l S
 .4 w
 .529412 .521569 .494118 RG
-n 434.945 369 m 364.945 397 l S
+n 532.945 229 m 504.945 285 l S
+q
+0 1 -1 0 518.945 257 cm
 .090196 .156863 .231373 rg
-BT /F2 5.7 Tf 6.84 TL ET
-BT 1 0 0 1 383.4805 381.6 Tm (CUPBOARD) Tj T* ET
+BT /F1 5.4 Tf 6.48 TL ET
+BT 1 0 0 1 -28.0611 0 Tm (CUPBOARD / 2 ft deep) Tj T* ET
+Q
 .823529 .807843 .776471 rg
 .466667 .478431 .462745 RG
 .45 w
-n 217.945 278 91 70 re B*
+n 245.945 264 91 70 re B*
 .407843 .454902 .447059 rg
 .466667 .478431 .462745 RG
 .45 w
-n 306.425 278 2.52 70 re B*
+n 334.425 264 2.52 70 re B*
 .980392 .976471 .964706 rg
 .466667 .478431 .462745 RG
 .3 w
-n 292.145 281.5 11.9 30.1 re B*
+n 320.145 267.5 11.9 30.1 re B*
 .980392 .976471 .964706 rg
 .466667 .478431 .462745 RG
 .3 w
-n 292.145 314.4 11.9 30.1 re B*
-n 240.345 278 m 240.345 348 l S
+n 320.145 300.4 11.9 30.1 re B*
+n 268.345 264 m 268.345 334 l S
 .823529 .807843 .776471 rg
 .466667 .478431 .462745 RG
 .45 w
-n 441.945 292 91 70 re B*
+n 336.945 264 91 70 re B*
 .407843 .454902 .447059 rg
 .466667 .478431 .462745 RG
 .45 w
-n 530.425 292 2.52 70 re B*
+n 336.945 264 2.52 70 re B*
 .980392 .976471 .964706 rg
 .466667 .478431 .462745 RG
 .3 w
-n 516.145 295.5 11.9 30.1 re B*
+n 341.145 267.5 11.9 30.1 re B*
 .980392 .976471 .964706 rg
 .466667 .478431 .462745 RG
 .3 w
-n 516.145 328.4 11.9 30.1 re B*
-n 464.345 292 m 464.345 362 l S
+n 341.145 300.4 11.9 30.1 re B*
+n 405.545 264 m 405.545 334 l S
 .090196 .156863 .231373 rg
 BT /F2 7.2 Tf 8.64 TL ET
 BT 1 0 0 1 231.1434 254.2 Tm (BEDROOM 1) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F1 7.2 Tf 8.64 TL ET
-BT 1 0 0 1 238.1346 245 Tm (12 x 12 ft) Tj T* ET
+BT 1 0 0 1 229.5306 245 Tm (14 x 12 ft suite) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F2 7.2 Tf 8.64 TL ET
-BT 1 0 0 1 427.1434 261.2 Tm (BEDROOM 2) Tj T* ET
+BT 1 0 0 1 413.1434 254.2 Tm (BEDROOM 2) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F1 7.2 Tf 8.64 TL ET
-BT 1 0 0 1 434.1346 252 Tm (12 x 12 ft) Tj T* ET
+BT 1 0 0 1 411.5306 245 Tm (14 x 12 ft suite) Tj T* ET
 .6 w
 .090196 .156863 .231373 RG
 .733333 .741176 .717647 rg
@@ -4506,28 +4515,28 @@ BT /F1 7.5 Tf 9 TL ET
 BT 1 0 0 1 601.5175 303.5 Tm (12 x 12 ft) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
-n 154.945 229 m 203.945 229 l S
+n 336.945 348 m 336.945 390 l S
 .607843 .447059 .329412 RG
 .9 w
-n 154.945 229 m 154.945 278 l S
+n 336.945 348 m 294.945 348 l S
 .5 w
-n 203.945 229 m 203.945 256.062 182.007 278 154.945 278 c
+n 336.945 390 m 313.749 390 294.945 371.196 294.945 348 c
 S
 .607843 .447059 .329412 rg
 BT /F1 6 Tf 7.2 TL ET
-BT 1 0 0 1 175.611 218 Tm (D5) Tj T* ET
+BT 1 0 0 1 323.111 369 Tm (D7) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
-n 532.945 236 m 532.945 285 l S
+n 532.945 292 m 532.945 341 l S
 .607843 .447059 .329412 RG
 .9 w
-n 532.945 236 m 483.945 236 l S
+n 532.945 292 m 483.945 292 l S
 .5 w
-n 532.945 285 m 505.883 285 483.945 263.062 483.945 236 c
+n 532.945 341 m 505.883 341 483.945 319.062 483.945 292 c
 S
 .607843 .447059 .329412 rg
 BT /F1 6 Tf 7.2 TL ET
-BT 1 0 0 1 519.111 260.5 Tm (D2) Tj T* ET
+BT 1 0 0 1 519.111 316.5 Tm (D2) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
 n 546.945 229 m 595.945 229 l S
@@ -4542,64 +4551,52 @@ BT /F1 6 Tf 7.2 TL ET
 BT 1 0 0 1 567.611 218 Tm (D1) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
-n 210.945 229 m 294.945 229 l S
+n 196.945 229 m 280.945 229 l S
 1 w
 .376471 .486275 .54902 RG
-n 210.945 227.32 m 294.945 227.32 l S
+n 196.945 227.32 m 280.945 227.32 l S
 1 w
 .376471 .486275 .54902 RG
-n 210.945 230.68 m 294.945 230.68 l S
+n 196.945 230.68 m 280.945 230.68 l S
 .235294 .388235 .454902 rg
 BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 248.07 236 Tm (W2) Tj T* ET
+BT 1 0 0 1 234.07 236 Tm (W2) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
-n 392.945 229 m 476.945 229 l S
+n 364.945 229 m 448.945 229 l S
 1 w
 .376471 .486275 .54902 RG
-n 392.945 227.32 m 476.945 227.32 l S
+n 364.945 227.32 m 448.945 227.32 l S
 1 w
 .376471 .486275 .54902 RG
-n 392.945 230.68 m 476.945 230.68 l S
+n 364.945 230.68 m 448.945 230.68 l S
 .235294 .388235 .454902 rg
 BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 430.07 236 Tm (W2) Tj T* ET
+BT 1 0 0 1 402.07 236 Tm (W2) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
-n 224.945 397 m 308.945 397 l S
+n 238.945 397 m 322.945 397 l S
 1 w
 .376471 .486275 .54902 RG
-n 224.945 395.32 m 308.945 395.32 l S
+n 238.945 395.32 m 322.945 395.32 l S
 1 w
 .376471 .486275 .54902 RG
-n 224.945 398.68 m 308.945 398.68 l S
+n 238.945 398.68 m 322.945 398.68 l S
 .235294 .388235 .454902 rg
 BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 262.07 404 Tm (W2) Tj T* ET
+BT 1 0 0 1 276.07 404 Tm (W2) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
-n 448.945 397 m 532.945 397 l S
+n 350.945 397 m 434.945 397 l S
 1 w
 .376471 .486275 .54902 RG
-n 448.945 395.32 m 532.945 395.32 l S
+n 350.945 395.32 m 434.945 395.32 l S
 1 w
 .376471 .486275 .54902 RG
-n 448.945 398.68 m 532.945 398.68 l S
+n 350.945 398.68 m 434.945 398.68 l S
 .235294 .388235 .454902 rg
 BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 486.07 404 Tm (W2) Tj T* ET
-5 w
-.980392 .976471 .964706 RG
-n 140.945 271 m 140.945 355 l S
-1 w
-.376471 .486275 .54902 RG
-n 139.265 271 m 139.265 355 l S
-1 w
-.376471 .486275 .54902 RG
-n 142.625 271 m 142.625 355 l S
-.235294 .388235 .454902 rg
-BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 147.945 310 Tm (W2) Tj T* ET
+BT 1 0 0 1 388.07 404 Tm (W2) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
 n 700.945 271 m 700.945 355 l S
@@ -4626,28 +4623,28 @@ BT /F1 6.5 Tf 7.8 TL ET
 BT 1 0 0 1 612.07 404 Tm (W4) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
-n 322.945 229 m 350.945 229 l S
+n 168.945 397 m 196.945 397 l S
 1 w
 .376471 .486275 .54902 RG
-n 322.945 227.32 m 350.945 227.32 l S
+n 168.945 395.32 m 196.945 395.32 l S
 1 w
 .376471 .486275 .54902 RG
-n 322.945 230.68 m 350.945 230.68 l S
+n 168.945 398.68 m 196.945 398.68 l S
 .235294 .388235 .454902 rg
 BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 332.9702 236 Tm (V1) Tj T* ET
+BT 1 0 0 1 178.9702 404 Tm (V1) Tj T* ET
 5 w
 .980392 .976471 .964706 RG
-n 322.945 397 m 350.945 397 l S
+n 476.945 397 m 504.945 397 l S
 1 w
 .376471 .486275 .54902 RG
-n 322.945 395.32 m 350.945 395.32 l S
+n 476.945 395.32 m 504.945 395.32 l S
 1 w
 .376471 .486275 .54902 RG
-n 322.945 398.68 m 350.945 398.68 l S
+n 476.945 398.68 m 504.945 398.68 l S
 .235294 .388235 .454902 rg
 BT /F1 6.5 Tf 7.8 TL ET
-BT 1 0 0 1 332.9702 404 Tm (V1) Tj T* ET
+BT 1 0 0 1 486.9702 404 Tm (V1) Tj T* ET
 .5 w
 .396078 .439216 .47451 RG
 n 140.945 415 m 700.945 415 l S
@@ -4674,16 +4671,16 @@ BT 1 0 0 1 40 180 Tm (ROOM SCHEDULE / NOMINAL FEET) Tj T* ET
 n 40 151 762 22 re B*
 .090196 .156863 .231373 rg
 BT /F2 7.4 Tf 8.88 TL ET
-BT 1 0 0 1 48 157 Tm (Middle washroom pair) Tj T* ET
+BT 1 0 0 1 48 157 Tm (Long-wall ensuites) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 7.4 Tf 8.88 TL ET
-BT 1 0 0 1 225 157 Tm (Two 4 x 6 ft ensuites in the 4 x 12 ft middle service band, each entered from its own bedroom.) Tj T* ET
+BT 1 0 0 1 225 157 Tm (Two 6 x 4 ft ensuites on the rear 40 ft side, each entered only from its bedroom.) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F2 7.4 Tf 8.88 TL ET
-BT 1 0 0 1 48 135 Tm (Rooms / access) Tj T* ET
+BT 1 0 0 1 48 135 Tm (Internal bedroom access) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 7.4 Tf 8.88 TL ET
-BT 1 0 0 1 225 135 Tm (12 x 12 ft bedrooms; 12 x 12 ft end living/open kitchen. Bedroom 1 has its own outside entry, as sketched.) Tj T* ET
+BT 1 0 0 1 225 135 Tm (Living opens into bedroom 2; a 3 ft connecting door leads from bedroom 2 to bedroom 1. No outside bedroom entry is needed.) Tj T* ET
 1 w
 .937255 .933333 .917647 RG
 .937255 .933333 .917647 rg
@@ -4693,7 +4690,7 @@ BT /F2 7.4 Tf 8.88 TL ET
 BT 1 0 0 1 48 113 Tm (Building area) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 7.4 Tf 8.88 TL ET
-BT 1 0 0 1 225 113 Tm (12 x 40 ft = 480 sq ft. Layout sequence: 12 ft bedroom + 4 ft services + 12 ft bedroom + 12 ft living.) Tj T* ET
+BT 1 0 0 1 225 113 Tm (12 x 40 ft = 480 sq ft; two 14 x 12 ft gross bedroom suites plus 12 x 12 ft end living/open kitchen.) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 6.4 Tf 7.68 TL ET
 BT 1 0 0 1 40 52 Tm (Beds: 5 x 6.5 ft; solid-wall headboards; minimum 2.5 ft access at both long sides and the foot.) Tj T* ET
@@ -5162,7 +5159,7 @@ endstream
 endobj
 113 0 obj
 <<
-/Length 4741
+/Length 4734
 >>
 stream
 q
@@ -5251,36 +5248,36 @@ BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 225 345 Tm (2 ft 6 in x 6 ft 6 in; moisture-resistant finish.) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F2 8 Tf 9.6 TL ET
-BT 1 0 0 1 48 320 Tm (D5 / separate bedroom entry) Tj T* ET
+BT 1 0 0 1 48 320 Tm (W2 / living & offices) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 225 320 Tm (3 ft 6 in x 6 ft 6 in; outside entry to bedroom 1 in the 40 ft residence option.) Tj T* ET
+BT 1 0 0 1 225 320 Tm (6 ft x 4 ft; living, bedroom and executive-office walls where tagged.) Tj T* ET
 1 w
 .937255 .933333 .917647 RG
 .937255 .933333 .917647 rg
 n 40 286 762 25 re B*
 .090196 .156863 .231373 rg
 BT /F2 8 Tf 9.6 TL ET
-BT 1 0 0 1 48 295 Tm (W2 / living & offices) Tj T* ET
+BT 1 0 0 1 48 295 Tm (W4 / kitchen / studio) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 225 295 Tm (6 ft x 4 ft; living, bedroom and executive-office walls where tagged.) Tj T* ET
+BT 1 0 0 1 225 295 Tm (4 ft x 4 ft; studio long walls, residence kitchen and office kitchen.) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F2 8 Tf 9.6 TL ET
-BT 1 0 0 1 48 270 Tm (W4 / kitchen / studio) Tj T* ET
+BT 1 0 0 1 48 270 Tm (V1 / washroom vent) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 225 270 Tm (4 ft x 4 ft; studio long walls, residence kitchen and office kitchen.) Tj T* ET
+BT 1 0 0 1 225 270 Tm (2 ft x 1 ft 6 in, high-level frosted opening; mechanical extract provision.) Tj T* ET
 1 w
 .937255 .933333 .917647 RG
 .937255 .933333 .917647 rg
 n 40 236 762 25 re B*
 .090196 .156863 .231373 rg
 BT /F2 8 Tf 9.6 TL ET
-BT 1 0 0 1 48 245 Tm (V1 / washroom vent) Tj T* ET
+BT 1 0 0 1 48 245 Tm (D7 / bedroom connection) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 225 245 Tm (2 ft x 1 ft 6 in, high-level frosted opening; mechanical extract provision.) Tj T* ET
+BT 1 0 0 1 225 245 Tm (3 ft x 6 ft 6 in; internal door between bedrooms 2 and 1 in the 40 ft option.) Tj T* ET
 .090196 .156863 .231373 rg
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 48 220 Tm (Cupboard / wardrobe) Tj T* ET
@@ -5335,7 +5332,7 @@ endstream
 endobj
 115 0 obj
 <<
-/Length 3250
+/Length 3252
 >>
 stream
 q
@@ -5438,7 +5435,7 @@ BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 40 94 Tm (AI-generated architectural concept images illustrate materials, lighting and landscape. The dimensioned floor plans and opening schedule control the layout. The 44 ft finish concept is illustrated. The 40 ft option) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 40 82.4 Tm (has the different room order and separate bedroom entry shown on its plan.) Tj T* ET
+BT 1 0 0 1 40 82.4 Tm (has long-wall ensuites and an internal connecting door between the bedrooms.) Tj T* ET
  
 
 Q
@@ -5474,7 +5471,7 @@ endstream
 endobj
 117 0 obj
 <<
-/Length 3241
+/Length 3243
 >>
 stream
 q
@@ -5577,7 +5574,7 @@ BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 40 94 Tm (AI-generated architectural concept images illustrate materials, lighting and landscape. The dimensioned floor plans and opening schedule control the layout. The 44 ft finish concept is illustrated. The 40 ft option) Tj T* ET
 .396078 .439216 .47451 rg
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 40 82.4 Tm (has the different room order and separate bedroom entry shown on its plan.) Tj T* ET
+BT 1 0 0 1 40 82.4 Tm (has long-wall ensuites and an internal connecting door between the bedrooms.) Tj T* ET
  
 
 Q
@@ -5900,19 +5897,19 @@ xref
 0005170638 00000 n 
 0005212304 00000 n 
 0005237021 00000 n 
-0005239858 00000 n 
-0005240105 00000 n 
-0005251218 00000 n 
-0005251465 00000 n 
-0005262091 00000 n 
-0005262338 00000 n 
-0005267133 00000 n 
-0005267380 00000 n 
-0005270684 00000 n 
-0005270931 00000 n 
-0005274226 00000 n 
-0005274473 00000 n 
-0005279392 00000 n 
+0005239975 00000 n 
+0005240222 00000 n 
+0005251149 00000 n 
+0005251396 00000 n 
+0005262022 00000 n 
+0005262269 00000 n 
+0005267057 00000 n 
+0005267304 00000 n 
+0005270610 00000 n 
+0005270857 00000 n 
+0005274154 00000 n 
+0005274401 00000 n 
+0005279320 00000 n 
 trailer
 <<
 /Size 121
@@ -5920,5 +5917,5 @@ trailer
 /Info 103 0 R
 >>
 startxref
-5279639
+5279567
 %%EOF

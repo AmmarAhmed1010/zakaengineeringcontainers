@@ -497,10 +497,10 @@
     "file": "three-bedroom-compact-duplex-12x24.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1506483,
+    "bytes": 2542943,
     "websiteCopyMatches": true,
     "slug": "portable-12x24",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-home-access",
     "widthFeet": 12,
     "lengthFeet": 24,
     "storeys": 2,
@@ -587,13 +587,13 @@
           "group": "Washroom"
         },
         {
-          "name": "Kitchen / entry",
+          "name": "Entrance / lobby",
           "x": 10,
           "y": 0,
           "length": 4,
           "width": 6,
-          "kind": "kitchen",
-          "group": "Kitchen / entry"
+          "kind": "landing",
+          "group": "Entrance / lobby"
         },
         {
           "name": "Bedroom 3",
@@ -672,7 +672,7 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "b96ddd7b9568b4142aaa13b377ac0fa51893f12119dd987eb349dca48c8f9340"
+    "sha256": "1fd66b285056a3c35c41abd58b2b49e5fa5c8cdd20f17176fcaf38a6498a18bd"
   },
   {
     "file": "compact-gabled-studio-12x20.pdf",
@@ -1989,10 +1989,10 @@
     "file": "three-bedroom-courtyard-home-24x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1276720,
+    "bytes": 1279007,
     "websiteCopyMatches": true,
     "slug": "compact-container-home",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-home-access",
     "widthFeet": 24,
     "lengthFeet": 40,
     "storeys": 1,
@@ -2008,7 +2008,8 @@
           "y": 0,
           "length": 10,
           "width": 12,
-          "kind": "bed"
+          "kind": "bed",
+          "group": "Bedroom 1"
         },
         {
           "name": "Bedroom 2",
@@ -2016,7 +2017,8 @@
           "y": 12,
           "length": 10,
           "width": 12,
-          "kind": "bed"
+          "kind": "bed",
+          "group": "Bedroom 2"
         },
         {
           "name": "Living / dining",
@@ -2024,7 +2026,8 @@
           "y": 12,
           "length": 20,
           "width": 12,
-          "kind": "living"
+          "kind": "living",
+          "group": "Living / dining"
         },
         {
           "name": "Bedroom 3",
@@ -2032,23 +2035,35 @@
           "y": 0,
           "length": 10,
           "width": 12,
-          "kind": "bed"
+          "kind": "bed",
+          "group": "Bedroom 3"
         },
         {
           "name": "Kitchen",
           "x": 30,
-          "y": 12,
-          "length": 5,
-          "width": 12,
-          "kind": "kitchen"
+          "y": 18,
+          "length": 10,
+          "width": 6,
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Bathroom",
           "x": 35,
           "y": 12,
           "length": 5,
-          "width": 12,
-          "kind": "bath"
+          "width": 6,
+          "kind": "bath",
+          "group": "Bathroom"
+        },
+        {
+          "name": "Bathroom lobby",
+          "x": 30,
+          "y": 12,
+          "length": 5,
+          "width": 6,
+          "kind": "hall",
+          "group": "Bathroom lobby"
         }
       ]
     ],
@@ -2118,7 +2133,7 @@
         "headboardOnSolidWall": true
       }
     ],
-    "sha256": "2bf91e446ae8fc1d10e2225810288baccb179f3f560690bcd3a2ffed88e579c7"
+    "sha256": "dd2c3c70526c2fd2e1a05de6177c83d4db391d0f648ece2c6154290c7d3ce2f1"
   },
   {
     "file": "family-home-two-floors-40x24.pdf",
@@ -2128,17 +2143,189 @@
     "sha256": "64f5d7472ebe053cde27766a4b48734dd75b1489fbd5359a9ddda41a6f30bff3",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-collection-30",
+    "bedFurniture": [
+      {
+        "context": "family-home-two-floors-40x24.pdf / page 2",
+        "x": 5.5,
+        "y": 9,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          0,
+          0,
+          12,
+          18
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          9,
+          4
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "family-home-two-floors-40x24.pdf / page 2",
+        "x": 28,
+        "y": 9,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          28,
+          0,
+          12,
+          18
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          9,
+          4
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "family-home-two-floors-40x24.pdf / page 3",
+        "x": 7,
+        "y": 17.5,
+        "width": 5,
+        "height": 6.5,
+        "head": "north",
+        "room": [
+          0,
+          12,
+          15,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          3,
+          3
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "family-home-two-floors-40x24.pdf / page 3",
+        "x": 28,
+        "y": 17.5,
+        "width": 5,
+        "height": 6.5,
+        "head": "north",
+        "room": [
+          25,
+          12,
+          15,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          3,
+          3
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "two-bedroom-living-12x40-and-12x44.pdf",
     "slug": "two-bedroom-living-12x40-and-12x44",
     "pages": 13,
-    "bytes": 5282144,
-    "sha256": "02d618cc99844275300f417fc1d5afdc249a424d8f265a79ee89240b7467e6d0",
+    "bytes": 5282072,
+    "sha256": "9c7e37dc464de6c1160c2eedd2062f1517474e1abb8b6923b1d0b55552bb3fe1",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-home-access",
+    "bedFurniture": [
+      {
+        "context": "two-bedroom-living-12x40-and-12x44.pdf / page 2",
+        "x": 7.5,
+        "y": 2.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          0,
+          0,
+          14,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          2.5,
+          4.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "two-bedroom-living-12x40-and-12x44.pdf / page 2",
+        "x": 14,
+        "y": 2.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          14,
+          0,
+          14,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          2.5,
+          4.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "two-bedroom-living-12x40-and-12x44.pdf / page 3",
+        "x": 7.5,
+        "y": 4.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "east",
+        "room": [
+          0,
+          0,
+          14,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          4.5,
+          2.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "two-bedroom-living-12x40-and-12x44.pdf / page 3",
+        "x": 30,
+        "y": 4.5,
+        "width": 6.5,
+        "height": 5,
+        "head": "west",
+        "room": [
+          30,
+          0,
+          14,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          4.5,
+          2.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "executive-office-suite-12x40-and-12x44.pdf",
@@ -2148,7 +2335,51 @@
     "sha256": "89264bb2fd88a464eb83641407875fd42c620dbbd719a04834b1ed1004cf304e",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-collection-30",
+    "bedFurniture": [
+      {
+        "context": "executive-office-suite-12x40-and-12x44.pdf / page 2",
+        "x": 2.5,
+        "y": 0,
+        "width": 5,
+        "height": 6.5,
+        "head": "south",
+        "room": [
+          0,
+          0,
+          10,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          2.5,
+          2.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      },
+      {
+        "context": "executive-office-suite-12x40-and-12x44.pdf / page 3",
+        "x": 2.5,
+        "y": 0,
+        "width": 5,
+        "height": 6.5,
+        "head": "south",
+        "room": [
+          0,
+          0,
+          10,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          2.5,
+          2.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "file": "studio-with-terrace-12x26.pdf",
@@ -2158,7 +2389,30 @@
     "sha256": "452e5789a9c540c157356722c362ae9e83a56ce95976c557e1967c1e346cfdcf",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-collection-30",
+    "bedFurniture": [
+      {
+        "context": "studio-with-terrace-12x26.pdf / page 2",
+        "x": 9.5,
+        "y": 5.5,
+        "width": 5,
+        "height": 6.5,
+        "head": "north",
+        "room": [
+          0,
+          0,
+          21,
+          12
+        ],
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          2.5,
+          6.5
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
+      }
+    ]
   },
   {
     "lengthFeet": 40,
@@ -2711,7 +2965,7 @@
       ],
       [
         "Service bay",
-        "8 x 12 ft / 96 sq ft; kitchen 8 x 4 ft, passage 8 x 3 ft, washroom 5 x 5 ft and store 3 x 5 ft."
+        "8 x 12 ft / 96 sq ft; kitchen 8 x 4 ft with sink/prep/hob under the front window, passage 8 x 3 ft, washroom 5 x 5 ft and store 3 x 5 ft."
       ],
       [
         "Living / dining",
@@ -2804,6 +3058,7 @@
     ],
     "bedFurniture": [
       {
+        "context": "silver-one-bedroom-home-12x32.pdf / page 2",
         "x": 0,
         "y": 3.5,
         "width": 6.5,
@@ -2815,17 +3070,23 @@
           12,
           12
         ],
-        "name": "Bedroom / sleeping zone"
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          3.5,
+          3.5
+        ],
+        "footClearanceFeet": 3.5,
+        "headboardOnSolidWall": true
       }
     ],
     "file": "silver-one-bedroom-home-12x32.pdf",
     "slug": "silver-one-bedroom-home-12x32",
     "pages": 13,
-    "bytes": 4963982,
-    "sha256": "393f72f88408b7f6fd8e34c4c477920dc5db15f784907f23296e42ebb654cef4",
+    "bytes": 4964285,
+    "sha256": "4e14e96a3be9e5aff0193197a9feae4ad56d4dac3b858982727ce3979bf4e6dd",
     "websiteCopyMatches": true,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "revision": "20261028-collection-30"
+    "revision": "20261028-home-access"
   },
   {
     "lengthFeet": 32,
@@ -2938,6 +3199,7 @@
     ],
     "bedFurniture": [
       {
+        "context": "charcoal-two-bedroom-home-24x32.pdf / page 2",
         "x": 8,
         "y": 17.5,
         "width": 5,
@@ -2949,9 +3211,16 @@
           16,
           12
         ],
-        "name": "Bedroom / sleeping zone"
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          3,
+          3
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
       },
       {
+        "context": "charcoal-two-bedroom-home-24x32.pdf / page 2",
         "x": 19,
         "y": 17.5,
         "width": 5,
@@ -2963,7 +3232,13 @@
           16,
           12
         ],
-        "name": "Bedroom / sleeping zone"
+        "name": "Bedroom / sleeping zone",
+        "sideClearancesFeet": [
+          3,
+          3
+        ],
+        "footClearanceFeet": 5.5,
+        "headboardOnSolidWall": true
       }
     ],
     "file": "charcoal-two-bedroom-home-24x32.pdf",

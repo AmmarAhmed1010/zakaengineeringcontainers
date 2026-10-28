@@ -65,7 +65,8 @@ def enrich(d):
     d['subtitle']=f"{d['storeys']}-storey {program} / {d['area']} sq ft enclosed"
     article='An' if d['width']==8 else 'A'
     d['description']=f"{article} {d['width']} x {d['length']} ft {program} with {d['finish']}."
-    if d['storeys']==2:d['description']+=' Kitchen and washroom on both floors; right-end stairs connect to the upper front access balcony.'
+    if d['storeys']==2:
+        d['description']+=(' Ground-floor kitchen; first-floor entrance lobby and washroom. Right-end stairs connect to the upper front access balcony.' if d['slug']=='portable-12x24' else ' Kitchen and washroom on both floors; right-end stairs connect to the upper front access balcony.')
     if d['terrace']:d['description']+=' An additional 12 x 5 ft terrace extends from the right end.'
     if d['roofTerrace']:d['description']+=' A 12 x 24 ft roof deck adds an outdoor lounge above the enclosed floor.'
     if d['slug']=='compact-container-home':d['description']+=' A 20 x 12 ft open courtyard connects the three bedrooms and living wing via outdoor access.'

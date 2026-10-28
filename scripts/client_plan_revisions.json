@@ -1,26 +1,98 @@
 {
   "office-10x20": {
     "changes": {},
-    "floors": [{
-      "rooms": [
-        {"name":"Washroom","x":0,"y":6,"length":6,"width":4,"kind":"bath","group":"Washroom"},
-        {"name":"Kitchen","x":0,"y":0,"length":6,"width":6,"kind":"kitchen","group":"Kitchen"},
-        {"name":"Team workspace","x":6,"y":0,"length":14,"width":10,"kind":"office","group":"Team workspace"}
-      ],
-      "doors": [
-        {"x":6,"y":6.4,"vertical":true,"sign":-1,"size":2.5},
-        {"x":6,"y":0.3,"vertical":true,"sign":-1,"size":2.5},
-        {"x":8,"y":0,"vertical":false,"sign":1,"size":3}
-      ],
-      "windows": [
-        {"tag":"W1","x":0,"y":1.25,"vertical":true,"size":3,"height":3},
-        {"tag":"W1","x":1.5,"y":0,"vertical":false,"size":3,"height":3},
-        {"tag":"W2","x":20,"y":3,"vertical":true,"size":4,"height":4},
-        {"tag":"W2","x":13,"y":0,"vertical":false,"size":4,"height":4}
-      ],
-      "openEdges": [],
-      "note":"Kitchen replaces entry/pantry. W1: 3 x 3 ft kitchen windows on front and 10 ft end. W2: 4 x 4 ft workspace windows on front and opposite 10 ft end; rear workspace window removed. Sizes are width x height."
-    }]
+    "floors": [
+      {
+        "rooms": [
+          {
+            "name": "Washroom",
+            "x": 0,
+            "y": 6,
+            "length": 6,
+            "width": 4,
+            "kind": "bath",
+            "group": "Washroom"
+          },
+          {
+            "name": "Kitchen",
+            "x": 0,
+            "y": 0,
+            "length": 6,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Team workspace",
+            "x": 6,
+            "y": 0,
+            "length": 14,
+            "width": 10,
+            "kind": "office",
+            "group": "Team workspace"
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 6.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 6,
+            "y": 0.3,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W1",
+            "x": 0,
+            "y": 1.25,
+            "vertical": true,
+            "size": 3,
+            "height": 3
+          },
+          {
+            "tag": "W1",
+            "x": 1.5,
+            "y": 0,
+            "vertical": false,
+            "size": 3,
+            "height": 3
+          },
+          {
+            "tag": "W2",
+            "x": 20,
+            "y": 3,
+            "vertical": true,
+            "size": 4,
+            "height": 4
+          },
+          {
+            "tag": "W2",
+            "x": 13,
+            "y": 0,
+            "vertical": false,
+            "size": 4,
+            "height": 4
+          }
+        ],
+        "openEdges": [],
+        "note": "Kitchen replaces entry/pantry. W1: 3 x 3 ft kitchen windows on front and 10 ft end. W2: 4 x 4 ft workspace windows on front and opposite 10 ft end; rear workspace window removed. Sizes are width x height."
+      }
+    ]
   },
   "studio-12x30": {
     "changes": {},
@@ -759,13 +831,13 @@
             "group": "Washroom"
           },
           {
-            "name": "Kitchen / entry",
+            "name": "Entrance / lobby",
             "x": 10,
             "y": 0,
             "length": 4,
             "width": 6,
-            "kind": "kitchen",
-            "group": "Kitchen / entry"
+            "kind": "landing",
+            "group": "Entrance / lobby"
           },
           {
             "name": "Bedroom 3",
@@ -808,7 +880,182 @@
           }
         ],
         "openEdges": [],
-        "note": "Two bedrooms upstairs, with a central 4 x 6 ft washroom and 4 x 6 ft kitchen/entry. Upper access is from the external front balcony, reached by the right-end stair."
+        "note": "Two bedrooms upstairs, with a central 4 x 6 ft washroom and clear 4 x 6 ft entrance lobby. No first-floor kitchen. Main entrance is marked from the external front balcony, reached by the right-end stair."
+      }
+    ]
+  },
+  "compact-container-home": {
+    "changes": {},
+    "floors": [
+      {
+        "rooms": [
+          {
+            "name": "Bedroom 1",
+            "x": 0,
+            "y": 0,
+            "length": 10,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 1"
+          },
+          {
+            "name": "Bedroom 2",
+            "x": 0,
+            "y": 12,
+            "length": 10,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 2"
+          },
+          {
+            "name": "Living / dining",
+            "x": 10,
+            "y": 12,
+            "length": 20,
+            "width": 12,
+            "kind": "living",
+            "group": "Living / dining"
+          },
+          {
+            "name": "Bedroom 3",
+            "x": 30,
+            "y": 0,
+            "length": 10,
+            "width": 12,
+            "kind": "bed",
+            "group": "Bedroom 3"
+          },
+          {
+            "name": "Kitchen",
+            "x": 30,
+            "y": 18,
+            "length": 10,
+            "width": 6,
+            "kind": "kitchen",
+            "group": "Kitchen"
+          },
+          {
+            "name": "Bathroom",
+            "x": 35,
+            "y": 12,
+            "length": 5,
+            "width": 6,
+            "kind": "bath",
+            "group": "Bathroom"
+          },
+          {
+            "name": "Bathroom lobby",
+            "x": 30,
+            "y": 12,
+            "length": 5,
+            "width": 6,
+            "kind": "hall",
+            "group": "Bathroom lobby"
+          }
+        ],
+        "doors": [
+          {
+            "x": 10,
+            "y": 1,
+            "size": 3,
+            "vertical": true,
+            "sign": -1
+          },
+          {
+            "x": 10,
+            "y": 13,
+            "size": 3,
+            "vertical": true,
+            "sign": -1
+          },
+          {
+            "x": 30,
+            "y": 1,
+            "size": 3,
+            "vertical": true,
+            "sign": 1
+          },
+          {
+            "x": 18,
+            "y": 12,
+            "size": 3,
+            "vertical": false,
+            "sign": 1
+          },
+          {
+            "x": 30,
+            "y": 12.5,
+            "size": 3,
+            "vertical": true,
+            "sign": 1
+          },
+          {
+            "x": 35,
+            "y": 12.5,
+            "size": 2.5,
+            "vertical": true,
+            "sign": 1
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 30,
+            "y": 18,
+            "length": 4,
+            "vertical": true
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W1",
+            "x": 2,
+            "y": 0,
+            "size": 6,
+            "height": 4,
+            "vertical": false
+          },
+          {
+            "tag": "W1",
+            "x": 2,
+            "y": 24,
+            "size": 6,
+            "height": 4,
+            "vertical": false
+          },
+          {
+            "tag": "W1",
+            "x": 32,
+            "y": 0,
+            "size": 6,
+            "height": 4,
+            "vertical": false
+          },
+          {
+            "tag": "W2",
+            "x": 16,
+            "y": 24,
+            "size": 6,
+            "height": 4,
+            "vertical": false
+          },
+          {
+            "tag": "W3",
+            "x": 32,
+            "y": 24,
+            "size": 6,
+            "height": 4,
+            "vertical": false
+          },
+          {
+            "tag": "V1",
+            "x": 40,
+            "y": 14,
+            "size": 2,
+            "height": 1.5,
+            "vertical": true
+          }
+        ],
+        "note": "Kitchen relocated along the rear 40 ft wall, with a 6 x 4 ft window above the counter. Bathroom is reached from living through its own 5 x 6 ft lobby, without entering the kitchen. W1/W2/W3: 6 x 4 ft windows; V1: 2 x 1.5 ft frosted vent. Nominal dimensions before wall deductions."
       }
     ]
   }

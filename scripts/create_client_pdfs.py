@@ -178,17 +178,17 @@ def first(c,cfg):
 def residence(c,cfg,L):
     s=14;p=Plan(c,L,12,(W-L*s)/2,229,s,cfg);p.box(0,0,L,12,'#F1F0EC',2)
     if L==40:
-        p.box(0,0,12,12,'#D9DADB');p.box(16,0,12,12,'#D9DADB')
-        p.bath(12,0,4,6,'ENSUITE 1','west');p.bath(12,6,4,6,'ENSUITE 2','east')
-        p.cupboard(0,10,5,2);p.cupboard(16,10,5,2)
-        p.bed(5.5,3.5,6.5,5,'east',(0,0,12,12));p.bed(21.5,4.5,6.5,5,'east',(16,0,12,12))
-        p.label(8,1.8,'BEDROOM 1\n12 x 12 ft',7.2);p.label(22,2.3,'BEDROOM 2\n12 x 12 ft',7.2)
+        p.box(0,0,14,12,'#D9DADB');p.box(14,0,14,12,'#D9DADB')
+        p.bath(0,8,6,4,'ENSUITE 1');p.bath(22,8,6,4,'ENSUITE 2','west')
+        p.cupboard(0,0,2,6);p.cupboard(26,0,2,4)
+        p.bed(7.5,2.5,6.5,5,'east',(0,0,14,12));p.bed(14,2.5,6.5,5,'west',(14,0,14,12))
+        p.label(8,1.8,'BEDROOM 1\n14 x 12 ft suite',7.2);p.label(21,1.8,'BEDROOM 2\n14 x 12 ft suite',7.2)
         p.kitchen(29,10,10,2);p.label(34,6,'LIVING / OPEN KITCHEN\n12 x 12 ft',7.5)
-        p.door(1,0,3.5,False,'D5');p.door(28,.5,3.5,True,'D2',-1);p.door(29,0,3.5,False,'D1')
-        for x in (5,18):p.win(x,0,6,False,'W2')
-        p.win(6,12,6,False,'W2');p.win(22,12,6,False,'W2');p.win(0,3,6,True,'W2');p.win(40,3,6,True,'W2');p.win(32,12,4,False,'W4')
-        p.win(13,0,2,False,'V1');p.win(13,12,2,False,'V1')
-        rows=[('Middle washroom pair','Two 4 x 6 ft ensuites in the 4 x 12 ft middle service band, each entered from its own bedroom.'),('Rooms / access','12 x 12 ft bedrooms; 12 x 12 ft end living/open kitchen. Bedroom 1 has its own outside entry, as sketched.'),('Building area','12 x 40 ft = 480 sq ft. Layout sequence: 12 ft bedroom + 4 ft services + 12 ft bedroom + 12 ft living.')]
+        p.door(14,8.5,3,True,'D7',-1);p.door(28,4.5,3.5,True,'D2',-1);p.door(29,0,3.5,False,'D1')
+        for x in (4,16):p.win(x,0,6,False,'W2')
+        p.win(7,12,6,False,'W2');p.win(15,12,6,False,'W2');p.win(40,3,6,True,'W2');p.win(32,12,4,False,'W4')
+        p.win(2,12,2,False,'V1');p.win(24,12,2,False,'V1')
+        rows=[('Long-wall ensuites','Two 6 x 4 ft ensuites on the rear 40 ft side, each entered only from its bedroom.'),('Internal bedroom access','Living opens into bedroom 2; a 3 ft connecting door leads from bedroom 2 to bedroom 1. No outside bedroom entry is needed.'),('Building area','12 x 40 ft = 480 sq ft; two 14 x 12 ft gross bedroom suites plus 12 x 12 ft end living/open kitchen.')]
     else:
         p.box(0,0,14,12,'#D9DADB');p.box(30,0,14,12,'#D9DADB')
         p.bath(0,6,4,6,'ENSUITE 1','south');p.bath(40,6,4,6,'ENSUITE 2','south')
@@ -253,7 +253,7 @@ def elevations(c,cfg,kind):
     wrap(c,'FINISH DIRECTION: '+cfg['palette'],40,128,750,9)
     note='AI-generated architectural concept images illustrate materials, lighting and landscape. The dimensioned floor plans and opening schedule control the layout.'
     if cfg['type']=='office': note+=' The 44 ft option is illustrated; the 40 ft option has a shorter reception bay.'
-    elif cfg['type']=='residence': note+=' The 44 ft finish concept is illustrated. The 40 ft option has the different room order and separate bedroom entry shown on its plan.'
+    elif cfg['type']=='residence': note+=' The 44 ft finish concept is illustrated. The 40 ft option has long-wall ensuites and an internal connecting door between the bedrooms.'
     wrap(c,note,40,94,750,8,MUTED)
     return
 
@@ -314,7 +314,7 @@ def vector_hero(c,cfg):
 
 CONFIGS=[
 dict(type='duplex',code='ZC-01',file='zaka-client-01-family-home-two-floors.pdf',title='Family Home\n& Terrace',short='Two-floor family home',dims='40 x 24 ft',body='#B9BEC1',trim='#33383B',accent='#526E72',border=0,finish='Grey body / charcoal frame / white soffits',palette='Light grey cladding, charcoal steel frame, white roof and soffits; muted teal double border.',desc='Four bedrooms across two floors: two on the ground floor and two upstairs. A full-length first-floor terrace extends the living space.',area='960 sq ft ground + 480 sq ft upper enclosed + 480 sq ft terrace'),
-dict(type='residence',code='ZC-02',file='zaka-client-02-two-bedroom-12x40-and-12x44.pdf',title='Two Bedroom\nLiving',short='Two bedroom residence',dims='12 x 40 / 44 ft',body='#454A4E',trim='#ECEDEA',accent='#9B7254',border=1,finish='Charcoal body / white trim / grey roof',palette='Charcoal corrugated body, white window frames and light grey roof; copper corner border.',desc='Two alternative layouts, each with two bedrooms, attached washrooms and living with an open kitchen. The 40 ft option uses middle washrooms; the 44 ft option uses rear-corner washrooms.',area='480 sq ft / 528 sq ft enclosed'),
+dict(type='residence',code='ZC-02',file='zaka-client-02-two-bedroom-12x40-and-12x44.pdf',title='Two Bedroom\nLiving',short='Two bedroom residence',dims='12 x 40 / 44 ft',body='#454A4E',trim='#ECEDEA',accent='#9B7254',border=1,finish='Charcoal body / white trim / grey roof',palette='Charcoal corrugated body, white window frames and light grey roof; copper corner border.',desc='Two alternative layouts, each with two bedrooms, attached washrooms and living with an open kitchen. The 40 ft option uses long-wall ensuites and an internal bedroom connection; the 44 ft option uses rear-corner washrooms.',area='480 sq ft / 528 sq ft enclosed'),
 dict(type='office',code='ZC-03',file='zaka-client-03-office-12x40-and-12x44.pdf',title='Executive\nOffice Suite',short='Office with rest bedroom',dims='12 x 40 / 44 ft',body='#EBECE8',trim='#41474D',accent='#596C88',border=2,finish='White body / charcoal trim / grey accents',palette='White cladding, charcoal frames and grey service panels; slate-blue side border.',desc='Two office sizes with a bedroom, enclosed kitchen and washroom accessed from a 2.5 ft passage, reception and a separate executive office behind a glazed partition.',area='480 sq ft / 528 sq ft enclosed'),
 dict(type='studio',code='ZC-04',file='zaka-client-04-studio-12x26-with-terrace.pdf',title='Studio\n& Terrace',short='Open studio with front terrace',dims='12 x 26 ft overall',body='#C9CAC8',trim='#484B50',accent='#815D6A',border=3,finish='Warm grey body / white fascia / charcoal frame',palette='Warm grey cladding, charcoal frame and white roof fascia; plum dashed round-corner border.',desc='A 12 x 21 ft enclosed studio with a 5 x 6 ft washroom, open kitchen and cupboard, opening onto a 12 x 5 ft terrace.',area='252 sq ft enclosed + 60 sq ft terrace')]
 
@@ -343,7 +343,8 @@ def author(cfg):
     else: page('01 / studio floor plan','21 ft inside. 5 ft terrace.',sub); studio(c,cfg); c.showPage()
     page('02 / doors, windows & finishes','Every opening. Clearly scheduled.','Window dimensions are width x height; locations follow the tags on the floor plans. All door sizes are clear nominal openings.')
     rows=[('D1 / main entrance',"4 ft x 6 ft 6 in (home); 3 ft 6 in x 6 ft 6 in (other units)."),('D2 / internal doors',"2 ft 6 in x 6 ft 6 in at office bedroom/passage; 3 ft 6 in x 6 ft 6 in for home/residence bedrooms."),('D3 / washroom doors',"2 ft 6 in x 6 ft 6 in; moisture-resistant finish."),('D4 / executive office',"3 ft 6 in x 7 ft glazed door within glazed reception partition."),('D5 / separate bedroom entry',"3 ft 6 in x 6 ft 6 in; outside entry to bedroom 1 in the 40 ft residence option."),('D6 / enclosed kitchen',"2 ft 6 in x 6 ft 6 in; entered only from office service passage."),('W1 / home bedrooms',"8 ft x 6 ft; front and outer side walls as drawn."),('W2 / living & offices',"6 ft x 4 ft; living, bedroom and executive-office walls where tagged."),('W3 / home kitchen',"6 ft x 4 ft; rear wall above kitchen counter."),('W4 / kitchen / studio',"4 ft x 4 ft; studio long walls, residence kitchen and office kitchen."),('W5 / office bedroom',"4 ft x 5 ft; bedroom end and rear walls."),('W6 / studio terrace',"5 ft x 4 ft; glazed opening beside terrace entrance."),('V1 / washroom vent',"2 ft x 1 ft 6 in, high-level frosted opening; mechanical extract provision.")]
-    used={'duplex':{'D1','D2','D3','W1','W2','W3','V1'},'residence':{'D1','D2','D3','D5','W2','W4','V1'},'office':{'D1','D2','D3','D4','D6','W2','W4','W5','V1'},'studio':{'D1','D3','W4','W6','V1'}}[cfg['type']]
+    if cfg['type']=='residence':rows.append(('D7 / bedroom connection','3 ft x 6 ft 6 in; internal door between bedrooms 2 and 1 in the 40 ft option.'))
+    used={'duplex':{'D1','D2','D3','W1','W2','W3','V1'},'residence':{'D1','D2','D3','D7','W2','W4','V1'},'office':{'D1','D2','D3','D4','D6','W2','W4','W5','V1'},'studio':{'D1','D3','W4','W6','V1'}}[cfg['type']]
     rows=[row for row in rows if row[0].split(' / ')[0] in used]
     if cfg['type']=='residence':rows=[(a,'3 ft clear in the 44 ft option; 3 ft 6 in in the 40 ft option. Door height 6 ft 6 in.' if a.startswith('D2 /') else b) for a,b in rows]
     rows.append(('Cupboard / wardrobe','2 ft deep x 6 ft long beside the studio washroom.' if cfg['type']=='studio' else '2 ft deep; positions and lengths follow the floor plan.'))

@@ -48,7 +48,7 @@ NEW=[
       rooms=[('Front meeting room','12 x 12 ft / 144 sq ft; six-place conference table.'),('Reception / circulation','8 x 12 ft front zone / 96 sq ft; centred entrance and open rear connection.'),('Team office','12 x 12 ft / 144 sq ft; four workstations.'),('Rear executive / lounge','20 x 12 ft / 240 sq ft; two desks and visitor/lounge seating.'),('Kitchen / washroom','Two 6 x 9 ft service rooms with a shared 12 x 3 ft passage from reception.')]),
  dict(slug='silver-one-bedroom-home-12x32',title='Silver One Bedroom Home',category='Living',L=32,B=12,bedrooms=1,
       description='A one-bedroom home with a separate service bay, kitchen, washroom and storage, opening into a bright living and dining room.',
-      rooms=[('Bedroom','12 x 12 ft / 144 sq ft; double bed with solid-wall headboard and wardrobe.'),('Service bay','8 x 12 ft / 96 sq ft; kitchen 8 x 4 ft, passage 8 x 3 ft, washroom 5 x 5 ft and store 3 x 5 ft.'),('Living / dining','12 x 12 ft / 144 sq ft; main entrance and end-wall kitchen-side glazing.')]),
+      rooms=[('Bedroom','12 x 12 ft / 144 sq ft; double bed with solid-wall headboard and wardrobe.'),('Service bay','8 x 12 ft / 96 sq ft; kitchen 8 x 4 ft with sink/prep/hob under the front window, passage 8 x 3 ft, washroom 5 x 5 ft and store 3 x 5 ft.'),('Living / dining','12 x 12 ft / 144 sq ft; main entrance and end-wall kitchen-side glazing.')]),
  dict(slug='charcoal-two-bedroom-home-24x32',title='Charcoal Two Bedroom Home',category='Living',L=32,B=24,bedrooms=2,
       description='A two-bedroom joined-module home with rear bedroom suites, two attached washrooms, cupboards and an open kitchen facing shared front living space.',
       rooms=[('Bedroom suites','Two 16 x 12 ft gross zones / 192 sq ft each, including a 5 x 6 ft ensuite and 2 ft deep wardrobe.'),('Living / dining','24 x 12 ft / 288 sq ft; centred front entrance and lounge furniture.'),('Open kitchen','8 x 12 ft / 96 sq ft; L-shaped counter in the front right corner.')]),
@@ -140,7 +140,10 @@ def floor_plan(c,cfg):
     elif slug=='silver-one-bedroom-home-12x32':
         p.box(0,0,12,12,'#D9DADB');p.bed(0,3.5,6.5,5,'west',(0,0,12,12));p.cupboard(10,8,2,4)
         p.label(6,10.8,'BEDROOM / 12 x 12 ft',6.2)
-        kitchen(p,12,0,8,4);p.box(12,7,5,5,'#DCE6E7');p.label(14.5,9.7,'WC\n5 x 5 ft',6)
+        p.box(12,0,8,4,'#E5E2D9');furniture(p,12,0,8,2,'SINK / PREP / HOB')
+        p.box(12.4,.4,1.2,1.1,'#FAF9F6',.4);p.box(18.3,.4,1.2,1.1,'#65706E',.4)
+        p.label(16,3.1,'KITCHEN / WINDOW WALL',5.8);p.line(12,4,20,4,'#FAF9F6',5)
+        p.box(12,7,5,5,'#DCE6E7');p.label(14.5,9.7,'WC\n5 x 5 ft',6)
         p.box(17,7,3,5,'#E2DED4');p.label(18.5,10,'STORE',5.7)
         p.door(12.5,7,2.5,tag='D3');p.door(17.2,7,2.5,tag='D2');p.label(16,5.8,'PASSAGE / 3 ft',5.5)
         p.door(12,4.2,2.6,True,'D2',1);p.line(20,0,20,12);p.door(20,4.2,2.6,True,'D2')

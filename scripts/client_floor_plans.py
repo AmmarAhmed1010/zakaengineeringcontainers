@@ -100,6 +100,9 @@ def draw_plan(c,d,index,page,roof=False):
             size=min(size,(ll*s-8)/pdfmetrics.stringWidth(label,'Bold',1))
         tw=pdfmetrics.stringWidth(label,'Bold',size);cx=x+(a+ll*.45)*s;cy=y+(b+ww*.36)*s
         if main['kind'] in ('bed','studio'):cx=x+(a+ll*.5)*s;cy=y+(b+ww-1.5)*s
+        if slug=='compact-container-home' and main['name']=='Bathroom lobby':
+            label='WC lobby';size=6.2;tw=pdfmetrics.stringWidth(label,'Bold',size)
+            cx=x+(a+ll*.62)*s;cy=y+(b+ww-1.3)*s
         rect(c,cx-tw/2-3,cy-3,tw+6,12,PAPER);text(c,cx-tw/2,cy,label,size,'Bold')
     if d.get('terrace'):
         bx(l,0,5,w,'#dedaca');text(c,x+(l+.6)*s,y+5*s,'TERRACE',7,'Bold')
@@ -131,9 +134,14 @@ def draw_plan(c,d,index,page,roof=False):
         dim(c,x+(l+4.5)*s+15,y+start*s,x+(l+4.5)*s+15,y+(start+16)*s,"16' stair allowance")
         dim(c,x+(l+.5)*s,y+start*s-12,x+(l+4.5)*s,y+start*s-12,"4'")
         if balcony:
-            bx(0,-3,l,3,'#e0e6de',MUTED);text(c,x+2*s,y-2*s,"UPPER ACCESS BALCONY / 3' DEEP",7,'Bold',RED)
+            bx(0,-3,l,3,'#e0e6de',MUTED);text(c,x+2*s,y-2*s,"FRONT ACCESS BALCONY" if slug=='portable-12x24' else "UPPER ACCESS BALCONY / 3' DEEP",7,'Bold',RED)
             bx(l,-3,.5,3,'#e0e6de',MUTED)
             line(c,x+l*s,y-3*s,x+l*s,y,HexColor('#e0e6de'),3)
+            if slug=='portable-12x24':
+                line(c,x+12*s,y-2.5*s,x+12*s,y-.2*s,RED,.9)
+                line(c,x+12*s,y-.2*s,x+11.75*s,y-.65*s,RED,.9)
+                line(c,x+12*s,y-.2*s,x+12.25*s,y-.65*s,RED,.9)
+                text(c,x+14*s,y-1.8*s,'FIRST-FLOOR ENTRANCE',6,'Bold',RED)
     for o in doors:opening(o)
     windows=detail.get('windows',[dict(x=r['x']+1,y=w,size=min(r['length']-1,4)-1,vertical=False) for r in rs if r['kind'] in ('bed','office','studio','living') and r['y']+r['width']==w])
     obstacles=[(r['x'],r['y'],r['length'],r['width']) for r in rs if r['kind'] in ('bath','kitchen','wardrobe')]
@@ -146,8 +154,10 @@ def draw_plan(c,d,index,page,roof=False):
         note+=' Kitchen counters include a sink and hob. Open sides keep entrance, landing and corridor routes clear.'
     if stairs:para(c,40,160,"RIGHT-END STAIR: 4' x 16' outside footprint. Upper front access balcony: 3' deep, additional outdoor area. Stair geometry to be engineered.",W-80,7,RED,10)
     text(c,40,139,'ROOM SCHEDULE / DIMENSIONS IN FEET',8,'Bold',RED)
+    columns=4 if len(g)>6 else 3
+    column_width=(W-80)/columns
     for i,zone in enumerate(g):
-        xx=40+(i%3)*257;yy=118-(i//3)*28
-        text(c,xx,yy,f"{i+1:02d}  {zone['name']}",8,'Bold');para(c,xx,yy-5,f"{zone['dimensions']} / {zone['area']} sq ft",245,7.5,MUTED,10)
+        xx=40+(i%columns)*column_width;yy=118-(i//columns)*28
+        text(c,xx,yy,f"{i+1:02d}  {zone['name']}",8,'Bold');para(c,xx,yy-5,f"{zone['dimensions']} / {zone['area']} sq ft",column_width-12,7.5,MUTED,10)
     if d.get('terrace'):note+=' Additional terrace: 60 sq ft; total ground footprint 12 x 26 ft.'
     para(c,40,65,note,W-80,7,MUTED,9);c.showPage()

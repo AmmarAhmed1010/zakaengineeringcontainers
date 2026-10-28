@@ -1,0 +1,212 @@
+[
+  {
+    "context": "portable-12x24 / floor 1",
+    "x": 0,
+    "y": 3.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "west",
+    "room": [
+      0,
+      0,
+      10,
+      12
+    ],
+    "name": "Bedroom 2",
+    "sideClearancesFeet": [
+      3.5,
+      3.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "portable-12x24 / floor 1",
+    "x": 17.5,
+    "y": 3.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "east",
+    "room": [
+      14,
+      0,
+      10,
+      12
+    ],
+    "name": "Bedroom 3",
+    "sideClearancesFeet": [
+      3.5,
+      3.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "compact-container-home / floor 0",
+    "x": 0,
+    "y": 3.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "west",
+    "room": [
+      0,
+      0,
+      10,
+      12
+    ],
+    "name": "Bedroom 1",
+    "sideClearancesFeet": [
+      3.5,
+      3.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "compact-container-home / floor 0",
+    "x": 0,
+    "y": 15.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "west",
+    "room": [
+      0,
+      12,
+      10,
+      12
+    ],
+    "name": "Bedroom 2",
+    "sideClearancesFeet": [
+      3.5,
+      3.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "compact-container-home / floor 0",
+    "x": 33.5,
+    "y": 3.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "east",
+    "room": [
+      30,
+      0,
+      10,
+      12
+    ],
+    "name": "Bedroom 3",
+    "sideClearancesFeet": [
+      3.5,
+      3.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "two-bedroom-living-12x40-and-12x44.pdf / page 2",
+    "x": 7.5,
+    "y": 2.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "east",
+    "room": [
+      0,
+      0,
+      14,
+      12
+    ],
+    "name": "Bedroom / sleeping zone",
+    "sideClearancesFeet": [
+      2.5,
+      4.5
+    ],
+    "footClearanceFeet": 5.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "two-bedroom-living-12x40-and-12x44.pdf / page 2",
+    "x": 14,
+    "y": 2.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "west",
+    "room": [
+      14,
+      0,
+      14,
+      12
+    ],
+    "name": "Bedroom / sleeping zone",
+    "sideClearancesFeet": [
+      2.5,
+      4.5
+    ],
+    "footClearanceFeet": 5.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "two-bedroom-living-12x40-and-12x44.pdf / page 3",
+    "x": 7.5,
+    "y": 4.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "east",
+    "room": [
+      0,
+      0,
+      14,
+      12
+    ],
+    "name": "Bedroom / sleeping zone",
+    "sideClearancesFeet": [
+      4.5,
+      2.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "two-bedroom-living-12x40-and-12x44.pdf / page 3",
+    "x": 30,
+    "y": 4.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "west",
+    "room": [
+      30,
+      0,
+      14,
+      12
+    ],
+    "name": "Bedroom / sleeping zone",
+    "sideClearancesFeet": [
+      4.5,
+      2.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  },
+  {
+    "context": "silver-one-bedroom-home-12x32.pdf / page 2",
+    "x": 0,
+    "y": 3.5,
+    "width": 6.5,
+    "height": 5,
+    "head": "west",
+    "room": [
+      0,
+      0,
+      12,
+      12
+    ],
+    "name": "Bedroom / sleeping zone",
+    "sideClearancesFeet": [
+      3.5,
+      3.5
+    ],
+    "footClearanceFeet": 3.5,
+    "headboardOnSolidWall": true
+  }
+]
