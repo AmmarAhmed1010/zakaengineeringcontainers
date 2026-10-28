@@ -1,6 +1,7 @@
 """Client-marked layouts: explicit openings, continuous living zones and end stairs."""
 from catalogue_style import *
 from bed_furniture import draw_bed, default_bed, audit_beds
+from office_kitchens import openings as kitchen_openings, counter as kitchen_counter
 
 REVISIONS=json.loads((ROOT/'scripts/client_plan_revisions.json').read_text())
 
@@ -40,6 +41,7 @@ def draw_plan(c,d,index,page,roof=False):
     detail=REVISIONS.get(slug,{}).get('floors',[])
     detail=detail[index] if detail else {}
     doors,opens=(detail['doors'],detail.get('openEdges',[])) if detail else default_openings(d,rs,index)
+    doors,opens=kitchen_openings(d,index,rs,doors,opens)
     stairs=d['storeys']==2;balcony=stairs and index==1
     name='Ground floor' if index==0 else 'First floor'
     header(c,d,page,name+' / measurements in feet')
@@ -69,15 +71,20 @@ def draw_plan(c,d,index,page,roof=False):
             bed=default_bed(r);beds.append(bed)
             draw_bed(c,bed['x'],bed['y'],bed['width'],bed['height'],bed['head'],s,(x,y))
         elif kind=='wardrobe':bx(a+.2,b+.2,ll-.4,1.5,'#cabba7',MUTED)
-        elif kind=='office':
+        elif kind=='office' and r.get('furnish',True):
             for xx in range(1,int(ll)-3,7):bx(a+xx,b+ww-2.2,3.5,1.5,'#cabba7',MUTED)
         elif kind=='kitchen':
-            bx(a+.4,b+ww-1.8,max(1,ll-.8),1.4,'#cabba7',MUTED)
-            bx(a+.7,b+ww-1.5,.9,.8,'#faf9f6',MUTED)
-            if slug=='office-10x20':
-                bx(a+ll-2.3,b+ww-1.5,1.4,.8,'#626a72',MUTED)
+            if d['category']=='Workspace':
+                ca,cb,cl,cw=kitchen_counter(r);bx(ca,cb,cl,cw,'#cabba7',MUTED)
+                vertical=cl==2
+                bx(ca+.35,cb+.2 if vertical else cb+.4,1.2,1.1,'#faf9f6',MUTED)
+                hx,hy=(ca+.35,cb+cw-1.3) if vertical else (ca+cl-1.55,cb+.4)
+                bx(hx,hy,1.2,1.1,'#626a72',MUTED)
                 c.setStrokeColor(PAPER);c.setLineWidth(.5)
-                for offset in (.35,1.05):c.circle(x+(a+ll-2.3+offset)*s,y+(b+ww-1.1)*s,.21*s,stroke=1,fill=0)
+                for offset in (.3,.9):c.circle(x+(hx+offset)*s,y+(hy+.55)*s,.18*s,stroke=1,fill=0)
+            else:
+                bx(a+.4,b+ww-1.8,max(1,ll-.8),1.4,'#cabba7',MUTED)
+                bx(a+.7,b+ww-1.5,.9,.8,'#faf9f6',MUTED)
         elif kind=='living' and ll>=6 and ww>=6:
             bx(a+1,b+ww-2.5,min(4,ll-2),1.7,'#cabba7',MUTED)
         elif kind=='bath':
@@ -134,6 +141,9 @@ def draw_plan(c,d,index,page,roof=False):
     dim(c,x,y+w*s+20,x+l*s,y+w*s+20,f"{l}' building length")
     dim(c,x-23,y,x-23,y+w*s,f"{w}' building width")
     note=detail.get('note','Blue: glazing. Red arcs: indicative doors. All final openings and clearances are developed for the approved layout.')
+    if d['category']=='Workspace':
+        note=note.replace('Kitchen replaces entry/pantry.','Open kitchen with outer-wall counters and unobstructed entry.')
+        note+=' Kitchen counters include a sink and hob. Open sides keep entrance, landing and corridor routes clear.'
     if stairs:para(c,40,160,"RIGHT-END STAIR: 4' x 16' outside footprint. Upper front access balcony: 3' deep, additional outdoor area. Stair geometry to be engineered.",W-80,7,RED,10)
     text(c,40,139,'ROOM SCHEDULE / DIMENSIONS IN FEET',8,'Bold',RED)
     for i,zone in enumerate(g):

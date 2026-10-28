@@ -42,9 +42,9 @@ def enrich(d,i):
     width,length=d['width'],d['length']
     if d['kind']=='office':
         main=length-6
-        d['description']=f'A {width} x {length} ft portable workspace with a dedicated {main} x {width} ft office zone, a compact washroom and an entrance/pantry bay. Perimeter furniture leaves a central path for daily circulation.'
+        d['description']=f'A {width} x {length} ft portable workspace with a dedicated {main} x {width} ft office zone, a compact washroom and an open kitchen. Perimeter furniture leaves a central path for daily circulation.'
         d['subtitle']='A focused place to work. Ready for your next site.'
-        d['rooms']=[('Office workspace',main,width),('Washroom',6,4),('Kitchen' if d['slug']=='office-10x20' else 'Entry / pantry',6,width-4)]
+        d['rooms']=[('Office workspace',main,width),('Washroom',6,4),('Kitchen',6,width-4)]
     elif d['kind']=='home':
         d['description']=f'A {width} x {length} ft portable residence with a private bedroom, a central living and dining space, a kitchenette and bathroom. The longer footprint gives each activity a dedicated zone.'
         d['subtitle']='Room to settle in. Freedom to move.'

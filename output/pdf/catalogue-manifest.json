@@ -747,10 +747,10 @@
     "file": "mint-site-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1101900,
+    "bytes": 1229691,
     "websiteCopyMatches": true,
     "slug": "office-8x20",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
@@ -769,12 +769,13 @@
           "kind": "bath"
         },
         {
-          "name": "Entry / pantry",
+          "name": "Kitchen",
           "x": 0,
           "y": 0,
           "length": 6,
           "width": 4,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Team workspace",
@@ -787,16 +788,59 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "65b56c6ba3258f80c37f056ec6af984239120f1b706365cb0185b0e57e8679fc"
+    "sha256": "b14015931152fa3dc07e3828b22bb9aaea4b3e55fcfd94b9780aa47ecfaae3a8",
+    "kitchenCirculation": [
+      {
+        "slug": "office-8x20",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              0,
+              2,
+              4
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 4.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 4
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "cedar-executive-office-10x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1302732,
+    "bytes": 1302731,
     "websiteCopyMatches": true,
     "slug": "office-10x20",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 10,
     "lengthFeet": 20,
     "storeys": 1,
@@ -870,16 +914,59 @@
         "height": 4
       }
     ],
-    "sha256": "81410558c626f8cecf5109aaccd2a2acf55c447ff033153b3dcaa64d96914ae9"
+    "sha256": "de825576487c9c33e119b631e4ae8daff70f128190ff8cad4e1709938850768a",
+    "kitchenCirculation": [
+      {
+        "slug": "office-10x20",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              0,
+              2,
+              6
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 6.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 6
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "glazed-team-office-12x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1129714,
+    "bytes": 1257559,
     "websiteCopyMatches": true,
     "slug": "office-12x20",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 12,
     "lengthFeet": 20,
     "storeys": 1,
@@ -898,12 +985,13 @@
           "kind": "bath"
         },
         {
-          "name": "Entry / pantry",
+          "name": "Kitchen",
           "x": 0,
           "y": 0,
           "length": 6,
           "width": 8,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Team workspace",
@@ -916,16 +1004,59 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "cfa6a7e5cc056219ca429c79a7b3f54d8eaf77eac29c4cae46a7059b9449943a"
+    "sha256": "3643c95c81847c29ed90aa909cee42d976a3356d5479e47b04255487dd701da1",
+    "kitchenCirculation": [
+      {
+        "slug": "office-12x20",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              0,
+              2,
+              8
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 8.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 8
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "olive-linear-site-hub-8x40.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1023331,
+    "bytes": 1151148,
     "websiteCopyMatches": true,
     "slug": "office-8x40",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 8,
     "lengthFeet": 40,
     "storeys": 1,
@@ -944,12 +1075,13 @@
           "kind": "bath"
         },
         {
-          "name": "Entry / pantry",
+          "name": "Kitchen",
           "x": 0,
           "y": 0,
           "length": 6,
           "width": 4,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Team workspace",
@@ -962,16 +1094,59 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "883e0c01dbfa73ae003bd1f84b6b076742cbde221eb7430547155cfbcea60077"
+    "sha256": "36cd6ecf5d9220d1133715938f4eb888903ad2892069566f5154553b89d2850a",
+    "kitchenCirculation": [
+      {
+        "slug": "office-8x40",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              0,
+              2,
+              4
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 4.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 4
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "two-storey-office-hub-10x40.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1099657,
+    "bytes": 1388519,
     "websiteCopyMatches": true,
     "slug": "office-10x40",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 10,
     "lengthFeet": 40,
     "storeys": 2,
@@ -990,12 +1165,13 @@
           "kind": "bath"
         },
         {
-          "name": "Entry / pantry",
+          "name": "Kitchen",
           "x": 0,
           "y": 0,
           "length": 6,
           "width": 6,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Team workspace",
@@ -1024,12 +1200,13 @@
           "kind": "bath"
         },
         {
-          "name": "Pantry",
+          "name": "Kitchen",
           "x": 0,
           "y": 3,
           "length": 6,
           "width": 3,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Meeting / studio",
@@ -1058,16 +1235,120 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "985a5ac3285b500a872a784fc52400213d56557eee41dc58b1bded8109375d53"
+    "sha256": "70b44aa8e891b8daa39a9091d2921577e8c8f016b7a8fa6013e07fda47bf429e",
+    "kitchenCirculation": [
+      {
+        "slug": "office-10x40",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              0,
+              2,
+              6
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 6.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 6
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      },
+      {
+        "slug": "office-10x40",
+        "floor": 1,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              3,
+              2,
+              3
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 0.6,
+            "y": 6,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 6.6,
+            "y": 3,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 26.6,
+            "y": 3,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 2.5,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 3,
+            "vertical": true,
+            "length": 3
+          },
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 3
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "charcoal-loft-office-12x40.pdf",
     "pages": 12,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1177480,
+    "bytes": 1466322,
     "websiteCopyMatches": true,
     "slug": "office-12x40",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 12,
     "lengthFeet": 40,
     "storeys": 2,
@@ -1086,12 +1367,13 @@
           "kind": "bath"
         },
         {
-          "name": "Entry / pantry",
+          "name": "Kitchen",
           "x": 0,
           "y": 0,
           "length": 6,
           "width": 8,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Team workspace",
@@ -1120,12 +1402,13 @@
           "kind": "bath"
         },
         {
-          "name": "Pantry",
+          "name": "Kitchen",
           "x": 0,
           "y": 3,
           "length": 6,
           "width": 5,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         },
         {
           "name": "Meeting / studio",
@@ -1154,16 +1437,120 @@
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "845851d684d4e4b4a037cce6c6190de3572da1216735a0b1a64d2cb2a38fecc6"
+    "sha256": "15a8403522d29b750438226718caa77788053d8c4f78abcc3ef9d8266913c186",
+    "kitchenCirculation": [
+      {
+        "slug": "office-12x40",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              0,
+              2,
+              8
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 6,
+            "y": 8.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 8
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      },
+      {
+        "slug": "office-12x40",
+        "floor": 1,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              3,
+              2,
+              5
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 0.6,
+            "y": 8,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 6.6,
+            "y": 3,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 28.6,
+            "y": 3,
+            "vertical": false,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 2.5,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 3,
+            "vertical": true,
+            "length": 5
+          },
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 3
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "compact-gabled-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1178302,
+    "bytes": 1306464,
     "websiteCopyMatches": true,
     "slug": "single-cabin-office",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
@@ -1174,42 +1561,104 @@
     "floorZones": [
       [
         {
-          "name": "Entrance",
+          "name": "Kitchen",
+          "group": "Kitchen",
+          "kind": "kitchen",
           "x": 0,
           "y": 0,
-          "length": 4,
-          "width": 4,
-          "kind": "landing"
+          "length": 6,
+          "width": 4
         },
         {
           "name": "Washroom",
+          "kind": "bath",
           "x": 0,
           "y": 4,
           "length": 4,
-          "width": 4,
-          "kind": "bath"
+          "width": 4
         },
         {
           "name": "Private office",
-          "x": 4,
+          "group": "Private office",
+          "kind": "office",
+          "x": 6,
           "y": 0,
+          "length": 14,
+          "width": 4,
+          "furnish": false,
+          "schedule": "14' x 4' + 16' x 4'"
+        },
+        {
+          "name": "Private office",
+          "group": "Private office",
+          "kind": "office",
+          "x": 4,
+          "y": 4,
           "length": 16,
-          "width": 8,
-          "kind": "office"
+          "width": 4
         }
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "f8da3f3e590abfd15971bdd07afb4e7da446a27f16d6f310126044d93793384e"
+    "sha256": "65fffc19a89c0af27f14e45c5b1f68b18ab0379257cda82895d6343f6cb04e94",
+    "kitchenCirculation": [
+      {
+        "slug": "single-cabin-office",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              0,
+              2,
+              4
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 4,
+            "y": 4.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 4
+          },
+          {
+            "x": 6,
+            "y": 4,
+            "vertical": false,
+            "length": 14
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "twin-cabin-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1107279,
+    "bytes": 1235143,
     "websiteCopyMatches": true,
     "slug": "two-cabin-office",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
@@ -1220,50 +1669,119 @@
     "floorZones": [
       [
         {
-          "name": "Private office 1",
+          "name": "Kitchen",
+          "group": "Kitchen",
+          "kind": "kitchen",
           "x": 0,
           "y": 0,
-          "length": 7,
-          "width": 8,
-          "kind": "office"
-        },
-        {
-          "name": "Entrance",
-          "x": 7,
-          "y": 0,
           "length": 6,
-          "width": 4,
-          "kind": "landing"
+          "width": 4
         },
         {
           "name": "Washroom",
-          "x": 7,
+          "kind": "bath",
+          "x": 0,
           "y": 4,
-          "length": 6,
+          "length": 4,
+          "width": 4
+        },
+        {
+          "name": "Private office 1",
+          "group": "Private office 1",
+          "kind": "office",
+          "x": 6,
+          "y": 0,
+          "length": 7,
           "width": 4,
-          "kind": "bath"
+          "furnish": false,
+          "schedule": "7' x 4' + 9' x 4'"
+        },
+        {
+          "name": "Private office 1",
+          "group": "Private office 1",
+          "kind": "office",
+          "x": 4,
+          "y": 4,
+          "length": 9,
+          "width": 4
         },
         {
           "name": "Private office 2",
+          "kind": "office",
           "x": 13,
           "y": 0,
           "length": 7,
-          "width": 8,
-          "kind": "office"
+          "width": 8
         }
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "80748a278b30fa685b2e3c1243d6b3e931e7b4c1ea08a6ede27eb8bd1e1c8e6a"
+    "sha256": "689408a934baac8128dfd5c9680940d4e8578db49bfdc0db33344ebec9329677",
+    "kitchenCirculation": [
+      {
+        "slug": "two-cabin-office",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              0,
+              0,
+              2,
+              4
+            ],
+            "clearApproachFeet": 4
+          }
+        ],
+        "doors": [
+          {
+            "x": 4,
+            "y": 4.4,
+            "vertical": true,
+            "sign": -1,
+            "size": 2.5
+          },
+          {
+            "x": 13,
+            "y": 0.5,
+            "vertical": true,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 6,
+            "y": 4,
+            "vertical": false,
+            "length": 7
+          },
+          {
+            "x": 6,
+            "y": 0,
+            "vertical": true,
+            "length": 4
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "off-grid-field-office-8x20.pdf",
     "pages": 11,
     "watermark": "ZAKA WEBSITE LOGO v1",
-    "bytes": 1077985,
+    "bytes": 1206008,
     "websiteCopyMatches": true,
     "slug": "industrial-field-office",
-    "revision": "20261028-collection-30",
+    "revision": "20261028-open-office-kitchens",
     "widthFeet": 8,
     "lengthFeet": 20,
     "storeys": 1,
@@ -1290,17 +1808,61 @@
           "kind": "office"
         },
         {
-          "name": "Equipment / pantry",
+          "name": "Kitchen",
           "x": 16,
           "y": 0,
           "length": 4,
           "width": 8,
-          "kind": "kitchen"
+          "kind": "kitchen",
+          "group": "Kitchen"
         }
       ]
     ],
     "materialSpecificationSections": 20,
-    "sha256": "36850dac878fe90b5f5612223cbedf7b0d0fba17400dea92a3e18ae47f5f3296"
+    "sha256": "1ad5d0dda3c5db75886d0bec9365a8ce39e5efb26e315d28ea1913b75ee5b523",
+    "kitchenCirculation": [
+      {
+        "slug": "industrial-field-office",
+        "floor": 0,
+        "counters": [
+          {
+            "room": "Kitchen",
+            "counterFeet": [
+              16,
+              6,
+              4,
+              2
+            ],
+            "clearApproachFeet": 6
+          }
+        ],
+        "doors": [
+          {
+            "x": 12,
+            "y": 0.3,
+            "vertical": true,
+            "sign": 1,
+            "size": 2.5
+          },
+          {
+            "x": 8,
+            "y": 0,
+            "vertical": false,
+            "sign": 1,
+            "size": 3
+          }
+        ],
+        "openEdges": [
+          {
+            "x": 16,
+            "y": 0,
+            "vertical": true,
+            "length": 6
+          }
+        ],
+        "doorSwingsClearOfCounters": true
+      }
+    ]
   },
   {
     "file": "two-bedroom-garden-cottage-16x40.pdf",

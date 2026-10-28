@@ -3,6 +3,7 @@ from catalogue_style import *
 from create_collection import panel_bounds
 from watermark_catalogues import add_watermark
 from client_floor_plans import REVISIONS, draw_plan
+from office_kitchens import normalize_rooms
 from client_materials import MATERIAL_PAGES, draw_materials
 import hashlib
 
@@ -17,7 +18,7 @@ def room(name,x,y,l,w,kind='living'):
 def service(d,upper=False):
     w=d['width']
     if d['category']=='Workspace':
-        return [room('Washroom',0,w-4,6,4,'bath'),room('Kitchen' if d['slug']=='office-10x20' else 'Entry / pantry',0,0,6,w-4,'kitchen')]
+        return [room('Washroom',0,w-4,6,4,'bath'),room('Kitchen',0,0,6,w-4,'kitchen')]
     return [room('Bathroom',0,6,6,w-6,'bath'),room('Landing' if upper else 'Kitchenette',0,0,6,6,'landing' if upper else 'kitchen')]
 
 def rooms_for(d):
@@ -29,12 +30,12 @@ def rooms_for(d):
     if slug=='single-cabin-office':
         return [[room('Entrance',0,0,4,4,'landing'),room('Washroom',0,4,4,4,'bath'),room('Private office',4,0,16,8,'office')]]
     if slug=='industrial-field-office':
-        return [[room('Review / briefing',0,0,12,8,'office'),room('Comms / desk',12,0,4,8,'office'),room('Equipment / pantry',16,0,4,8,'kitchen')]]
+        return [[room('Review / briefing',0,0,12,8,'office'),room('Comms / desk',12,0,4,8,'office'),room('Kitchen',16,0,4,8,'kitchen')]]
     if d['category']=='Workspace':
         floors=[service(d)+[room('Team workspace',6,0,l-6,w,'office')]]
         if d['storeys']==2:
             end=14 if w==10 else 12
-            floors.append([room('Stair landing',0,0,6,3,'landing'),room('Washroom',0,w-4,6,4,'bath'),room('Pantry',0,3,6,w-7,'kitchen'),room('Meeting / studio',6,3,l-6-end,w-3,'office'),room('Private office',l-end,3,end,w-3,'office'),room('Shared corridor',6,0,l-6,3,'hall')])
+            floors.append([room('Stair landing',0,0,6,3,'landing'),room('Washroom',0,w-4,6,4,'bath'),room('Kitchen',0,3,6,w-7,'kitchen'),room('Meeting / studio',6,3,l-6-end,w-3,'office'),room('Private office',l-end,3,end,w-3,'office'),room('Shared corridor',6,0,l-6,3,'hall')])
         return floors
     b=d['bedrooms']
     if d['storeys']==2:
@@ -50,6 +51,7 @@ def rooms_for(d):
 def enrich(d):
     d={**d,**REVISIONS.get(d['slug'],{}).get('changes',{})}
     d['revision']='03';d['floors']=[f['rooms'] for f in REVISIONS[d['slug']]['floors']] if d['slug'] in REVISIONS else rooms_for(d)
+    normalize_rooms(d)
     d['basePages']=7 if d['storeys']==2 or d['roofTerrace'] else 6
     d['pages']=d['basePages']+MATERIAL_PAGES;d['briefPage']=d['basePages']-1
     d['floorArea']=sum(r['length']*r['width'] for r in d['floors'][0]);d['area']=d['floorArea']*d['storeys'];d['type']='redesign'

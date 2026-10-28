@@ -1,0 +1,512 @@
+[
+  {
+    "slug": "office-8x20",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          0,
+          2,
+          4
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 6,
+        "y": 4.4,
+        "vertical": true,
+        "sign": -1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 4
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "office-10x20",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          0,
+          2,
+          6
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 6,
+        "y": 6.4,
+        "vertical": true,
+        "sign": -1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 6
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "office-12x20",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          0,
+          2,
+          8
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 6,
+        "y": 8.4,
+        "vertical": true,
+        "sign": -1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 8
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "office-8x40",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          0,
+          2,
+          4
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 6,
+        "y": 4.4,
+        "vertical": true,
+        "sign": -1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 4
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "office-10x40",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          0,
+          2,
+          6
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 6,
+        "y": 6.4,
+        "vertical": true,
+        "sign": -1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 6
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "office-10x40",
+    "floor": 1,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          3,
+          2,
+          3
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 0.6,
+        "y": 6,
+        "vertical": false,
+        "sign": 1,
+        "size": 2.5
+      },
+      {
+        "x": 6.6,
+        "y": 3,
+        "vertical": false,
+        "sign": 1,
+        "size": 2.5
+      },
+      {
+        "x": 26.6,
+        "y": 3,
+        "vertical": false,
+        "sign": 1,
+        "size": 2.5
+      },
+      {
+        "x": 2.5,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 3,
+        "vertical": true,
+        "length": 3
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 3
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "office-12x40",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          0,
+          2,
+          8
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 6,
+        "y": 8.4,
+        "vertical": true,
+        "sign": -1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 8
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "office-12x40",
+    "floor": 1,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          3,
+          2,
+          5
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 0.6,
+        "y": 8,
+        "vertical": false,
+        "sign": 1,
+        "size": 2.5
+      },
+      {
+        "x": 6.6,
+        "y": 3,
+        "vertical": false,
+        "sign": 1,
+        "size": 2.5
+      },
+      {
+        "x": 28.6,
+        "y": 3,
+        "vertical": false,
+        "sign": 1,
+        "size": 2.5
+      },
+      {
+        "x": 2.5,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 3,
+        "vertical": true,
+        "length": 5
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 3
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "single-cabin-office",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          0,
+          2,
+          4
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 4,
+        "y": 4.4,
+        "vertical": true,
+        "sign": -1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 4
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "vertical": false,
+        "length": 14
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "two-cabin-office",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          0,
+          0,
+          2,
+          4
+        ],
+        "clearApproachFeet": 4
+      }
+    ],
+    "doors": [
+      {
+        "x": 4,
+        "y": 4.4,
+        "vertical": true,
+        "sign": -1,
+        "size": 2.5
+      },
+      {
+        "x": 13,
+        "y": 0.5,
+        "vertical": true,
+        "sign": 1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 6,
+        "y": 4,
+        "vertical": false,
+        "length": 7
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "vertical": true,
+        "length": 4
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  },
+  {
+    "slug": "industrial-field-office",
+    "floor": 0,
+    "counters": [
+      {
+        "room": "Kitchen",
+        "counterFeet": [
+          16,
+          6,
+          4,
+          2
+        ],
+        "clearApproachFeet": 6
+      }
+    ],
+    "doors": [
+      {
+        "x": 12,
+        "y": 0.3,
+        "vertical": true,
+        "sign": 1,
+        "size": 2.5
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "vertical": false,
+        "sign": 1,
+        "size": 3
+      }
+    ],
+    "openEdges": [
+      {
+        "x": 16,
+        "y": 0,
+        "vertical": true,
+        "length": 6
+      }
+    ],
+    "doorSwingsClearOfCounters": true
+  }
+]
